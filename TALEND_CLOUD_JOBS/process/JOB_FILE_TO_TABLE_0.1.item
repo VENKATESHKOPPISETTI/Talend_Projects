@@ -4,7 +4,7 @@
     <contextParameter comment="" internalId="_bSj6MYJQEe2b8YqQaLSvSQ" name="Oracle_Cloud_Server" prompt="Oracle_Cloud_Server?" promptNeeded="false" repositoryContextId="_Y92soIJQEe2b8YqQaLSvSQ" type="id_String" value="localhost"/>
     <contextParameter comment="" internalId="_bSj6MoJQEe2b8YqQaLSvSQ" name="Oracle_Cloud_Login" prompt="Oracle_Cloud_Login?" promptNeeded="false" repositoryContextId="_Y92soIJQEe2b8YqQaLSvSQ" type="id_String" value="system"/>
     <contextParameter comment="" internalId="_bSj6M4JQEe2b8YqQaLSvSQ" name="Oracle_Cloud_Port" prompt="Oracle_Cloud_Port?" promptNeeded="false" repositoryContextId="_Y92soIJQEe2b8YqQaLSvSQ" type="id_String" value="1521"/>
-    <contextParameter comment="" internalId="_bSj6NIJQEe2b8YqQaLSvSQ" name="Oracle_Cloud_Password" prompt="Oracle_Cloud_Password?" promptNeeded="false" repositoryContextId="_Y92soIJQEe2b8YqQaLSvSQ" type="id_Password" value="enc:system.encryption.key.v1:egREeW6exznSMvuVemFxUUk6txakd6qn0D/sGl6FRsdx1f25Cg=="/>
+    <contextParameter comment="" internalId="_bSj6NIJQEe2b8YqQaLSvSQ" name="Oracle_Cloud_Password" prompt="Oracle_Cloud_Password?" promptNeeded="false" repositoryContextId="_Y92soIJQEe2b8YqQaLSvSQ" type="id_Password" value="enc:system.encryption.key.v1:hIAYG+eU6K58VbjI5DLFc0DYWnZfyAWbN6CresLpjPN1DiFCow=="/>
     <contextParameter comment="" internalId="_bSj6NYJQEe2b8YqQaLSvSQ" name="Oracle_Cloud_ServiceName" prompt="Oracle_Cloud_ServiceName?" promptNeeded="false" repositoryContextId="_Y92soIJQEe2b8YqQaLSvSQ" type="id_String" value="xe"/>
     <contextParameter comment="" internalId="_bSj6NoJQEe2b8YqQaLSvSQ" name="Oracle_Cloud_AdditionalParams" prompt="Oracle_Cloud_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y92soIJQEe2b8YqQaLSvSQ" type="id_String" value="noDatetimeStringSync=true"/>
   </context>
@@ -13,7 +13,7 @@
     <contextParameter comment="" internalId="_bSj6OIJQEe2b8YqQaLSvSQ" name="Oracle_Cloud_Server" prompt="Oracle_Cloud_Server?" promptNeeded="false" repositoryContextId="_Y92soIJQEe2b8YqQaLSvSQ" type="id_String" value="localhost"/>
     <contextParameter comment="" internalId="_bSj6OYJQEe2b8YqQaLSvSQ" name="Oracle_Cloud_Login" prompt="Oracle_Cloud_Login?" promptNeeded="false" repositoryContextId="_Y92soIJQEe2b8YqQaLSvSQ" type="id_String" value="system"/>
     <contextParameter comment="" internalId="_bSj6OoJQEe2b8YqQaLSvSQ" name="Oracle_Cloud_Port" prompt="Oracle_Cloud_Port?" promptNeeded="false" repositoryContextId="_Y92soIJQEe2b8YqQaLSvSQ" type="id_String" value="1521"/>
-    <contextParameter comment="" internalId="_bSj6O4JQEe2b8YqQaLSvSQ" name="Oracle_Cloud_Password" prompt="Oracle_Cloud_Password?" promptNeeded="false" repositoryContextId="_Y92soIJQEe2b8YqQaLSvSQ" type="id_Password" value="enc:system.encryption.key.v1:6Px9uTI89kY5DKAOh3cPOUksvtl6gb3p8obbZqmR5QaxfS2vSg=="/>
+    <contextParameter comment="" internalId="_bSj6O4JQEe2b8YqQaLSvSQ" name="Oracle_Cloud_Password" prompt="Oracle_Cloud_Password?" promptNeeded="false" repositoryContextId="_Y92soIJQEe2b8YqQaLSvSQ" type="id_Password" value="enc:system.encryption.key.v1:kz1qsH5et+8CUxIkB+o4e/i0NgfsGkwdKuFCQCKwqmLhH+ZQEQ=="/>
     <contextParameter comment="" internalId="_bSj6PIJQEe2b8YqQaLSvSQ" name="Oracle_Cloud_ServiceName" prompt="Oracle_Cloud_ServiceName?" promptNeeded="false" repositoryContextId="_Y92soIJQEe2b8YqQaLSvSQ" type="id_String" value="xe"/>
     <contextParameter comment="" internalId="_bSj6PYJQEe2b8YqQaLSvSQ" name="Oracle_Cloud_AdditionalParams" prompt="Oracle_Cloud_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y92soIJQEe2b8YqQaLSvSQ" type="id_String" value="noDatetimeStringSync=true"/>
   </context>
@@ -60,7 +60,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:DjKHB6USbljBtm8toNmQAFpTX68gSaubVOuJZrXi"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:RmtUaY5zXQZXqj8NGAecKDi7Gi8ClrMyEa4RYTkN"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -95,7 +95,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:OEMacwG05xhXWVHkt9BOmQ39q9DpJOOENz9a3PRX"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:JKqEQbmJQbFP5+QnnLqhWCIVLOwAuNkRxNKnxoSI"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -127,21 +127,21 @@
   </parameters>
   <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_Dpl9kH5aEe2LEuM2q6oWTQ"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_18"/>
     <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="HOST" value="context.Oracle_Cloud_Server"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.Oracle_Cloud_Server"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
-    <elementParameter field="TEXT" name="PORT" value="context.Oracle_Cloud_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.Oracle_Cloud_ServiceName"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.Oracle_Cloud_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.Oracle_Cloud_ServiceName"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;xe&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Oracle_Cloud_Schema"/>
-    <elementParameter field="TEXT" name="USER" value="context.Oracle_Cloud_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XopM7J/nZn2VehgqvcQKXB/ikofFFZcOAhVii3ZLWePFab9SebgLFTIzb2G7wUlK3TZEdqWB0dCL"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.Oracle_Cloud_Schema"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.Oracle_Cloud_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:/sLvCy1iyxx5arnc6M/OiSW7jk+kktnR4QZ15DJxh/4Zcmol/RFczZsd7KIMVnm3o/DLzN/sWqcl"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Dpl9kH5aEe2LEuM2q6oWTQ - EMP18042022"/>
@@ -151,16 +151,16 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  SYSTEM.EMP18042022.EMPNO, &#10;  SYSTEM.EMP18042022.EMPNAME, &#10;  SYSTEM.EMP18042022.SAL, &#10;  SYSTEM.EMP18042022.LOC, &#10;  SYSTEM.EMP18042022.HRA, &#10;  SYSTEM.EMP18042022.MOBILENO&#10;FROM SYSTEM.EMP18042022&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.Oracle_Cloud_AdditionalParams"/>
-    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.Oracle_Cloud_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
     <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
     <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
     <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
@@ -179,7 +179,7 @@
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NLS" show="false" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="EMP18042022" name="tDBInput_1">
@@ -256,21 +256,21 @@
   </node>
   <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_Dpl9kH5aEe2LEuM2q6oWTQ"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_18"/>
     <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="HOST" value="context.Oracle_Cloud_Server"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.Oracle_Cloud_Server"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
-    <elementParameter field="TEXT" name="PORT" value="context.Oracle_Cloud_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.Oracle_Cloud_ServiceName"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.Oracle_Cloud_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.Oracle_Cloud_ServiceName"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;xe&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Oracle_Cloud_Schema"/>
-    <elementParameter field="TEXT" name="USER" value="context.Oracle_Cloud_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7n7vuNNfJLh6MiibZEOXTL4+4H3AZj3EPYsHva8JJXE4N+0kAiRgebUD+9MarRZwgZo+znL5Lmb8"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.Oracle_Cloud_Schema"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.Oracle_Cloud_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:An8/JMa+IDQ6BW3gOkQKdCm8BWOFDtpeqOsmEh6a6A6VyEp1mkkGlhseh6UmXnGy02UIy2JvFB29"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Dpl9kH5aEe2LEuM2q6oWTQ - EMPOUT123"/>
@@ -280,16 +280,16 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  SYSTEM.EMPOUT123.COLUMN0, &#10;  SYSTEM.EMPOUT123.COLUMN1, &#10;  SYSTEM.EMPOUT123.COLUMN2, &#10;  SYSTEM.EMPOUT123.COLUMN3, &#10;  SYSTEM.EMPOUT123.COLUMN4, &#10;  SYSTEM.EMPOUT123.COLUMN5, &#10;  SYSTEM.EMPOUT123.COLUMN6, &#10;  SYSTEM.EMPOUT123.COLUMN7&#10;FROM SYSTEM.EMPOUT123&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.Oracle_Cloud_AdditionalParams"/>
-    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.Oracle_Cloud_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
     <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
     <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
     <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
@@ -312,7 +312,7 @@
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NLS" show="false" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="EMPOUT123" name="tDBInput_2">
@@ -460,6 +460,49 @@
       </column>
     </metadata>
   </node>
+  <node componentName="tOracleConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_Dpl9kH5aEe2LEuM2q6oWTQ"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.Oracle_Cloud_Server"/>
+    <elementParameter field="CHECK" name="USE_TNS_FILE" value="false"/>
+    <elementParameter field="FILE" name="TNS_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TNS_EDITOR" name="TNS_EDITOR" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.Oracle_Cloud_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Oracle_Cloud_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Oracle_Cloud_ServiceName"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.Oracle_Cloud_ServiceName"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Oracle_Cloud_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.Oracle_Cloud_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:14GJSom2brxPLqDv1I2OlhzcJwuv0CFqC+mFneM5+iWum8CA4+yB5V8KSsuK6YwhJWOYLVyC3PGL"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
+    <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:3g+pXf9VZmm6bNekO/agqny39WfpfFM1XoM0V+UD"/>
+    <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" show="false" value="false"/>
+    <elementParameter field="FILE" name="SSL_KEYSTORE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:SqGSlX/cABsTjNQ9Z2ztg0OMMPsFXwjWDjMcSqe0"/>
+    <elementParameter field="CHECK" name="DISABLE_CBC_PROTECTION" show="false" value="true"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Oracle_Cloud_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:thin:USER/MDP@server&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tFileOutputDelimited_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
@@ -472,6 +515,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
@@ -482,13 +528,24 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a318e870-af62-45ac-aa92-d4e0c3379d29"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xJFi4IoaRCdEAPZHfYfwSzSVZQ9AjBRA22ekEneIArz/z+7YyQYKRTuvp8ebUUswP3ERzY6UQ3wc&#13;
-xyaSIr+OHA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3fe9f4af-5384-4bd6-9abc-370ce314480a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>d6KH+k3NHUR2wa79RRRx23nq6Zn4E5eDrwVo2hNS6/WoGlsmE6TrkvboZ6se2KIpZj5jiiT6N1BK&#13;
-YrYkxn4xpQ==</DigestValue></Reference></SignedInfo><SignatureValue>iOwEeW/LhRxE1sxghr230EjOe7sNWPkAS9kBAoZVQNNxMH+WxG6cHSOBXzQjnWVSECeSzQLNBnAq&#13;
-X8NdbZYXMYDCRM2J8If4v9WdYwSAKTqGgQ/igHapVWB2Zl09Ur1j1JNSWEmqhJSjUCYukeFxQV73&#13;
-opLQkCeSXmi9LNp3JDDTAW0yMGEu5K3j9dgVJywvE1AjN4I4AAjjaeBis88nfKiOg1NsogYIOrgj&#13;
-F5DbaF/C3HDiDNajvCaUfFCljhVGf4WbkHbPKqVnV3rRXCqo40QbFJWuYk5F0kMg45nvGeyB4XWA&#13;
-DdV8CDfX4Gje4QqbyMzkF0iytaDNH5ETOQjN7w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bb8523f5-0e2a-4ec4-b825-4650aea8269a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ptzmiY0JHG99oVc7rIMjURv3vT/kFL9EEq2vuGbOt+KunOg2q9seyMI0AN7ZTrepU11WMz5HHnT+&#13;
+UASGZes7IA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ba80a6c2-4afc-4bbd-a27d-3ae63b996b0f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2p2Fhlaj+WE2DfBVpaGNBS/WDBeSLWISrZ5ShOJZnwYXNgEjfjqm+w4Jbr3Dm8/Luo178TzSWn+/&#13;
+g364Eg4QbA==</DigestValue></Reference></SignedInfo><SignatureValue>YUe9Tqd2QTbglFsTlyojDsv6oDoMndM3OlCUt1DkEfIh1pIsPMeMCq0S88u65xigfINOSI/in/4o&#13;
+2yYBWxmuj9ZO1G6nObf6NZURRKYdiy0BGTlGBjbIXjrzK3TB9h/U2bnYMt9rGoz48H14MfXD9vl7&#13;
+OaxLs+nwR/oqV/p3L9ukh8xXaJTtxUD+SpZr313obGaTbmHIYGIz9eHSB3O+b8G8g281eFciAzVq&#13;
+ZhV8vQlaUzyPDKAMV/+k8ZcRRilRwHx1oH/ppQloDP6YdlCGlTPc3/wmCka7honsbhK8Zq6ctiWu&#13;
+Jj9SOYuKnpMw9wS8YNKLipaUazRNrYSOqWjtvA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -510,4 +567,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3fe9f4af-5384-4bd6-9abc-370ce314480a" Target="#_a318e870-af62-45ac-aa92-d4e0c3379d29"><Timestamp>2022-12-22 23:38:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ba80a6c2-4afc-4bbd-a27d-3ae63b996b0f" Target="#_bb8523f5-0e2a-4ec4-b825-4650aea8269a"><Timestamp>2022-12-22 23:47:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
