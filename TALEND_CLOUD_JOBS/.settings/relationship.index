@@ -1,5 +1,24 @@
 [ {
   "baseItem" : {
+    "id" : "_B1AagH5aEe2LEuM2q6oWTQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_Dpl9kH5aEe2LEuM2q6oWTQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_Dpl9kH5aEe2LEuM2q6oWTQ - EMP18042022",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Dpl9kH5aEe2LEuM2q6oWTQ - EMPOUT123",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_QKNNUGZ8EeWm5YvsrIoYzQ",
     "version" : "0.1",
     "type" : "job"
