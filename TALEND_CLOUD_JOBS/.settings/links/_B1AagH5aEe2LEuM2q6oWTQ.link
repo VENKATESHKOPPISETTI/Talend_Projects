@@ -1,0 +1,54 @@
+{
+  "itemId" : "_B1AagH5aEe2LEuM2q6oWTQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_Y92soIJQEe2b8YqQaLSvSQ",
+    "parameterList" : [ {
+      "id" : "_Y-JnkYJQEe2b8YqQaLSvSQ",
+      "name" : "Oracle_Cloud_Schema"
+    }, {
+      "id" : "_Y-JnkoJQEe2b8YqQaLSvSQ",
+      "name" : "Oracle_Cloud_Server"
+    }, {
+      "id" : "_Y-Jnk4JQEe2b8YqQaLSvSQ",
+      "name" : "Oracle_Cloud_Login"
+    }, {
+      "id" : "_Y-JnlIJQEe2b8YqQaLSvSQ",
+      "name" : "Oracle_Cloud_Port"
+    }, {
+      "id" : "_Y-JnlYJQEe2b8YqQaLSvSQ",
+      "name" : "Oracle_Cloud_Password"
+    }, {
+      "id" : "_Y-JnloJQEe2b8YqQaLSvSQ",
+      "name" : "Oracle_Cloud_ServiceName"
+    }, {
+      "id" : "_Y-Jnl4JQEe2b8YqQaLSvSQ",
+      "name" : "Oracle_Cloud_AdditionalParams"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_Y92soIJQEe2b8YqQaLSvSQ",
+    "parameterList" : [ {
+      "id" : "_Y-JnkYJQEe2b8YqQaLSvSQ",
+      "name" : "Oracle_Cloud_Schema"
+    }, {
+      "id" : "_Y-JnkoJQEe2b8YqQaLSvSQ",
+      "name" : "Oracle_Cloud_Server"
+    }, {
+      "id" : "_Y-Jnk4JQEe2b8YqQaLSvSQ",
+      "name" : "Oracle_Cloud_Login"
+    }, {
+      "id" : "_Y-JnlIJQEe2b8YqQaLSvSQ",
+      "name" : "Oracle_Cloud_Port"
+    }, {
+      "id" : "_Y-JnlYJQEe2b8YqQaLSvSQ",
+      "name" : "Oracle_Cloud_Password"
+    }, {
+      "id" : "_Y-JnloJQEe2b8YqQaLSvSQ",
+      "name" : "Oracle_Cloud_ServiceName"
+    }, {
+      "id" : "_Y-Jnl4JQEe2b8YqQaLSvSQ",
+      "name" : "Oracle_Cloud_AdditionalParams"
+    } ]
+  } ]
+}
