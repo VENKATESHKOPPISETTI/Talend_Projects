@@ -24,6 +24,9 @@
     }, {
       "id" : "_Nm2MlYJaEe2b8YqQaLSvSQ",
       "name" : "Oracle_Cloud1_Password"
+    }, {
+      "id" : "_A5ev0IJfEe2b8YqQaLSvSQ",
+      "name" : "Table_Name"
     } ]
   }, {
     "contextName" : "DEV",
@@ -49,6 +52,9 @@
     }, {
       "id" : "_Nm2MlYJaEe2b8YqQaLSvSQ",
       "name" : "Oracle_Cloud1_Password"
+    }, {
+      "id" : "_A5ev0IJfEe2b8YqQaLSvSQ",
+      "name" : "Table_Name"
     } ]
   } ]
 }
