@@ -4,18 +4,30 @@
     <contextParameter comment="" internalId="_-QYnoYTEEe2SR5n_G0kofQ" name="Oracle_Cloud1_Server" prompt="Oracle_Cloud1_Server?" promptNeeded="false" repositoryContextId="_Nl80sIJaEe2b8YqQaLSvSQ" type="id_String" value="localhost"/>
     <contextParameter comment="" internalId="_-QYnooTEEe2SR5n_G0kofQ" name="Oracle_Cloud1_Login" prompt="Oracle_Cloud1_Login?" promptNeeded="false" repositoryContextId="_Nl80sIJaEe2b8YqQaLSvSQ" type="id_String" value="system"/>
     <contextParameter comment="" internalId="_-QYno4TEEe2SR5n_G0kofQ" name="Oracle_Cloud1_Port" prompt="Oracle_Cloud1_Port?" promptNeeded="false" repositoryContextId="_Nl80sIJaEe2b8YqQaLSvSQ" type="id_String" value="1521"/>
-    <contextParameter comment="" internalId="_-QYnpITEEe2SR5n_G0kofQ" name="Oracle_Cloud1_Password" prompt="Oracle_Cloud1_Password?" promptNeeded="false" repositoryContextId="_Nl80sIJaEe2b8YqQaLSvSQ" type="id_Password" value="enc:system.encryption.key.v1:FrZXlPwHU2EZwS90PhL7avHKIZIJvhmbgvOvHtZsnitBUFIg+g=="/>
+    <contextParameter comment="" internalId="_-QYnpITEEe2SR5n_G0kofQ" name="Oracle_Cloud1_Password" prompt="Oracle_Cloud1_Password?" promptNeeded="false" repositoryContextId="_Nl80sIJaEe2b8YqQaLSvSQ" type="id_Password" value="enc:system.encryption.key.v1:2+yVYL6Z2rd4tl9Oz+2efBQnhLbxoG2+Qz64V8C7U1xhoxWQwg=="/>
     <contextParameter comment="" internalId="_-QYnpYTEEe2SR5n_G0kofQ" name="Oracle_Cloud1_ServiceName" prompt="Oracle_Cloud1_ServiceName?" promptNeeded="false" repositoryContextId="_Nl80sIJaEe2b8YqQaLSvSQ" type="id_String" value="xe"/>
     <contextParameter comment="" internalId="_-QYnpoTEEe2SR5n_G0kofQ" name="Oracle_Cloud1_AdditionalParams" prompt="Oracle_Cloud1_AdditionalParams?" promptNeeded="false" repositoryContextId="_Nl80sIJaEe2b8YqQaLSvSQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" internalId="_uRkxQIbXEe27b5TibM3c3A" name="connection_oracle_password" prompt="connection_oracle_password?" promptNeeded="false" repositoryContextId="_nC5kEIbXEe27b5TibM3c3A" type="id_Password" value="enc:system.encryption.key.v1:SqjKbesMhy0V+udBWjJp6ZVioB3o1+IkjvEPEvsLWoz9YzgrPA=="/>
+    <contextParameter comment="" internalId="_uRkxQYbXEe27b5TibM3c3A" name="connection_oracle_database" prompt="connection_oracle_database?" promptNeeded="false" repositoryContextId="_nC5kEIbXEe27b5TibM3c3A" type="id_String" value="xe"/>
+    <contextParameter comment="" internalId="_uRkxQobXEe27b5TibM3c3A" name="connection_oracle_schema" prompt="connection_oracle_schema?" promptNeeded="false" repositoryContextId="_nC5kEIbXEe27b5TibM3c3A" type="id_String" value="SYSTEM"/>
+    <contextParameter comment="" internalId="_uRkxQ4bXEe27b5TibM3c3A" name="connection_oracle_port" prompt="connection_oracle_port?" promptNeeded="false" repositoryContextId="_nC5kEIbXEe27b5TibM3c3A" type="id_String" value="1521"/>
+    <contextParameter comment="" internalId="_uRkxRIbXEe27b5TibM3c3A" name="Oracle_dev_host" prompt="Oracle_dev_host?" promptNeeded="false" repositoryContextId="_nC5kEIbXEe27b5TibM3c3A" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_uRkxRYbXEe27b5TibM3c3A" name="connection_oracle_username" prompt="connection_oracle_username?" promptNeeded="false" repositoryContextId="_nC5kEIbXEe27b5TibM3c3A" type="id_String" value="system"/>
   </context>
   <context confirmationNeeded="false" name="DEV">
     <contextParameter comment="" internalId="_-QYnp4TEEe2SR5n_G0kofQ" name="Oracle_Cloud1_Schema" prompt="Oracle_Cloud1_Schema?" promptNeeded="false" repositoryContextId="_Nl80sIJaEe2b8YqQaLSvSQ" type="id_String" value="SYSTEM"/>
     <contextParameter comment="" internalId="_-QYnqITEEe2SR5n_G0kofQ" name="Oracle_Cloud1_Server" prompt="Oracle_Cloud1_Server?" promptNeeded="false" repositoryContextId="_Nl80sIJaEe2b8YqQaLSvSQ" type="id_String" value="localhost"/>
     <contextParameter comment="" internalId="_-QYnqYTEEe2SR5n_G0kofQ" name="Oracle_Cloud1_Login" prompt="Oracle_Cloud1_Login?" promptNeeded="false" repositoryContextId="_Nl80sIJaEe2b8YqQaLSvSQ" type="id_String" value="system"/>
     <contextParameter comment="" internalId="_-QYnqoTEEe2SR5n_G0kofQ" name="Oracle_Cloud1_Port" prompt="Oracle_Cloud1_Port?" promptNeeded="false" repositoryContextId="_Nl80sIJaEe2b8YqQaLSvSQ" type="id_String" value="1521"/>
-    <contextParameter comment="" internalId="_-QYnq4TEEe2SR5n_G0kofQ" name="Oracle_Cloud1_Password" prompt="Oracle_Cloud1_Password?" promptNeeded="false" repositoryContextId="_Nl80sIJaEe2b8YqQaLSvSQ" type="id_Password" value="enc:system.encryption.key.v1:hiXcqgC0IXG0rPse9xYdmyZWlae8Wt93HUIxcmkG+4s96jlbyg=="/>
+    <contextParameter comment="" internalId="_-QYnq4TEEe2SR5n_G0kofQ" name="Oracle_Cloud1_Password" prompt="Oracle_Cloud1_Password?" promptNeeded="false" repositoryContextId="_Nl80sIJaEe2b8YqQaLSvSQ" type="id_Password" value="enc:system.encryption.key.v1:HaFFyxARNPpMmWnJiIrF4B3ldu1uhD3ijDnLKyfYFz8gsHkASw=="/>
     <contextParameter comment="" internalId="_-QYnrITEEe2SR5n_G0kofQ" name="Oracle_Cloud1_ServiceName" prompt="Oracle_Cloud1_ServiceName?" promptNeeded="false" repositoryContextId="_Nl80sIJaEe2b8YqQaLSvSQ" type="id_String" value="xe"/>
     <contextParameter comment="" internalId="_-QYnrYTEEe2SR5n_G0kofQ" name="Oracle_Cloud1_AdditionalParams" prompt="Oracle_Cloud1_AdditionalParams?" promptNeeded="false" repositoryContextId="_Nl80sIJaEe2b8YqQaLSvSQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" internalId="_uRkxRobXEe27b5TibM3c3A" name="connection_oracle_password" prompt="connection_oracle_password?" promptNeeded="false" repositoryContextId="_nC5kEIbXEe27b5TibM3c3A" type="id_Password" value="enc:system.encryption.key.v1:8o3vBIIrX+QcVJsAWJSD+8Jjd1crvAGUk/QodEtolLQcOwLwfw=="/>
+    <contextParameter comment="" internalId="_uRkxR4bXEe27b5TibM3c3A" name="connection_oracle_database" prompt="connection_oracle_database?" promptNeeded="false" repositoryContextId="_nC5kEIbXEe27b5TibM3c3A" type="id_String" value="xe"/>
+    <contextParameter comment="" internalId="_uRkxSIbXEe27b5TibM3c3A" name="connection_oracle_schema" prompt="connection_oracle_schema?" promptNeeded="false" repositoryContextId="_nC5kEIbXEe27b5TibM3c3A" type="id_String" value="SYSTEM"/>
+    <contextParameter comment="" internalId="_uRkxSYbXEe27b5TibM3c3A" name="connection_oracle_port" prompt="connection_oracle_port?" promptNeeded="false" repositoryContextId="_nC5kEIbXEe27b5TibM3c3A" type="id_String" value="1521"/>
+    <contextParameter comment="" internalId="_uRkxSobXEe27b5TibM3c3A" name="Oracle_dev_host" prompt="Oracle_dev_host?" promptNeeded="false" repositoryContextId="_nC5kEIbXEe27b5TibM3c3A" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_uRkxS4bXEe27b5TibM3c3A" name="connection_oracle_username" prompt="connection_oracle_username?" promptNeeded="false" repositoryContextId="_nC5kEIbXEe27b5TibM3c3A" type="id_String" value="system"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -60,7 +72,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:T/7hPm3vrcwc6q1liVrn90E7Wy1DdR599L53SPf/"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:XZX8GaIHcvhVuMaQsdzan6Afer9YFlFLBihcE580"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -95,7 +107,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:s4YQTVLR4FEDZThtOHIbuwcip1nyhcWOsGknoTAR"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:O1JWs2tSCaBy5BGcElg2MPv7inexT2bZohNwPmsK"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -241,7 +253,7 @@
       <column comment="" key="false" length="10" name="loc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="OUTPUT" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.empno " name="empno" nullable="true" type="id_Integer"/>
@@ -304,14 +316,14 @@
     <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
     <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Oracle_dev_host"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;xe&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_oracle_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_oracle_database"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;xe&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;system&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sJKTWfaip6VdAtBJVvcSCxRF8AI6/hy4Ni/mJAfWi0DglCsht8g2"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.connection_oracle_schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_oracle_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jVvketSin3Nm+4ZGS8EMlvrRalhuJFqwgC4bzo4ah/NDy7n3CiYUQoTA+6ZvcJDzkx0HqOnmFDTS2IDtPpA="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;EMP18042022&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -323,7 +335,7 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Oracle_dev_AdditionalParams"/>
     <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
     <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
     <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
@@ -380,14 +392,14 @@
     <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
     <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Oracle_dev_host"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;xe&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_oracle_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_oracle_database"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;xe&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;system&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:D0aMaHN3KhnAgNGynvtLkQ1fOUf2XLxcttGjPQfwHGN5vSy4pNtt"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.connection_oracle_schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_oracle_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IR8bqfp4q4+ZsRFJxaE+tTZ7QpSCkxcGUd3HmNooUDa9UWVVsIM/4rVMYz4GzrYAdWRh+oouYhBqPpZ1WTk="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_qrNc8IMFEe2A_4unGhUM-Q - EMP18042022"/>
@@ -401,7 +413,7 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Oracle_dev_AdditionalParams"/>
     <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
     <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
     <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
@@ -458,14 +470,14 @@
     <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
     <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Oracle_dev_host"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;xe&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_oracle_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_oracle_database"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;xe&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;system&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0/xXuDjAmw72sOelCF/KiEaCA43ZCBrMbBWZ4Q1vmXgxaV6SoPsd"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.connection_oracle_schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_oracle_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:R+nxsmhnaUkziTGkCbeDmFLRan9OyNfkxj3YGLwZvyETzMI7Fab0x1zAW1YezRnXK72LUoL/SipafFf65cY="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_qrNc8IMFEe2A_4unGhUM-Q - EMP18042022"/>
@@ -479,7 +491,7 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Oracle_dev_AdditionalParams"/>
     <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
     <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
     <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
@@ -536,14 +548,14 @@
     <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
     <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Oracle_dev_host"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;xe&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_oracle_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_oracle_database"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;xe&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;system&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:232U+RRV+U4M7ivFJV6FZOnc/MDywQDk/FDDgyTMzMM6Z5WHc7F/"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.connection_oracle_schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_oracle_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:eU8Kshptwkp0bQg+maxiVWVpsI1xaH8hvO6LxXbbopUJ3ENy02/+8gMXcywfggf9/VRQQc5GH7Bmg/GQwHc="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_qrNc8IMFEe2A_4unGhUM-Q - EMP18042022"/>
@@ -557,7 +569,7 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Oracle_dev_AdditionalParams"/>
     <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
     <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
     <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
@@ -694,13 +706,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_98bcce1a-daac-4638-b23a-dd5e16bb086e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GcGSMcLPvUb2BJUnovkOuqSfd/pt4A8sf0Pp8STK8pe0bSyU2hNEriaTWxYYMAkvXpM8X/SmGcFE&#13;
-k7cVAMQ5Fg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_29659e30-9c99-4a97-a806-a243cbc80a03"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gQoFB0khlW4IQAo/C85dsFDbwBqvtaATps5vzm/gRG4g0g2Kvth22rUnn3e/fdIob2UaSgY2OtnS&#13;
-a2Jad9BFKw==</DigestValue></Reference></SignedInfo><SignatureValue>KTQe47gg2mLstooL/a6alTFRUfWoR25l55l/Isc1Q8COJGFSbNZDK+RCt2/92PklXpQ+u0ugtRJF&#13;
-7VJNdqgsUXrZXLYHXLh64EjGFYJ7ABN6awY39IGQZ5h5kiDC+vwHwP3Pw/z2Y+DgVyLylQqsUm+L&#13;
-IpMM4lbakmaRQUwb+weN8zFQKJ6tJ/aR1WOf3XkjDLDcnH5kTRDIFK6ks3cbptqIns50Or+NHwso&#13;
-TURhTY2TqNiDLOtB0q4PuoZx6YsB5tWDEsrtaadsUv4TktG//DIBfjexIGhWRSF4zFNNhRGHZ+3b&#13;
-9az7WikttU1Ix/z+3QUDHS9sVVN5XL/gN9zW6g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_599b2d93-34ec-4bb4-9867-047c3b810a1d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SSkBO1sE5BwxbXu/lqbsx2PkWC/Gd6YvYKKbTuUpUP9RoW+8gSNqvHqNmDdcbOOJ2UTjPayq326u&#13;
+Iz5o4u04AA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_dcf31530-e034-4dfc-91cf-0de24db2fa92"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>u39Lyj/+AHbnHo52xC/DjwePOESma6O771w9GOfoCDNvQg0+xA8xvr3q69KVVLkrrlW7le0WmxOL&#13;
+in5hFX94YQ==</DigestValue></Reference></SignedInfo><SignatureValue>evk0PuCsgRP67PhosfwSvXx4iVTU8RIxiqp8EVy/vwcY6bF9TDyWxSND3dc14NpHUeWMquGg1l4r&#13;
+Z4hAVCbVxL5/dNhwdnkb7LCQd3bB7dCUbGUdCrp6alfwRcFdpzMJfc1wMJepP0gZtq/heaY9/f0W&#13;
+oUadJZr2jnlnhj6Au80roEV82ye611fGH7anLwGP1R9dsQmpExegMYfFUQCJwrEeEJKKLkk0D0d8&#13;
+uhbV0OASqQYzahNUzumU9HByloWpnnwEWRvFR8JuisXtKApg8gQsU/STWqEnj+OV2m2zlxoOt0HQ&#13;
+AryHw++9nJDX7ezu4wcz13wgKVKgYIZPXLtIGg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -722,4 +734,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_29659e30-9c99-4a97-a806-a243cbc80a03" Target="#_98bcce1a-daac-4638-b23a-dd5e16bb086e"><Timestamp>2022-12-26 02:46:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_dcf31530-e034-4dfc-91cf-0de24db2fa92" Target="#_599b2d93-34ec-4bb4-9867-047c3b810a1d"><Timestamp>2022-12-28 17:47:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
