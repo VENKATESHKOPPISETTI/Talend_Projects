@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:FTPConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_fg6x4IY-Ee26O-myJeB1XA" Host="192.168.1.5" Port="22" Username="FTP-USER" Password="enc:system.encryption.key.v1:+5ntnrAKUA/RTXbhLblP21pjJEqcnJLwoga+bJ6MzGgH" Mode="Passive" Ecoding="ISO-8859-15" SFTP="true" Method="Password" KeystoreFile="" KeystorePassword="" Proxyhost="" Proxyport="" Proxyuser="" Proxypassword="" CustomEncode="ISO-8859-15"/>

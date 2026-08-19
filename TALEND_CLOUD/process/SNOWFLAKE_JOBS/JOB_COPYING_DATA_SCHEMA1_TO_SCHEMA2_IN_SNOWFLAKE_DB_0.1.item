@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="DEV" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_loginTimeout" prompt="SNOWFLAKE_CONNECTION3_loginTimeout?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_Integer" value="0" internalId="_TavFcIMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_userPassword_password" prompt="SNOWFLAKE_CONNECTION3_userPassword_password?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_Password" value="enc:system.encryption.key.v1:dDNUmGzbI9RVQhtuc/q+QO/eIrCbZCpFGoEv/MGCaHIyM1HXnlAJ" internalId="_TavFcYMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_schemaName" prompt="SNOWFLAKE_CONNECTION3_schemaName?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_String" value="TPCH_SF1" internalId="_TavFcoMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_account" prompt="SNOWFLAKE_CONNECTION3_account?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_String" value="mjb45978.us-east-1" internalId="_TavFc4MYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_warehouse" prompt="SNOWFLAKE_CONNECTION3_warehouse?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_String" value="SAMPLE_WAREHOUSE" internalId="_TavFdIMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_db" prompt="SNOWFLAKE_CONNECTION3_db?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_String" value="SNOWFLAKE_SAMPLE_DATA" internalId="_TavFdYMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_role" prompt="SNOWFLAKE_CONNECTION3_role?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_String" value="ACCOUNTADMIN" internalId="_TavFdoMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_userPassword_userId" prompt="SNOWFLAKE_CONNECTION3_userPassword_userId?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_String" value="venkatesh" internalId="_TavFd4MYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_userPassword_userId" prompt="SNOWFLAKE_CONNECTION_2_userPassword_userId?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_String" value="venkatesh" internalId="_TavFeIMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_schemaName" prompt="SNOWFLAKE_CONNECTION_2_schemaName?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_String" value="SAMPLE_SCHEMA1" internalId="_TavFeYMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_loginTimeout" prompt="SNOWFLAKE_CONNECTION_2_loginTimeout?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_Integer" value="0" internalId="_TavFeoMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_userPassword_password" prompt="SNOWFLAKE_CONNECTION_2_userPassword_password?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_Password" value="enc:system.encryption.key.v1:wcQMNoDdoQtK2iB5UGFkQIzZt2gd7tXFOh0R0r6GDoDuAMRU4RzH" internalId="_TavFe4MYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_role" prompt="SNOWFLAKE_CONNECTION_2_role?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_String" value="ACCOUNTADMIN" internalId="_TavFfIMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_db" prompt="SNOWFLAKE_CONNECTION_2_db?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_String" value="SNOWFLAKE_SAMPLE_DATA1" internalId="_TavFfYMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_warehouse" prompt="SNOWFLAKE_CONNECTION_2_warehouse?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_String" value="SAMPLE_WAREHOUSE" internalId="_TavFfoMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_account" prompt="SNOWFLAKE_CONNECTION_2_account?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_String" value="mjb45978.us-east-1" internalId="_TavFf4MYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="Oracle_dev_Password" prompt="Oracle_dev_Password?" promptNeeded="false" repositoryContextId="_P2IbcIMGEe2A_4unGhUM-Q" type="id_Password" value="enc:system.encryption.key.v1:vicAf4UpcBlVpGskWlwOxPG+5mqkOF1D3UFlMle2y2n2spvZlg==" internalId="_FQ2KwISmEe2SR5n_G0kofQ"/>
+    <contextParameter comment="" name="Oracle_dev_ServiceName" prompt="Oracle_dev_ServiceName?" promptNeeded="false" repositoryContextId="_P2IbcIMGEe2A_4unGhUM-Q" type="id_String" value="xe" internalId="_FQ2KwYSmEe2SR5n_G0kofQ"/>
+    <contextParameter comment="" name="Oracle_dev_Login" prompt="Oracle_dev_Login?" promptNeeded="false" repositoryContextId="_P2IbcIMGEe2A_4unGhUM-Q" type="id_String" value="system" internalId="_FQ2KwoSmEe2SR5n_G0kofQ"/>
+    <contextParameter comment="" name="Oracle_dev_Server" prompt="Oracle_dev_Server?" promptNeeded="false" repositoryContextId="_P2IbcIMGEe2A_4unGhUM-Q" type="id_String" value="localhost" internalId="_FQ2Kw4SmEe2SR5n_G0kofQ"/>
+    <contextParameter comment="" name="Oracle_dev_Port" prompt="Oracle_dev_Port?" promptNeeded="false" repositoryContextId="_P2IbcIMGEe2A_4unGhUM-Q" type="id_String" value="1521" internalId="_FQ2KxISmEe2SR5n_G0kofQ"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_userPassword_password" prompt="SNOWFLAKE_CONNECTION3_userPassword_password?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_Password" value="enc:system.encryption.key.v1:5cIPgG9ObVYgAEyVspEbQtQipCL8lSl9h9qs+kmyfYEflmvM5bmj" internalId="_TavFgIMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_loginTimeout" prompt="SNOWFLAKE_CONNECTION3_loginTimeout?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_Integer" value="0" internalId="_TavFgYMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_role" prompt="SNOWFLAKE_CONNECTION3_role?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_String" value="ACCOUNTADMIN" internalId="_TavFgoMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_userPassword_userId" prompt="SNOWFLAKE_CONNECTION3_userPassword_userId?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_String" value="venkatesh" internalId="_TavFg4MYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_warehouse" prompt="SNOWFLAKE_CONNECTION3_warehouse?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_String" value="SAMPLE_WAREHOUSE" internalId="_TavFhIMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_db" prompt="SNOWFLAKE_CONNECTION3_db?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_String" value="SNOWFLAKE_SAMPLE_DATA" internalId="_TavFhYMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_schemaName" prompt="SNOWFLAKE_CONNECTION3_schemaName?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_String" value="TPCH_SF1" internalId="_TavFhoMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION3_account" prompt="SNOWFLAKE_CONNECTION3_account?" promptNeeded="false" repositoryContextId="_z724MICwEe2QCJazXufkJg" type="id_String" value="mjb45978.us-east-1" internalId="_TavFh4MYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_userPassword_userId" prompt="SNOWFLAKE_CONNECTION_2_userPassword_userId?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_String" value="venkatesh" internalId="_TavFiIMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_schemaName" prompt="SNOWFLAKE_CONNECTION_2_schemaName?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_String" value="SAMPLE_SCHEMA1" internalId="_TavFiYMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_loginTimeout" prompt="SNOWFLAKE_CONNECTION_2_loginTimeout?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_Integer" value="0" internalId="_TavFioMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_userPassword_password" prompt="SNOWFLAKE_CONNECTION_2_userPassword_password?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_Password" value="enc:system.encryption.key.v1:pUgj4co4tyw+6F773hZ8F/Vp455VYRTSdbFhll1+Srr2XAt4NMzK" internalId="_TavFi4MYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_role" prompt="SNOWFLAKE_CONNECTION_2_role?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_String" value="ACCOUNTADMIN" internalId="_TavFjIMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_db" prompt="SNOWFLAKE_CONNECTION_2_db?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_String" value="SNOWFLAKE_SAMPLE_DATA1" internalId="_TavFjYMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_warehouse" prompt="SNOWFLAKE_CONNECTION_2_warehouse?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_String" value="SAMPLE_WAREHOUSE" internalId="_TavFjoMYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="SNOWFLAKE_CONNECTION_2_account" prompt="SNOWFLAKE_CONNECTION_2_account?" promptNeeded="false" repositoryContextId="_od0bsIC9Ee2xmdoXq4NKOQ" type="id_String" value="mjb45978.us-east-1" internalId="_TavFj4MYEe2dYs7CbW_rjg"/>
+    <contextParameter comment="" name="Oracle_dev_Password" prompt="Oracle_dev_Password?" promptNeeded="false" repositoryContextId="_P2IbcIMGEe2A_4unGhUM-Q" type="id_Password" value="enc:system.encryption.key.v1:Aqo0DA8nTTMANCsdEZhOoFUripcSsCf0vPMuOeJj8ThMMz9UfQ==" internalId="_FQ2x0ISmEe2SR5n_G0kofQ"/>
+    <contextParameter comment="" name="Oracle_dev_ServiceName" prompt="Oracle_dev_ServiceName?" promptNeeded="false" repositoryContextId="_P2IbcIMGEe2A_4unGhUM-Q" type="id_String" value="xe" internalId="_FQ2x0YSmEe2SR5n_G0kofQ"/>
+    <contextParameter comment="" name="Oracle_dev_Login" prompt="Oracle_dev_Login?" promptNeeded="false" repositoryContextId="_P2IbcIMGEe2A_4unGhUM-Q" type="id_String" value="system" internalId="_FQ2x0oSmEe2SR5n_G0kofQ"/>
+    <contextParameter comment="" name="Oracle_dev_Server" prompt="Oracle_dev_Server?" promptNeeded="false" repositoryContextId="_P2IbcIMGEe2A_4unGhUM-Q" type="id_String" value="localhost" internalId="_FQ2x04SmEe2SR5n_G0kofQ"/>
+    <contextParameter comment="" name="Oracle_dev_Port" prompt="Oracle_dev_Port?" promptNeeded="false" repositoryContextId="_P2IbcIMGEe2A_4unGhUM-Q" type="id_String" value="1521" internalId="_FQ2x1ISmEe2SR5n_G0kofQ"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:WNqoPd4n0z6at0QC3nPT0N8Lu4pNNxE5KVLSEkd5" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/TALEND CLOUD/ADMIN/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZsuplmAjj3xFH1FYfbusE21jLN3IW6wNfzNr7hsk" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_XhmcoAcjEe2iMIU874BDqg" name="DataOperation"/>
+    <routinesParameter id="_XjujkAcjEe2iMIU874BDqg" name="Mathematical"/>
+    <routinesParameter id="_Xj7-8AcjEe2iMIU874BDqg" name="Numeric"/>
+    <routinesParameter id="_XkL2kAcjEe2iMIU874BDqg" name="Relational"/>
+    <routinesParameter id="_XkZ5AAcjEe2iMIU874BDqg" name="StringHandling"/>
+    <routinesParameter id="_XknUYAcjEe2iMIU874BDqg" name="TalendDataGenerator"/>
+    <routinesParameter id="_Xk194AcjEe2iMIU874BDqg" name="TalendDate"/>
+    <routinesParameter id="_XlTQ4AcjEe2iMIU874BDqg" name="TalendStringUtil"/>
+    <routinesParameter id="_XlFOcAcjEe2iMIU874BDqg" name="TalendString"/>
+    <routinesParameter id="_iYkTsH5XEe2LEuM2q6oWTQ" name="SQLike"/>
+  </parameters>
+  <node componentName="SnowflakeConnection" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_K3nwsICuEe2QCJazXufkJg" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dAConnection"/>
+    <elementParameter field="TEXT" name="configuration.account" value="context.SNOWFLAKE_CONNECTION3_account"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.snowflakeAuth.authenticationType" value="BASIC"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.userId" value="context.SNOWFLAKE_CONNECTION3_userPassword_userId"/>
+    <elementParameter field="PASSWORD" name="configuration.snowflakeAuth.password" value="context.SNOWFLAKE_CONNECTION3_userPassword_password"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.keyAlias" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.oauthTokenEndpoint" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.clientId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.snowflakeAuth.clientSecret" value="enc:system.encryption.key.v1:HHBKwWVfMbIosFHLWRXVRBqMlO3IEF9sj8/xsUIE"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.oauthUsername" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.snowflakeAuth.oauthPassword" value="enc:system.encryption.key.v1:a7NYr5s+ej2vtDYguroeyPbjDNcwOpO/4FthGxp8"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.scope" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.warehouse" value="context.SNOWFLAKE_CONNECTION3_warehouse"/>
+    <elementParameter field="TEXT" name="configuration.dbSchema" value="context.SNOWFLAKE_CONNECTION3_schemaName"/>
+    <elementParameter field="TEXT" name="configuration.database" value="context.SNOWFLAKE_CONNECTION3_db"/>
+    <elementParameter field="CHECK" name="configuration.shareConnection" value="false"/>
+    <elementParameter field="TEXT" name="configuration.sharedConnectionName"/>
+    <elementParameter field="CHECK" name="configuration.autoCommit" value="true"/>
+    <elementParameter field="TEXT" name="configuration.jdbcParameters" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.loginTimeout" value="context.SNOWFLAKE_CONNECTION3_loginTimeout"/>
+    <elementParameter field="TEXT" name="configuration.role" value="context.SNOWFLAKE_CONNECTION3_role"/>
+    <elementParameter field="TEXT" name="configuration.jdbcUrlSuffix" value="&quot;.snowflakecomputing.com&quot;"/>
+    <elementParameter field="TECHNICAL" name="configuration.__version" value="-1"/>
+  </node>
+  <node componentName="SnowflakeInput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_K3nwsICuEe2QCJazXufkJg" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="SnowflakeInput_NATION"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSnowflakeConnection_1"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.account" value="context.SNOWFLAKE_CONNECTION3_account"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.authenticationType" value="BASIC"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.userId" value="context.SNOWFLAKE_CONNECTION3_userPassword_userId"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.password" value="context.SNOWFLAKE_CONNECTION3_userPassword_password"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.keyAlias" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.oauthTokenEndpoint" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.clientId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.clientSecret" value="enc:system.encryption.key.v1:86kXjubKY47wKmcvobPjjlu26a7UUg3aWCj6k69a"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.oauthUsername" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.oauthPassword" value="enc:system.encryption.key.v1:WahpdsukpNZOjgssFKqZxWyicjaNbYVcTf7S1hmD"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.scope" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.warehouse" value="context.SNOWFLAKE_CONNECTION3_warehouse"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.dbSchema" value="context.SNOWFLAKE_CONNECTION3_schemaName"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.database" value="context.SNOWFLAKE_CONNECTION3_db"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcParameters"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.loginTimeout" value="context.SNOWFLAKE_CONNECTION3_loginTimeout"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.role" value="context.SNOWFLAKE_CONNECTION3_role"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrlSuffix" value="&quot;.snowflakecomputing.com&quot;"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="&quot;NATION&quot;"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.manualQuery" value="true"/>
+    <elementParameter field="MEMO_SQL" name="configuration.dataSet.sqlQuery" value="&quot;SELECT * FROM NATION LIMIT 20&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.condition" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.useUnquotedObjectIdentifiers" value="true"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.useSessionTimezone" value="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1"/>
+    <metadata connector="FLOW" label="NATION" name="tSnowflakeInput_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="N_NATIONKEY" nullable="false" pattern="" precision="-1" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="N_NAME" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="N_REGIONKEY" nullable="false" pattern="" precision="-1" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="N_COMMENT" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_NATIONKEY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_NAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_REGIONKEY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="N_COMMENT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="NATION" name="tLogRow_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="N_NATIONKEY" nullable="false" pattern="" precision="-1" type="id_Integer" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="N_NATIONKEY"/>
+      </column>
+      <column comment="" key="false" length="-1" name="N_NAME" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="N_NAME"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="N_REGIONKEY" nullable="false" pattern="" precision="-1" type="id_Integer" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="N_REGIONKEY"/>
+      </column>
+      <column comment="" key="false" length="-1" name="N_COMMENT" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="N_COMMENT"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="SnowflakeOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_80IC8IC8Ee2xmdoXq4NKOQ" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNPdXRwdXQ"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.account" value="context.SNOWFLAKE_CONNECTION_2_account"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.authenticationType" value="BASIC"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.userId" value="context.SNOWFLAKE_CONNECTION_2_userPassword_userId"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.password" value="context.SNOWFLAKE_CONNECTION_2_userPassword_password"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.keyAlias" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.oauthTokenEndpoint" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.clientId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.clientSecret" value="enc:system.encryption.key.v1:3WQ+05Crpzu5ivqk7b/TABGCUviIyPg++Q4Jj7sF"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.oauthUsername" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.oauthPassword" value="enc:system.encryption.key.v1:A5e9z9j+JAbDvJQ7mYUhEE73eqY8NHkYreMTvq+U"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.scope" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.warehouse" value="context.SNOWFLAKE_CONNECTION_2_warehouse"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.dbSchema" value="context.SNOWFLAKE_CONNECTION_2_schemaName"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.database" value="context.SNOWFLAKE_CONNECTION_2_db"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="true"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcParameters" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.loginTimeout" value="context.SNOWFLAKE_CONNECTION_2_loginTimeout"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.role" value="context.SNOWFLAKE_CONNECTION_2_role"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrlSuffix" value="&quot;.snowflakecomputing.com&quot;"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="&quot;NATION_TABLE&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.snowflakeOutputCommonConfig.tableAction" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.snowflakeOutputCommonConfig.dataAction" value="INSERT"/>
+    <elementParameter field="CHECK" name="configuration.snowflakeOutputCommonConfig.useSchemaKeysForUpsert" value="true"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeOutputCommonConfig.upsertKeyColumn" value="N_NATIONKEY"/>
+    <elementParameter field="CHECK" name="configuration.snowflakeOutputCommonConfig.convertColumnsAndTableToUppercase" value="true"/>
+    <elementParameter field="CHECK" name="configuration.snowflakeOutputCommonConfig.enforceDatabaseSchema" value="true"/>
+    <elementParameter field="CHECK" name="configuration.snowflakeOutputCommonConfig.usePersonalDBType" value="false"/>
+    <elementParameter field="TABLE" name="configuration.snowflakeOutputCommonConfig.columnAndDBTypes">
+      <elementValue elementRef="configuration.snowflakeOutputCommonConfig.columnAndDBTypes[].column" value="N_NATIONKEY"/>
+      <elementValue elementRef="configuration.snowflakeOutputCommonConfig.columnAndDBTypes[].dbType" value="ARRAY"/>
+      <elementValue elementRef="configuration.snowflakeOutputCommonConfig.columnAndDBTypes[].column" value="N_NAME"/>
+      <elementValue elementRef="configuration.snowflakeOutputCommonConfig.columnAndDBTypes[].dbType" value="ARRAY"/>
+      <elementValue elementRef="configuration.snowflakeOutputCommonConfig.columnAndDBTypes[].column" value="N_REGIONKEY"/>
+      <elementValue elementRef="configuration.snowflakeOutputCommonConfig.columnAndDBTypes[].dbType" value="ARRAY"/>
+      <elementValue elementRef="configuration.snowflakeOutputCommonConfig.columnAndDBTypes[].column" value="N_COMMENT"/>
+      <elementValue elementRef="configuration.snowflakeOutputCommonConfig.columnAndDBTypes[].dbType" value="ARRAY"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.snowflakeOutputCommonConfig.useDateMapping" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.snowflakeOutputCommonConfig.dateMapping" value="DATE"/>
+    <elementParameter field="CHECK" name="configuration.snowflakeOutputCommonConfig.useDBMappingFile" value="false"/>
+    <elementParameter field="CHECK" name="configuration.snowflakeOutputCommonConfig.useVectors" value="false"/>
+    <elementParameter field="TABLE" name="configuration.snowflakeOutputCommonConfig.vectorConfigs"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="CHECK" name="configuration.convertEmptyStringsToNull" value="false"/>
+    <elementParameter field="CHECK" name="configuration.useSchemaDatePattern" value="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1"/>
+    <metadata connector="FLOW" label="NATION" name="tSnowflakeOutput_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="N_NATIONKEY" nullable="false" pattern="" precision="-1" type="id_Integer" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="N_NATIONKEY"/>
+      </column>
+      <column comment="" key="false" length="-1" name="N_NAME" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="N_NAME"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="N_REGIONKEY" nullable="false" pattern="" precision="-1" type="id_Integer" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="N_REGIONKEY"/>
+      </column>
+      <column comment="" key="false" length="-1" name="N_COMMENT" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="N_COMMENT"/>
+      </column>
+    </metadata>
+    <metadata connector="reject" label="NATION" name="reject">
+      <column comment="" key="false" length="255" name="columnName" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="columnName"/>
+      </column>
+      <column comment="" key="false" length="255" name="rowNumber" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="rowNumber"/>
+      </column>
+      <column comment="" key="false" length="255" name="category" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="category"/>
+      </column>
+      <column comment="" key="false" length="255" name="character" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="character"/>
+      </column>
+      <column comment="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="errorMessage"/>
+      </column>
+      <column comment="" key="false" length="255" name="byteOffset" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="byteOffset"/>
+      </column>
+      <column comment="" key="false" length="255" name="line" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="line"/>
+      </column>
+      <column comment="" key="false" length="255" name="sqlState" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="sqlState"/>
+      </column>
+      <column comment="" key="false" length="255" name="code" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="code"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="SnowflakeClose" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeClose_1" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dAClose"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSnowflakeConnection_1"/>
+  </node>
+  <node componentName="SnowflakeConnection" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_80IC8IC8Ee2xmdoXq4NKOQ" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dAConnection"/>
+    <elementParameter field="TEXT" name="configuration.account" value="context.SNOWFLAKE_CONNECTION_2_account"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.snowflakeAuth.authenticationType" value="BASIC"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.userId" value="context.SNOWFLAKE_CONNECTION_2_userPassword_userId"/>
+    <elementParameter field="PASSWORD" name="configuration.snowflakeAuth.password" value="context.SNOWFLAKE_CONNECTION_2_userPassword_password"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.keyAlias" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.oauthTokenEndpoint" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.clientId" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.snowflakeAuth.clientSecret" value="enc:system.encryption.key.v1:9gyypnoRdAESIm5IEgYv709V+72w/Hn2nIAxlFB8"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.oauthUsername" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.snowflakeAuth.oauthPassword" value="enc:system.encryption.key.v1:+aqUcS/uKj0/rX8hUuS3tqBirlXx7eBZSM7XXk4k"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.scope" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.warehouse" value="context.SNOWFLAKE_CONNECTION_2_warehouse"/>
+    <elementParameter field="TEXT" name="configuration.dbSchema" value="context.SNOWFLAKE_CONNECTION_2_schemaName"/>
+    <elementParameter field="TEXT" name="configuration.database" value="context.SNOWFLAKE_CONNECTION_2_db"/>
+    <elementParameter field="CHECK" name="configuration.shareConnection" value="false"/>
+    <elementParameter field="TEXT" name="configuration.sharedConnectionName"/>
+    <elementParameter field="CHECK" name="configuration.autoCommit" value="true"/>
+    <elementParameter field="TEXT" name="configuration.jdbcParameters" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.loginTimeout" value="context.SNOWFLAKE_CONNECTION_2_loginTimeout"/>
+    <elementParameter field="TEXT" name="configuration.role" value="context.SNOWFLAKE_CONNECTION_2_role"/>
+    <elementParameter field="TEXT" name="configuration.jdbcUrlSuffix" value="&quot;.snowflakecomputing.com&quot;"/>
+    <elementParameter field="TECHNICAL" name="configuration.__version" value="-1"/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="SnowflakeRollback" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRollback_1" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNSb2xsYmFjaw"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CHECK" name="configuration.close" value="true"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="SnowflakeClose" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBClose_1" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dAClose"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSnowflakeConnection_1" offsetLabelX="0" offsetLabelY="0" source="tSnowflakeConnection_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSnowflakeInput_1" offsetLabelX="0" offsetLabelY="0" source="tSnowflakeInput_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tSnowflakeInput_1" offsetLabelX="0" offsetLabelY="0" source="tSnowflakeInput_1" target="tDBRollback_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tSnowflakeOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSnowflakeClose_1" offsetLabelX="0" offsetLabelY="0" source="tSnowflakeClose_1" target="tDBClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tSnowflakeConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="-20" offsetLabelY="-1" source="tPostjob_1" target="tSnowflakeClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="192;192;192"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeInput_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="TO COPY THE DATA FROM ONE SCHEMA TO ANOTHER SCHEMA INSIDE SNOWFLAKE DATABASE"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="64;0;64"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="192;192;192"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeClose_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="192;192;192"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRollback_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBClose_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

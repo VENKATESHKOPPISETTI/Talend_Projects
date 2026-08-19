@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_4nqbUIbXEe27b5TibM3c3A" name="DEV">
+  <contextParameter xmi:id="_4pXrgIbXEe27b5TibM3c3A" comment="" name="connection_oracle_database" prompt="connection_oracle_database?" promptNeeded="false" type="id_String" value="xe"/>
+  <contextParameter xmi:id="_4pXrgYbXEe27b5TibM3c3A" comment="" name="connection_oracle_username" prompt="connection_oracle_username?" promptNeeded="false" type="id_String" value="system"/>
+  <contextParameter xmi:id="_4pXrgobXEe27b5TibM3c3A" comment="" name="connection_oracle_schema" prompt="connection_oracle_schema?" promptNeeded="false" type="id_String" value="SYSTEM"/>
+  <contextParameter xmi:id="_4pXrg4bXEe27b5TibM3c3A" comment="" name="connection_oracle_port" prompt="connection_oracle_port?" promptNeeded="false" type="id_String" value="1521"/>
+  <contextParameter xmi:id="_4pXrhIbXEe27b5TibM3c3A" comment="" name="connection_oracle_host" prompt="connection_oracle_host?" promptNeeded="false" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_4pXrhYbXEe27b5TibM3c3A" comment="" name="connection_oracle_password" prompt="connection_oracle_password?" promptNeeded="false" type="id_Password" value="venkatesh"/>
+</talendfile:ContextType>

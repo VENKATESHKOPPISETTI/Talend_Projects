@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_oeRusIC9Ee2xmdoXq4NKOQ" confirmationNeeded="false" name="DEV">
+  <contextParameter xmi:id="_oeRusYC9Ee2xmdoXq4NKOQ" comment="" name="SNOWFLAKE_CONNECTION_2_db" prompt="SNOWFLAKE_CONNECTION_2_db?" promptNeeded="false" type="id_String" value="SNOWFLAKE_SAMPLE_DATA1"/>
+  <contextParameter xmi:id="_oeRusoC9Ee2xmdoXq4NKOQ" comment="" name="SNOWFLAKE_CONNECTION_2_userPassword_userId" prompt="SNOWFLAKE_CONNECTION_2_userPassword_userId?" promptNeeded="false" type="id_String" value="venkatesh"/>
+  <contextParameter xmi:id="_oeRus4C9Ee2xmdoXq4NKOQ" comment="" name="SNOWFLAKE_CONNECTION_2_warehouse" prompt="SNOWFLAKE_CONNECTION_2_warehouse?" promptNeeded="false" type="id_String" value="SAMPLE_WAREHOUSE"/>
+  <contextParameter xmi:id="_oeRutIC9Ee2xmdoXq4NKOQ" comment="" name="SNOWFLAKE_CONNECTION_2_schemaName" prompt="SNOWFLAKE_CONNECTION_2_schemaName?" promptNeeded="false" type="id_String" value="SAMPLE_SCHEMA1"/>
+  <contextParameter xmi:id="_oeRutYC9Ee2xmdoXq4NKOQ" comment="" name="SNOWFLAKE_CONNECTION_2_account" prompt="SNOWFLAKE_CONNECTION_2_account?" promptNeeded="false" type="id_String" value="mjb45978.us-east-1"/>
+  <contextParameter xmi:id="_oeRutoC9Ee2xmdoXq4NKOQ" comment="" name="SNOWFLAKE_CONNECTION_2_role" prompt="SNOWFLAKE_CONNECTION_2_role?" promptNeeded="false" type="id_String" value="ACCOUNTADMIN"/>
+  <contextParameter xmi:id="_oeRut4C9Ee2xmdoXq4NKOQ" comment="" name="SNOWFLAKE_CONNECTION_2_userPassword_password" prompt="SNOWFLAKE_CONNECTION_2_userPassword_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:XpNp+6rmo7vDfhERY5vOrP62KgYAD/6fLcKcLAzyRZK+kFquUSHR"/>
+  <contextParameter xmi:id="_oeRuuIC9Ee2xmdoXq4NKOQ" comment="" name="SNOWFLAKE_CONNECTION_2_loginTimeout" prompt="SNOWFLAKE_CONNECTION_2_loginTimeout?" promptNeeded="false" type="id_Integer" value="0"/>
+</talendfile:ContextType>

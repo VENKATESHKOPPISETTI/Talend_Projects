@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_KLS44IbSEe27b5TibM3c3A" confirmationNeeded="false" name="DEV">
+  <contextParameter xmi:id="_KLS44YbSEe27b5TibM3c3A" comment="" name="connection_oracle_database" prompt="connection_oracle_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="xe"/>
+  <contextParameter xmi:id="_KLS44obSEe27b5TibM3c3A" comment="" name="connection_oracle_schema" prompt="connection_oracle_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SYSTEM"/>
+  <contextParameter xmi:id="_KLS444bSEe27b5TibM3c3A" comment="" name="connection_oracle_host" prompt="connection_oracle_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_KLS45IbSEe27b5TibM3c3A" comment="" name="connection_oracle_port" prompt="connection_oracle_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1521"/>
+  <contextParameter xmi:id="_KLS45YbSEe27b5TibM3c3A" comment="" name="connection_oracle_username" prompt="connection_oracle_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="system"/>
+  <contextParameter xmi:id="_KLS45obSEe27b5TibM3c3A" comment="" name="connection_oracle_password" prompt="connection_oracle_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:rwgiCBb0QppQ3iZoEAFqwA6LKgKbgINfIUkbRl45nu7Ope003w=="/>
+</talendfile:ContextType>

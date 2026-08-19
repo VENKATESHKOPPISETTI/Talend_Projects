@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:TacokitSnowflakeConnection xmi:id="_APzWEICxEe2QCJazXufkJg" name="SNOWFLAKE_CONNECTION_1" properties="configuration.snowflakeAuth.password&#xA;&#xA;context.SNOWFLAKE_CONNECTION3_userPassword_password&#xA;&#xA;configuration.snowflakeAuth.userId&#xA;&#xA;context.SNOWFLAKE_CONNECTION3_userPassword_userId&#xA;&#xA;configuration.database&#xA;&#xA;context.SNOWFLAKE_CONNECTION3_db&#xA;&#xA;configuration.loginTimeout&#xA;&#xA;context.SNOWFLAKE_CONNECTION3_loginTimeout&#xA;&#xA;configuration.jdbcUrlSuffix&#xA;&#xA;.snowflakecomputing.com&#xA;&#xA;configuration.snowflakeAuth.authenticationType&#xA;&#xA;BASIC&#xA;&#xA;__TACOKIT_CONFIG_ID&#xA;&#xA;c25vd2ZsYWtlI1Nub3dmbGFrZSNkYXRhc3RvcmUjU25vd2ZsYWtlRGF0YVN0b3Jl&#xA;&#xA;configuration.jdbcParameters&#xA;&#xA;&#xA;&#xA;configuration.role&#xA;&#xA;context.SNOWFLAKE_CONNECTION3_role&#xA;&#xA;configuration.snowflakeAuth.grantType&#xA;&#xA;CLIENT_CREDENTIALS&#xA;&#xA;configuration.dbSchema&#xA;&#xA;context.SNOWFLAKE_CONNECTION3_schemaName&#xA;&#xA;configuration.warehouse&#xA;&#xA;context.SNOWFLAKE_CONNECTION3_warehouse&#xA;&#xA;__TACOKIT_CONFIG_PARENT_ID&#xA;&#xA;c25vd2ZsYWtlI1Nub3dmbGFrZQ&#xA;&#xA;configuration.autoCommit&#xA;&#xA;true&#xA;&#xA;configuration.account&#xA;&#xA;context.SNOWFLAKE_CONNECTION3_account&#xA;&#xA;" label="SNOWFLAKE_CONNECTION_1" dataPackage="_8XK08ZutEfG8oPVtB5afCw" ContextMode="true" ContextId="_z724MICwEe2QCJazXufkJg" DatabaseType="Snowflake" ProductId="SNOWFLAKE" supportNLS="false"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_8XK08ZutEfG8oPVtB5afCw" name="context.SNOWFLAKE_CONNECTION3_db" dataManager="_APzWEICxEe2QCJazXufkJg">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_8XK08putEfG8oPVtB5afCw" name="context.SNOWFLAKE_CONNECTION3_schemaName">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_52rk8IC9Ee2xmdoXq4NKOQ" name="NATION" id="_52ibAIC9Ee2xmdoXq4NKOQ" label="NATION">
+        <feature xsi:type="relational:TdColumn" xmi:id="_52rk84C9Ee2xmdoXq4NKOQ" name="N_NATIONKEY" label="N_NATIONKEY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_52rk9IC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_52rk9YC9Ee2xmdoXq4NKOQ" name="N_NAME" label="N_NAME" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_52rk9oC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_52rk94C9Ee2xmdoXq4NKOQ" name="N_REGIONKEY" label="N_REGIONKEY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_52rk-IC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_52rk-YC9Ee2xmdoXq4NKOQ" name="N_COMMENT" label="N_COMMENT" length="-1" precision="-1" talendType="id_String" originalLength="-1">
+          <initialValue xmi:id="_52rk-oC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+      </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_6gQtcIC9Ee2xmdoXq4NKOQ" name="PARTSUPP" id="_6gG8cIC9Ee2xmdoXq4NKOQ" label="PARTSUPP">
+        <feature xsi:type="relational:TdColumn" xmi:id="_6gQtc4C9Ee2xmdoXq4NKOQ" name="PS_PARTKEY" label="PS_PARTKEY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_6gQtdIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_6gQtdYC9Ee2xmdoXq4NKOQ" name="PS_SUPPKEY" label="PS_SUPPKEY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_6gQtdoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_6gQtd4C9Ee2xmdoXq4NKOQ" name="PS_AVAILQTY" label="PS_AVAILQTY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_6gQteIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_6gQteYC9Ee2xmdoXq4NKOQ" name="PS_SUPPLYCOST" label="PS_SUPPLYCOST" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_6gQteoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_6gQte4C9Ee2xmdoXq4NKOQ" name="PS_COMMENT" label="PS_COMMENT" length="-1" precision="-1" talendType="id_String" originalLength="-1">
+          <initialValue xmi:id="_6gQtfIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+      </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_7NHMYIC9Ee2xmdoXq4NKOQ" name="ORDERS" id="_7M9bYIC9Ee2xmdoXq4NKOQ" label="ORDERS">
+        <feature xsi:type="relational:TdColumn" xmi:id="_7NHMY4C9Ee2xmdoXq4NKOQ" name="O_ORDERKEY" label="O_ORDERKEY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_7NHMZIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_7NHMZYC9Ee2xmdoXq4NKOQ" name="O_CUSTKEY" label="O_CUSTKEY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_7NHMZoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_7NHMZ4C9Ee2xmdoXq4NKOQ" name="O_ORDERSTATUS" label="O_ORDERSTATUS" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_7NHMaIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_7NHMaYC9Ee2xmdoXq4NKOQ" name="O_TOTALPRICE" label="O_TOTALPRICE" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_7NHMaoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_7NHMa4C9Ee2xmdoXq4NKOQ" name="O_ORDERDATE" label="O_ORDERDATE" length="-1" precision="-1" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" originalLength="-1">
+          <taggedValue xmi:id="_7NHMbIC9Ee2xmdoXq4NKOQ" tag="di.date.date" value="true"/>
+          <taggedValue xmi:id="_7NHMbYC9Ee2xmdoXq4NKOQ" tag="di.column.logicalType" value="date"/>
+          <initialValue xmi:id="_7NHMboC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_7NHMb4C9Ee2xmdoXq4NKOQ" name="O_ORDERPRIORITY" label="O_ORDERPRIORITY" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_7NHMcIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_7NHMcYC9Ee2xmdoXq4NKOQ" name="O_CLERK" label="O_CLERK" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_7NHMcoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_7NHMc4C9Ee2xmdoXq4NKOQ" name="O_SHIPPRIORITY" label="O_SHIPPRIORITY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_7NHMdIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_7NHMdYC9Ee2xmdoXq4NKOQ" name="O_COMMENT" label="O_COMMENT" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_7NHMdoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+      </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_71I1sYC9Ee2xmdoXq4NKOQ" name="PART" id="_71I1sIC9Ee2xmdoXq4NKOQ" label="PART">
+        <feature xsi:type="relational:TdColumn" xmi:id="_71I1tIC9Ee2xmdoXq4NKOQ" name="P_PARTKEY" label="P_PARTKEY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_71I1tYC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_71I1toC9Ee2xmdoXq4NKOQ" name="P_NAME" label="P_NAME" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_71I1t4C9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_71I1uIC9Ee2xmdoXq4NKOQ" name="P_MFGR" label="P_MFGR" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_71I1uYC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_71I1uoC9Ee2xmdoXq4NKOQ" name="P_BRAND" label="P_BRAND" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_71I1u4C9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_71I1vIC9Ee2xmdoXq4NKOQ" name="P_TYPE" label="P_TYPE" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_71I1vYC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_71I1voC9Ee2xmdoXq4NKOQ" name="P_SIZE" label="P_SIZE" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_71I1v4C9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_71I1wIC9Ee2xmdoXq4NKOQ" name="P_CONTAINER" label="P_CONTAINER" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_71I1wYC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_71I1woC9Ee2xmdoXq4NKOQ" name="P_RETAILPRICE" label="P_RETAILPRICE" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_71I1w4C9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_71I1xIC9Ee2xmdoXq4NKOQ" name="P_COMMENT" label="P_COMMENT" length="-1" precision="-1" talendType="id_String" originalLength="-1">
+          <initialValue xmi:id="_71I1xYC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+      </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_8aZe4IC9Ee2xmdoXq4NKOQ" name="REGION" id="_8aPt4IC9Ee2xmdoXq4NKOQ" label="REGION">
+        <feature xsi:type="relational:TdColumn" xmi:id="_8aZe44C9Ee2xmdoXq4NKOQ" name="R_REGIONKEY" label="R_REGIONKEY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_8aZe5IC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_8aZe5YC9Ee2xmdoXq4NKOQ" name="R_NAME" label="R_NAME" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_8aZe5oC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_8aZe54C9Ee2xmdoXq4NKOQ" name="R_COMMENT" label="R_COMMENT" length="-1" precision="-1" talendType="id_String" originalLength="-1">
+          <initialValue xmi:id="_8aZe6IC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+      </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_9AsC0YC9Ee2xmdoXq4NKOQ" name="CUSTOMER" id="_9AsC0IC9Ee2xmdoXq4NKOQ" label="CUSTOMER">
+        <feature xsi:type="relational:TdColumn" xmi:id="_9AsC1IC9Ee2xmdoXq4NKOQ" name="C_CUSTKEY" label="C_CUSTKEY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_9AsC1YC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9AsC1oC9Ee2xmdoXq4NKOQ" name="C_NAME" label="C_NAME" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_9AsC14C9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9AsC2IC9Ee2xmdoXq4NKOQ" name="C_ADDRESS" label="C_ADDRESS" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_9AsC2YC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9AsC2oC9Ee2xmdoXq4NKOQ" name="C_NATIONKEY" label="C_NATIONKEY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_9AsC24C9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9AsC3IC9Ee2xmdoXq4NKOQ" name="C_PHONE" label="C_PHONE" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_9AsC3YC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9AsC3oC9Ee2xmdoXq4NKOQ" name="C_ACCTBAL" label="C_ACCTBAL" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_9AsC34C9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9AsC4IC9Ee2xmdoXq4NKOQ" name="C_MKTSEGMENT" label="C_MKTSEGMENT" length="-1" precision="-1" talendType="id_String" originalLength="-1">
+          <initialValue xmi:id="_9AsC4YC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9AsC4oC9Ee2xmdoXq4NKOQ" name="C_COMMENT" label="C_COMMENT" length="-1" precision="-1" talendType="id_String" originalLength="-1">
+          <initialValue xmi:id="_9AsC44C9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+      </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_9n4lsIC9Ee2xmdoXq4NKOQ" name="SUPPLIER" id="_9nu0sIC9Ee2xmdoXq4NKOQ" label="SUPPLIER">
+        <feature xsi:type="relational:TdColumn" xmi:id="_9n4ls4C9Ee2xmdoXq4NKOQ" name="S_SUPPKEY" label="S_SUPPKEY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_9n4ltIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9n4ltYC9Ee2xmdoXq4NKOQ" name="S_NAME" label="S_NAME" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_9n4ltoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9n4lt4C9Ee2xmdoXq4NKOQ" name="S_ADDRESS" label="S_ADDRESS" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_9n4luIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9n4luYC9Ee2xmdoXq4NKOQ" name="S_NATIONKEY" label="S_NATIONKEY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_9n4luoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9n4lu4C9Ee2xmdoXq4NKOQ" name="S_PHONE" label="S_PHONE" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_9n4lvIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9n4lvYC9Ee2xmdoXq4NKOQ" name="S_ACCTBAL" label="S_ACCTBAL" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_9n4lvoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9n4lv4C9Ee2xmdoXq4NKOQ" name="S_COMMENT" label="S_COMMENT" length="-1" precision="-1" talendType="id_String" originalLength="-1">
+          <initialValue xmi:id="_9n4lwIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+      </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_-QalUIC9Ee2xmdoXq4NKOQ" name="LINEITEM" id="_-QQ0UIC9Ee2xmdoXq4NKOQ" label="LINEITEM">
+        <feature xsi:type="relational:TdColumn" xmi:id="_-QalU4C9Ee2xmdoXq4NKOQ" name="L_ORDERKEY" label="L_ORDERKEY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_-QalVIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_-QalVYC9Ee2xmdoXq4NKOQ" name="L_PARTKEY" label="L_PARTKEY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_-QalVoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_-QalV4C9Ee2xmdoXq4NKOQ" name="L_SUPPKEY" label="L_SUPPKEY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_-QalWIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_-QalWYC9Ee2xmdoXq4NKOQ" name="L_LINENUMBER" label="L_LINENUMBER" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_-QalWoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_-QalW4C9Ee2xmdoXq4NKOQ" name="L_QUANTITY" label="L_QUANTITY" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_-QalXIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_-QalXYC9Ee2xmdoXq4NKOQ" name="L_EXTENDEDPRICE" label="L_EXTENDEDPRICE" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_-QalXoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_-QalX4C9Ee2xmdoXq4NKOQ" name="L_DISCOUNT" label="L_DISCOUNT" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_-QalYIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_-QalYYC9Ee2xmdoXq4NKOQ" name="L_TAX" label="L_TAX" length="-1" precision="-1" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_-QalYoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_-QalY4C9Ee2xmdoXq4NKOQ" name="L_RETURNFLAG" label="L_RETURNFLAG" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_-QalZIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_-QalZYC9Ee2xmdoXq4NKOQ" name="L_LINESTATUS" label="L_LINESTATUS" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_-QalZoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_-QalZ4C9Ee2xmdoXq4NKOQ" name="L_SHIPDATE" label="L_SHIPDATE" length="-1" precision="-1" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" originalLength="-1">
+          <taggedValue xmi:id="_-QalaIC9Ee2xmdoXq4NKOQ" tag="di.date.date" value="true"/>
+          <taggedValue xmi:id="_-QalaYC9Ee2xmdoXq4NKOQ" tag="di.column.logicalType" value="date"/>
+          <initialValue xmi:id="_-QalaoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_-Qala4C9Ee2xmdoXq4NKOQ" name="L_COMMITDATE" label="L_COMMITDATE" length="-1" precision="-1" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" originalLength="-1">
+          <taggedValue xmi:id="_-QalbIC9Ee2xmdoXq4NKOQ" tag="di.date.date" value="true"/>
+          <taggedValue xmi:id="_-QalbYC9Ee2xmdoXq4NKOQ" tag="di.column.logicalType" value="date"/>
+          <initialValue xmi:id="_-QalboC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_-Qalb4C9Ee2xmdoXq4NKOQ" name="L_RECEIPTDATE" label="L_RECEIPTDATE" length="-1" precision="-1" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" originalLength="-1">
+          <taggedValue xmi:id="_-QalcIC9Ee2xmdoXq4NKOQ" tag="di.date.date" value="true"/>
+          <taggedValue xmi:id="_-QalcYC9Ee2xmdoXq4NKOQ" tag="di.column.logicalType" value="date"/>
+          <initialValue xmi:id="_-QalcoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_-Qalc4C9Ee2xmdoXq4NKOQ" name="L_SHIPINSTRUCT" label="L_SHIPINSTRUCT" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_-QaldIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_-QaldYC9Ee2xmdoXq4NKOQ" name="L_SHIPMODE" label="L_SHIPMODE" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_-QaldoC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_-Qald4C9Ee2xmdoXq4NKOQ" name="L_COMMENT" label="L_COMMENT" length="-1" precision="-1" talendType="id_String" nullable="false" originalLength="-1">
+          <initialValue xmi:id="_-QaleIC9Ee2xmdoXq4NKOQ" body=""/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
