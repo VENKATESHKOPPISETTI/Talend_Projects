@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_e_HLQZusEfGq_oQf_cngJQ" label="Talend_Cloud" description="Talend Cloud" language="java" technicalLabel="TALEND_CLOUD" author="_e_HLQpusEfGq_oQf_cngJQ" productVersion="Qlik Talend Cloud Enterprise Edition-8.0.1.20260724_0953-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/VENKATESHKOPPISETTI/Talend_Projects.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
+    <migrationTask xmi:id="_fAXJnpusEfGq_oQf_cngJQ" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_e_HLQpusEfGq_oQf_cngJQ" login="efd31a70-1e7f-4ab5-8a56-8dfc8bdfcf8f@cpphbv4vx6wdhhc.in.qlikcloud.com" firstName="Venkatesh" lastName="Koppisetti" type="DQ"/>
+  <TalendProperties:User xmi:id="_mD6qwJusEfG8oPVtB5afCw" login="67dadb8e-30d6-4c4b-8767-36a9ce551b57@cpphbv4vx6wdhhc.in.qlikcloud.com" firstName="Meharnath" lastName="Ksheerasagar" type="DQ"/>
+</xmi:XMI>
