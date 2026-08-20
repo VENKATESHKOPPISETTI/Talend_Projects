@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_m-iYUJxOEfG8oPVtB5afCw" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_m-iYUZxOEfG8oPVtB5afCw" comment="" name="Snowflake_Target_Connection_jdbcUrlSuffix" prompt="Snowflake_Target_Connection_jdbcUrlSuffix?" promptNeeded="false" repositoryContextId="" type="id_String" value=".snowflakecomputing.com"/>
+  <contextParameter xmi:id="_m-iYUpxOEfG8oPVtB5afCw" comment="" name="Snowflake_Target_Connection_loginTimeout" prompt="Snowflake_Target_Connection_loginTimeout?" promptNeeded="false" repositoryContextId="" type="id_String" value="15"/>
+  <contextParameter xmi:id="_m-iYU5xOEfG8oPVtB5afCw" comment="" name="Snowflake_Target_Connection_jdbcParameters" prompt="Snowflake_Target_Connection_jdbcParameters?" promptNeeded="false" repositoryContextId="" type="id_String" value=""/>
+  <contextParameter xmi:id="_m-iYVJxOEfG8oPVtB5afCw" comment="" name="Snowflake_Target_Connection_warehouse" prompt="Snowflake_Target_Connection_warehouse?" promptNeeded="false" repositoryContextId="" type="id_String" value="COMPUTE_WH"/>
+  <contextParameter xmi:id="_m-iYVZxOEfG8oPVtB5afCw" comment="" name="Snowflake_Target_Connection_account" prompt="Snowflake_Target_Connection_account?" promptNeeded="false" repositoryContextId="" type="id_String" value="lzeaojr-mu61924"/>
+  <contextParameter xmi:id="_m-iYVpxOEfG8oPVtB5afCw" comment="" name="Snowflake_Target_Connection_database" prompt="Snowflake_Target_Connection_database?" promptNeeded="false" repositoryContextId="" type="id_String" value="METADATA"/>
+  <contextParameter xmi:id="_m-iYV5xOEfG8oPVtB5afCw" comment="" name="Snowflake_Target_Connection_userId" prompt="Snowflake_Target_Connection_userId?" promptNeeded="false" repositoryContextId="" type="id_String" value="venkatesh"/>
+  <contextParameter xmi:id="_m-iYWJxOEfG8oPVtB5afCw" comment="" name="Snowflake_Target_Connection_dbSchema" prompt="Snowflake_Target_Connection_dbSchema?" promptNeeded="false" repositoryContextId="" type="id_String" value="DW"/>
+  <contextParameter xmi:id="_m-iYWZxOEfG8oPVtB5afCw" comment="" name="Snowflake_Target_Connection_role" prompt="Snowflake_Target_Connection_role?" promptNeeded="false" repositoryContextId="" type="id_String" value=""/>
+  <contextParameter xmi:id="_m-iYWpxOEfG8oPVtB5afCw" comment="" name="Snowflake_Target_Connection_password" prompt="Snowflake_Target_Connection_password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:7bLgpx5IAkyYQVwNpcnmDKGwYzQQ4TlhDuYFyC027+MlwV4oMTWv/EN9+o8="/>
+</talendfile:ContextType>

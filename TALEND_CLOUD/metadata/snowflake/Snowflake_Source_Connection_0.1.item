@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:TacokitSnowflakeConnection xmi:id="_sWISoJxPEfG8oPVtB5afCw" name="Snowflake_Source_Connection" properties="configuration.snowflakeAuth.password&#xA;&#xA;context.Snowflake_Source_Connection_password&#xA;&#xA;configuration.snowflakeAuth.userId&#xA;&#xA;context.Snowflake_Source_Connection_userId&#xA;&#xA;configuration.database&#xA;&#xA;context.Snowflake_Source_Connection_database&#xA;&#xA;configuration.loginTimeout&#xA;&#xA;context.Snowflake_Source_Connection_loginTimeout&#xA;&#xA;configuration.jdbcUrlSuffix&#xA;&#xA;context.Snowflake_Source_Connection_jdbcUrlSuffix&#xA;&#xA;configuration.snowflakeAuth.authenticationType&#xA;&#xA;BASIC&#xA;&#xA;__TACOKIT_CONFIG_ID&#xA;&#xA;c25vd2ZsYWtlI1Nub3dmbGFrZSNkYXRhc3RvcmUjU25vd2ZsYWtlRGF0YVN0b3Jl&#xA;&#xA;configuration.__version&#xA;&#xA;-1&#xA;&#xA;configuration.jdbcParameters&#xA;&#xA;context.Snowflake_Source_Connection_jdbcParameters&#xA;&#xA;configuration.role&#xA;&#xA;context.Snowflake_Source_Connection_role&#xA;&#xA;configuration.snowflakeAuth.grantType&#xA;&#xA;CLIENT_CREDENTIALS&#xA;&#xA;configuration.dbSchema&#xA;&#xA;context.Snowflake_Source_Connection_dbSchema&#xA;&#xA;configuration.shareConnection&#xA;&#xA;false&#xA;&#xA;configuration.warehouse&#xA;&#xA;context.Snowflake_Source_Connection_warehouse&#xA;&#xA;__TACOKIT_CONFIG_PARENT_ID&#xA;&#xA;c25vd2ZsYWtlI1Nub3dmbGFrZQ&#xA;&#xA;configuration.autoCommit&#xA;&#xA;true&#xA;&#xA;configuration.account&#xA;&#xA;context.Snowflake_Source_Connection_account&#xA;&#xA;" label="Snowflake_Source_Connection" dataPackage="_N_qaAJvMEfG8oPVtB5afCw" ContextMode="true" ContextId="_LUUpIJxQEfG8oPVtB5afCw" contextName="Default" DatabaseType="SNOWFLAKE" DriverClass="net.snowflake.client.jdbc.SnowflakeDriver" URL="jdbc:snowflake://lzeaojr-mu61924.snowflakecomputing.com/?warehouse=COMPUTE_WH&amp;db=METADATA&amp;schema=registered_data_storage__internal" DbmsId="snowflake_id" ProductId="SNOWFLAKE" supportNLS="false">
+    <taggedValue xmi:id="_Ny7lkJvMEfG8oPVtB5afCw" tag="Status" value=""/>
+    <taggedValue xmi:id="_Ny7lkZvMEfG8oPVtB5afCw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Ny7lkpvMEfG8oPVtB5afCw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_Ny7lk5vMEfG8oPVtB5afCw" tag="Description" value=""/>
+    <taggedValue xmi:id="_Ny7llJvMEfG8oPVtB5afCw" tag="Author" value=""/>
+    <taggedValue xmi:id="_Ny7llZvMEfG8oPVtB5afCw" tag="otherParameter"/>
+    <taggedValue xmi:id="_N3WLgJvMEfG8oPVtB5afCw" tag="DB ProductName" value="Snowflake"/>
+    <taggedValue xmi:id="_N3WLgZvMEfG8oPVtB5afCw" tag="DB ProductVersion" value="10.29.101"/>
+    <taggedValue xmi:id="_N3WLgpvMEfG8oPVtB5afCw" tag="DB IdentifierQuoteString" value="&quot;"/>
+  </TalendMetadata:TacokitSnowflakeConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_N_qaAJvMEfG8oPVtB5afCw" name="METADATA" dataManager="_sWISoJxPEfG8oPVtB5afCw">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_N_rBEJvMEfG8oPVtB5afCw" name="registered_data_storage__internal">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_OAdEMJvMEfG8oPVtB5afCw" name="EMP_DETAILS__current" id="_Ny37MJvMEfG8oPVtB5afCw" label="EMP_DETAILS__current" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_OAdEMZvMEfG8oPVtB5afCw" name="hdr__key_hash" label="hdr__key_hash" length="20" sourceType="BINARY" talendType="id_String" nullable="false">
+          <taggedValue xmi:id="_OAdEMpvMEfG8oPVtB5afCw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_OAdEM5vMEfG8oPVtB5afCw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_OAdENJvMEfG8oPVtB5afCw" name="BINARY" javaDataType="-2"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_OAdENZvMEfG8oPVtB5afCw" name="hdr__from_timestamp" label="hdr__from_timestamp" precision="6" sourceType="TIMESTAMP_NTZ" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+          <taggedValue xmi:id="_OAdENpvMEfG8oPVtB5afCw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_OAdEN5vMEfG8oPVtB5afCw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_OAdEOJvMEfG8oPVtB5afCw" name="TIMESTAMP_NTZ" numericPrecision="6" javaDataType="93" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_OAdEOZvMEfG8oPVtB5afCw" name="hdr__operation" label="hdr__operation" length="1" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_OAdEOpvMEfG8oPVtB5afCw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_OAdEO5vMEfG8oPVtB5afCw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_OAdEPJvMEfG8oPVtB5afCw" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_OAdEPZvMEfG8oPVtB5afCw" name="hdr__inserted_timestamp" label="hdr__inserted_timestamp" precision="6" sourceType="TIMESTAMP_NTZ" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+          <taggedValue xmi:id="_OAdEPpvMEfG8oPVtB5afCw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_OAdEP5vMEfG8oPVtB5afCw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_OAdEQJvMEfG8oPVtB5afCw" name="TIMESTAMP_NTZ" numericPrecision="6" javaDataType="93" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_OAdEQZvMEfG8oPVtB5afCw" name="hdr__modified_timestamp" label="hdr__modified_timestamp" precision="6" sourceType="TIMESTAMP_NTZ" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+          <taggedValue xmi:id="_OAdEQpvMEfG8oPVtB5afCw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_OAdEQ5vMEfG8oPVtB5afCw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_OAdERJvMEfG8oPVtB5afCw" name="TIMESTAMP_NTZ" numericPrecision="6" javaDataType="93" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_OAdERZvMEfG8oPVtB5afCw" name="ID" label="ID" length="16777216" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_OAdERpvMEfG8oPVtB5afCw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_OAdER5vMEfG8oPVtB5afCw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_OAdESJvMEfG8oPVtB5afCw" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_OAdESZvMEfG8oPVtB5afCw" name="FIRST_NAME" label="FIRST_NAME" length="16777216" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_OAdESpvMEfG8oPVtB5afCw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_OAdES5vMEfG8oPVtB5afCw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_OAdETJvMEfG8oPVtB5afCw" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_OAdETZvMEfG8oPVtB5afCw" name="LAST_NAME" label="LAST_NAME" length="16777216" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_OAdETpvMEfG8oPVtB5afCw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_OAdET5vMEfG8oPVtB5afCw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_OAdEUJvMEfG8oPVtB5afCw" name="VARCHAR" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

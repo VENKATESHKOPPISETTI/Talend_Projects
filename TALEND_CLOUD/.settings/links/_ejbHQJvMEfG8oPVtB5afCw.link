@@ -1,0 +1,38 @@
+{
+  "itemId" : "_ejbHQJvMEfG8oPVtB5afCw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_m-D3MJxOEfG8oPVtB5afCw",
+    "parameterList" : [ {
+      "id" : "_m-iYVZxOEfG8oPVtB5afCw",
+      "name" : "Snowflake_Target_Connection_account"
+    }, {
+      "id" : "_m-iYVpxOEfG8oPVtB5afCw",
+      "name" : "Snowflake_Target_Connection_database"
+    }, {
+      "id" : "_m-iYWJxOEfG8oPVtB5afCw",
+      "name" : "Snowflake_Target_Connection_dbSchema"
+    }, {
+      "id" : "_m-iYU5xOEfG8oPVtB5afCw",
+      "name" : "Snowflake_Target_Connection_jdbcParameters"
+    }, {
+      "id" : "_m-iYUZxOEfG8oPVtB5afCw",
+      "name" : "Snowflake_Target_Connection_jdbcUrlSuffix"
+    }, {
+      "id" : "_m-iYUpxOEfG8oPVtB5afCw",
+      "name" : "Snowflake_Target_Connection_loginTimeout"
+    }, {
+      "id" : "_m-iYWpxOEfG8oPVtB5afCw",
+      "name" : "Snowflake_Target_Connection_password"
+    }, {
+      "id" : "_m-iYWZxOEfG8oPVtB5afCw",
+      "name" : "Snowflake_Target_Connection_role"
+    }, {
+      "id" : "_m-iYV5xOEfG8oPVtB5afCw",
+      "name" : "Snowflake_Target_Connection_userId"
+    }, {
+      "id" : "_m-iYVJxOEfG8oPVtB5afCw",
+      "name" : "Snowflake_Target_Connection_warehouse"
+    } ]
+  } ]
+}
