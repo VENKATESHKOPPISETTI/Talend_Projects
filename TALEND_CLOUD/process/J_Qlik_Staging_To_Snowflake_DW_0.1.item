@@ -428,25 +428,25 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="Snowflake_Source_Connection"/>
-    <elementParameter field="TEXT" name="configuration.account" value="context.Snowflake_Source_Connection_account"/>
+    <elementParameter field="TEXT" name="configuration.account" value="&quot;lzeaojr-mu61924&quot;"/>
     <elementParameter field="CLOSED_LIST" name="configuration.snowflakeAuth.authenticationType" value="BASIC"/>
-    <elementParameter field="TEXT" name="configuration.snowflakeAuth.userId" value="context.Snowflake_Source_Connection_userId"/>
-    <elementParameter field="PASSWORD" name="configuration.snowflakeAuth.password" value="context.Snowflake_Source_Connection_password"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.userId" value="&quot;venkatesh&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.snowflakeAuth.password" value="enc:system.encryption.key.v1:HzD4vZKKyCFQgJmzW2w6SHPGUvmRiVkDwEk3qRDIz2be0EBIxnY2os/dCkegVw=="/>
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.keyAlias" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.oauthTokenEndpoint" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.clientId" value="&quot;&quot;" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.oauthUsername" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.scope" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="configuration.warehouse" value="context.Snowflake_Source_Connection_warehouse"/>
-    <elementParameter field="TEXT" name="configuration.dbSchema" value="context.Snowflake_Source_Connection_dbSchema"/>
-    <elementParameter field="TEXT" name="configuration.database" value="context.Snowflake_Source_Connection_database"/>
+    <elementParameter field="TEXT" name="configuration.warehouse" value="&quot;COMPUTE_WH&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dbSchema" value="&quot;registered_data_staorage__internal&quot;"/>
+    <elementParameter field="TEXT" name="configuration.database" value="&quot;METADATA&quot;"/>
     <elementParameter field="CHECK" name="configuration.shareConnection" value="false"/>
     <elementParameter field="CHECK" name="configuration.autoCommit" value="true"/>
-    <elementParameter field="TEXT" name="configuration.jdbcParameters" value="context.Snowflake_Source_Connection_jdbcParameters"/>
-    <elementParameter field="TEXT" name="configuration.loginTimeout" value="context.Snowflake_Source_Connection_loginTimeout"/>
-    <elementParameter field="TEXT" name="configuration.role" value="context.Snowflake_Source_Connection_role"/>
-    <elementParameter field="TEXT" name="configuration.jdbcUrlSuffix" value="context.Snowflake_Source_Connection_jdbcUrlSuffix"/>
+    <elementParameter field="TEXT" name="configuration.jdbcParameters" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.loginTimeout" value="15"/>
+    <elementParameter field="TEXT" name="configuration.role" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.jdbcUrlSuffix" value="&quot;.snowflakecomputing.com&quot;"/>
     <elementParameter field="TECHNICAL" name="configuration.__version" value="-1" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_sV4bAJxPEfG8oPVtB5afCw - EMP_DETAILS__current" show="false"/>
