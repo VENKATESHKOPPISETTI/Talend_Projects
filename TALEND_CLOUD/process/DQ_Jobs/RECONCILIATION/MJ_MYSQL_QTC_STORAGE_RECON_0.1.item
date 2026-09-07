@@ -5,7 +5,7 @@
     <contextParameter comment="" name="sf_account" prompt="Snowflake account identifier" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXVUIahhEfGrYqkUV-fn_w"/>
     <contextParameter comment="" name="sf_region" prompt="Snowflake region" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXVUIqhhEfGrYqkUV-fn_w"/>
     <contextParameter comment="" name="sf_user" prompt="Snowflake user" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXVUI6hhEfGrYqkUV-fn_w"/>
-    <contextParameter comment="Runtime secret; do not hardcode." name="sf_password" prompt="Snowflake password" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" internalId="_pXVUJKhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="Runtime secret; do not hardcode." name="sf_password" prompt="Snowflake password" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:XzEZaymHWgVaHPeWRQrAjoYTlcJjU5Q/8VDPr3oyO8tzGBH8K2qYMMrbSg==" internalId="_pXVUJKhhEfGrYqkUV-fn_w"/>
     <contextParameter comment="" name="sf_database" prompt="Snowflake database" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_DB" internalId="_pXVUJahhEfGrYqkUV-fn_w"/>
     <contextParameter comment="" name="sf_warehouse" prompt="Snowflake warehouse" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_WH" internalId="_pXVUJqhhEfGrYqkUV-fn_w"/>
     <contextParameter comment="" name="sf_role" prompt="Snowflake role" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXVUJ6hhEfGrYqkUV-fn_w"/>
@@ -30,7 +30,7 @@
     <contextParameter comment="" name="sf_account" prompt="Snowflake account identifier" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXV7N6hhEfGrYqkUV-fn_w"/>
     <contextParameter comment="" name="sf_region" prompt="Snowflake region" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXV7OKhhEfGrYqkUV-fn_w"/>
     <contextParameter comment="" name="sf_user" prompt="Snowflake user" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXV7OahhEfGrYqkUV-fn_w"/>
-    <contextParameter comment="Runtime secret; do not hardcode." name="sf_password" prompt="Snowflake password" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" internalId="_pXV7OqhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="Runtime secret; do not hardcode." name="sf_password" prompt="Snowflake password" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:UMzgMdp4zAP390NvXOTYDMVF4WsTDcFmNk3+oFKHSZ794Pb6wnYKY36U2g==" internalId="_pXV7OqhhEfGrYqkUV-fn_w"/>
     <contextParameter comment="" name="sf_database" prompt="Snowflake database" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_DB" internalId="_pXV7O6hhEfGrYqkUV-fn_w"/>
     <contextParameter comment="" name="sf_warehouse" prompt="Snowflake warehouse" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_WH" internalId="_pXV7PKhhEfGrYqkUV-fn_w"/>
     <contextParameter comment="" name="sf_role" prompt="Snowflake role" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXV7PahhEfGrYqkUV-fn_w"/>
@@ -93,7 +93,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:WFIBZKMyPXKdddxHU+cyKrUwjV3Z9qxH6YXaPxas" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:0O5q2QXIgxImXOX/8XxkVtfwC/5JzILK0JFPgeWw" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -108,7 +108,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Waltz/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/Talend 8 studio/studio/workspace/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -128,7 +128,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:azthg5vOaigRzgbcSBEM3qdc2f3H3I1gKRRH17sq" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:3tzeymp5iNQdo8cf24hqHFI9B//ZhtZNbl0IsRWM" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -204,16 +204,7 @@
   </node>
   <node componentName="SnowflakeConnection" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="SnowflakeConnection" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dAConnection" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="1" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Snowflake" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Z4j8AKhAEfGrYqkUV-fn_w"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -240,7 +231,6 @@
     <elementParameter field="TEXT" name="configuration.role" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="configuration.jdbcUrlSuffix" value="&quot;.snowflakecomputing.com&quot;"/>
     <elementParameter field="TECHNICAL" name="configuration.__version" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="___TACOKIT_COMPONENT_PLUGIN_NAME___" value="snowflake" show="false"/>
     <metadata connector="FLOW" name="tDBConnection_1"/>
     <metadata connector="LOOKUP" name="LOOKUP"/>
     <metadata connector="MERGE" name="MERGE"/>
