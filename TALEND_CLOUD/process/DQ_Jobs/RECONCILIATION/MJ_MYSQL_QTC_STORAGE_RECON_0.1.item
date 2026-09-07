@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="environment" prompt="Environment" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DEV" internalId="_pXVUIKhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_account" prompt="Snowflake account identifier" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXVUIahhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_region" prompt="Snowflake region" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXVUIqhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_user" prompt="Snowflake user" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXVUI6hhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="Runtime secret; do not hardcode." name="sf_password" prompt="Snowflake password" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" internalId="_pXVUJKhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_database" prompt="Snowflake database" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_DB" internalId="_pXVUJahhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_warehouse" prompt="Snowflake warehouse" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_WH" internalId="_pXVUJqhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_role" prompt="Snowflake role" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXVUJ6hhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_qtc_storage_schema" prompt="QTC Storage/current schema (read only)" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql_to_snowflake_demo_storage" internalId="_pXVUKKhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_curated_schema" prompt="CURATED schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CURATED" internalId="_pXVUKahhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_control_schema" prompt="CONTROL schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CONTROL" internalId="_pXVUKqhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_exception_schema" prompt="DQ exception schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CONTROL" internalId="_pXVUK6hhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="run_id" prompt="Optional run ID" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXVULKhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="mysql_host" prompt="MySQL host" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.5.194" internalId="_pXVULahhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="mysql_port" prompt="MySQL port" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3306" internalId="_pXVULqhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="mysql_database" prompt="MySQL database" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="qtc_demo" internalId="_pXVUL6hhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="mysql_user" prompt="MySQL user" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql" internalId="_pXVUMKhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="Runtime secret; do not hardcode." name="mysql_password" prompt="MySQL password" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:BMZ7RVQUxk+ANbOa21ujZCq05OSFryJLoXw7inXMz0t8zy+fJoi4" internalId="_pXV7MKhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="mysql_additional_params" prompt="MySQL JDBC parameters" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="useSSL=true&amp;serverTimezone=UTC" internalId="_pXV7MahhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="dq_run_id" prompt="DQ run ID to reconcile" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXV7MqhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="cutoff_ts" prompt="Common reconciliation cutoff timestamp" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXV7M6hhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="amount_tolerance" prompt="Allowed amount difference" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="0.01" internalId="_pXV7NKhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="fail_on_recon_error" prompt="Fail Job when a critical reconciliation control fails" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true" internalId="_pXV7NahhEfGrYqkUV-fn_w"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter comment="" name="environment" prompt="Environment" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DEV" internalId="_pXV7NqhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_account" prompt="Snowflake account identifier" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXV7N6hhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_region" prompt="Snowflake region" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXV7OKhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_user" prompt="Snowflake user" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXV7OahhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="Runtime secret; do not hardcode." name="sf_password" prompt="Snowflake password" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" internalId="_pXV7OqhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_database" prompt="Snowflake database" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_DB" internalId="_pXV7O6hhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_warehouse" prompt="Snowflake warehouse" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_WH" internalId="_pXV7PKhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_role" prompt="Snowflake role" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXV7PahhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_qtc_storage_schema" prompt="QTC Storage/current schema (read only)" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql_to_snowflake_demo_storage" internalId="_pXV7PqhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_curated_schema" prompt="CURATED schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CURATED" internalId="_pXV7P6hhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_control_schema" prompt="CONTROL schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CONTROL" internalId="_pXV7QKhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="sf_exception_schema" prompt="DQ exception schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CONTROL" internalId="_pXV7QahhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="run_id" prompt="Optional run ID" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXV7QqhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="mysql_host" prompt="MySQL host" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.5.194" internalId="_pXV7Q6hhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="mysql_port" prompt="MySQL port" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3306" internalId="_pXV7RKhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="mysql_database" prompt="MySQL database" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="qtc_demo" internalId="_pXV7RahhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="mysql_user" prompt="MySQL user" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql" internalId="_pXV7RqhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="Runtime secret; do not hardcode." name="mysql_password" prompt="MySQL password" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:AyMdPnEPGGk8MuIGVo4maahfwufawtwfngJ1Nyb3QNfdKkKU0SHn" internalId="_pXV7R6hhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="mysql_additional_params" prompt="MySQL JDBC parameters" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="useSSL=true&amp;serverTimezone=UTC" internalId="_pXV7SKhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="dq_run_id" prompt="DQ run ID to reconcile" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXV7SahhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="cutoff_ts" prompt="Common reconciliation cutoff timestamp" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_pXV7SqhhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="amount_tolerance" prompt="Allowed amount difference" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="0.01" internalId="_pXV7S6hhEfGrYqkUV-fn_w"/>
+    <contextParameter comment="" name="fail_on_recon_error" prompt="Fail Job when a critical reconciliation control fails" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true" internalId="_pXV7TKhhEfGrYqkUV-fn_w"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:WFIBZKMyPXKdddxHU+cyKrUwjV3Z9qxH6YXaPxas" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Waltz/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:azthg5vOaigRzgbcSBEM3qdc2f3H3I1gKRRH17sq" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_qprWQOajEeW8mutquO2GXQ" name="ID"/>
+    <routinesParameter id="_uDi24CvPEemn7J3ssWShHg" name="r"/>
+  </parameters>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_InitRun" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="if (context.run_id == null || context.run_id.trim().isEmpty()) {&#xA;    context.run_id = &quot;RECON_&quot; + java.time.format.DateTimeFormatter.ofPattern(&quot;yyyyMMdd_HHmmss_SSS&quot;)&#xA;        .withZone(java.time.ZoneOffset.UTC).format(java.time.Instant.now())&#xA;        + &quot;_&quot; + java.util.UUID.randomUUID().toString().substring(0, 8);&#xA;}&#xA;if (context.cutoff_ts == null || context.cutoff_ts.trim().isEmpty()) {&#xA;    context.cutoff_ts = new java.sql.Timestamp(System.currentTimeMillis()).toString();&#xA;}&#xA;globalMap.put(&quot;RECON_RUN_ID&quot;, context.run_id);&#xA;globalMap.put(&quot;RECON_CUTOFF&quot;, context.cutoff_ts);&#xA;System.out.println(&quot;Starting reconciliation run &quot; + context.run_id + &quot; at cutoff &quot; + context.cutoff_ts);&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_host"/>
+    <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_additional_params"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_user"/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.mysql_password"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_ExecuteRecon" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String[] identifiers = {&#xD;&#xA;&#x9;    context.sf_database, context.sf_qtc_storage_schema, context.sf_curated_schema,&#xD;&#xA;&#x9;    context.sf_control_schema, context.sf_exception_schema, context.mysql_database&#xD;&#xA;&#x9;};&#xD;&#xA;&#x9;for (String identifier : identifiers) {&#xD;&#xA;&#x9;    if (identifier == null || !identifier.matches(&quot;[A-Za-z_][A-Za-z0-9_$]*&quot;)) {&#xD;&#xA;&#x9;        throw new IllegalArgumentException(&quot;Unsafe or empty identifier: &quot; + identifier);&#xD;&#xA;&#x9;    }&#xD;&#xA;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;final java.sql.Connection mysql = (java.sql.Connection) globalMap.get(&quot;conn_tMysqlConnection_1&quot;);&#xD;&#xA;&#x9;final java.sql.Connection sf = (java.sql.Connection) globalMap.get(&quot;conn_tDBConnection_1&quot;);&#xD;&#xA;&#x9;if (mysql == null || sf == null) throw new IllegalStateException(&quot;MySQL or Snowflake connection is unavailable.&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;// Quote every identifier to preserve exact case. The raw/storage schema and its&#xD;&#xA;&#x9;// tables/columns were created case-sensitive lowercase by the ingestion pipeline&#xD;&#xA;&#x9;// (e.g. &quot;mysql_to_snowflake_demo_storage&quot;.&quot;customer&quot;.&quot;customer_id&quot;), so every&#xD;&#xA;&#x9;// reference into that schema must be quoted lowercase or Snowflake folds it to&#xD;&#xA;&#x9;// uppercase and the object &quot;doesn't exist&quot;.&#xD;&#xA;&#x9;final java.util.function.Function&lt;String, String> q = s -> &quot;\&quot;&quot; + s.replace(&quot;\&quot;&quot;, &quot;\&quot;\&quot;&quot;) + &quot;\&quot;&quot;;&#xD;&#xA;&#xD;&#xA;&#x9;final String db = q.apply(context.sf_database);&#xD;&#xA;&#x9;final String raw = db + &quot;.&quot; + q.apply(context.sf_qtc_storage_schema);&#xD;&#xA;&#x9;final String curated = db + &quot;.&quot; + context.sf_curated_schema;&#xD;&#xA;&#x9;final String control = db + &quot;.&quot; + context.sf_control_schema;&#xD;&#xA;&#x9;final String exception = db + &quot;.&quot; + context.sf_exception_schema;&#xD;&#xA;&#x9;final java.math.BigDecimal tolerance = new java.math.BigDecimal(context.amount_tolerance);&#xD;&#xA;&#x9;final String runId = context.run_id;&#xD;&#xA;&#x9;final String cutoff = context.cutoff_ts;&#xD;&#xA;&#x9;int failedControls = 0;&#xD;&#xA;&#xD;&#xA;&#x9;// Raw (source) table references - lowercase quoted, matching the DQ job's convention.&#xD;&#xA;&#x9;final String rawCustomer = raw + &quot;.\&quot;customer\&quot;&quot;;&#xD;&#xA;&#x9;final String rawOrders   = raw + &quot;.\&quot;orders\&quot;&quot;;&#xD;&#xA;&#x9;final String rawPayments = raw + &quot;.\&quot;payments\&quot;&quot;;&#xD;&#xA;&#xD;&#xA;&#x9;class ReconHelper {&#xD;&#xA;&#x9;    java.math.BigDecimal scalar(java.sql.Connection conn, String sql, String cutoffValue) throws Exception {&#xD;&#xA;&#x9;        try (java.sql.PreparedStatement ps = conn.prepareStatement(sql)) {&#xD;&#xA;&#x9;            if (cutoffValue != null) ps.setString(1, cutoffValue);&#xD;&#xA;&#x9;            try (java.sql.ResultSet rs = ps.executeQuery()) {&#xD;&#xA;&#x9;                if (!rs.next()) return java.math.BigDecimal.ZERO;&#xD;&#xA;&#x9;                java.math.BigDecimal value = rs.getBigDecimal(1);&#xD;&#xA;&#x9;                return value == null ? java.math.BigDecimal.ZERO : value;&#xD;&#xA;&#x9;            }&#xD;&#xA;&#x9;        }&#xD;&#xA;&#x9;    }&#xD;&#xA;&#x9;    java.util.Set&lt;String> keys(java.sql.Connection conn, String sql, String cutoffValue) throws Exception {&#xD;&#xA;&#x9;        java.util.Set&lt;String> values = new java.util.HashSet&lt;String>();&#xD;&#xA;&#x9;        try (java.sql.PreparedStatement ps = conn.prepareStatement(sql)) {&#xD;&#xA;&#x9;            ps.setString(1, cutoffValue);&#xD;&#xA;&#x9;            try (java.sql.ResultSet rs = ps.executeQuery()) {&#xD;&#xA;&#x9;                while (rs.next()) values.add(String.valueOf(rs.getObject(1)));&#xD;&#xA;&#x9;            }&#xD;&#xA;&#x9;        }&#xD;&#xA;&#x9;        return values;&#xD;&#xA;&#x9;    }&#xD;&#xA;&#x9;    String status(java.math.BigDecimal sourceValue, java.math.BigDecimal targetValue, java.math.BigDecimal allowed) {&#xD;&#xA;&#x9;        return sourceValue.subtract(targetValue).abs().compareTo(allowed) &lt;= 0 ? &quot;PASSED&quot; : &quot;FAILED&quot;;&#xD;&#xA;&#x9;    }&#xD;&#xA;&#x9;    void add(String controlName, String entity, String severity, java.math.BigDecimal sourceValue,&#xD;&#xA;&#x9;             java.math.BigDecimal targetValue, String status, String detail) throws Exception {&#xD;&#xA;&#x9;        String insert = &quot;INSERT INTO &quot; + control + &quot;.RECONCILIATION_DETAIL (RUN_ID,CONTROL_NAME,ENTITY_NAME,SEVERITY,SOURCE_VALUE,TARGET_VALUE,DIFFERENCE_VALUE,STATUS,DETAIL_TEXT,CREATED_AT) VALUES (?,?,?,?,?,?,?,?,?,CURRENT_TIMESTAMP())&quot;;&#xD;&#xA;&#x9;        try (java.sql.PreparedStatement ps = sf.prepareStatement(insert)) {&#xD;&#xA;&#x9;            ps.setString(1, runId); ps.setString(2, controlName); ps.setString(3, entity); ps.setString(4, severity);&#xD;&#xA;&#x9;            ps.setBigDecimal(5, sourceValue); ps.setBigDecimal(6, targetValue);&#xD;&#xA;&#x9;            ps.setBigDecimal(7, sourceValue.subtract(targetValue)); ps.setString(8, status); ps.setString(9, detail);&#xD;&#xA;&#x9;            ps.executeUpdate();&#xD;&#xA;&#x9;        }&#xD;&#xA;&#x9;    }&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;ReconHelper h = new ReconHelper();&#xD;&#xA;&#xD;&#xA;&#x9;sf.setAutoCommit(false);&#xD;&#xA;&#x9;try (java.sql.Statement st = sf.createStatement()) {&#xD;&#xA;&#x9;    st.execute(&quot;CREATE SCHEMA IF NOT EXISTS &quot; + control);&#xD;&#xA;&#x9;    st.execute(&quot;CREATE TABLE IF NOT EXISTS &quot; + control + &quot;.RECONCILIATION_RUN (RUN_ID VARCHAR, DQ_RUN_ID VARCHAR, CUTOFF_TS TIMESTAMP_NTZ, ENVIRONMENT VARCHAR, START_TS TIMESTAMP_LTZ, END_TS TIMESTAMP_LTZ, STATUS VARCHAR, TOTAL_CONTROLS NUMBER, FAILED_CONTROLS NUMBER, WARNING_CONTROLS NUMBER, ERROR_MESSAGE VARCHAR)&quot;);&#xD;&#xA;&#x9;    st.execute(&quot;CREATE TABLE IF NOT EXISTS &quot; + control + &quot;.RECONCILIATION_DETAIL (RUN_ID VARCHAR, CONTROL_NAME VARCHAR, ENTITY_NAME VARCHAR, SEVERITY VARCHAR, SOURCE_VALUE NUMBER(38,4), TARGET_VALUE NUMBER(38,4), DIFFERENCE_VALUE NUMBER(38,4), STATUS VARCHAR, DETAIL_TEXT VARCHAR, CREATED_AT TIMESTAMP_LTZ)&quot;);&#xD;&#xA;&#x9;    st.execute(&quot;CREATE OR REPLACE VIEW &quot; + control + &quot;.RECONCILIATION_SUMMARY AS SELECT RUN_ID,ENTITY_NAME,COUNT(*) CONTROL_COUNT,COUNT_IF(STATUS='FAILED') FAILED_COUNT,COUNT_IF(STATUS='WARNING') WARNING_COUNT,MAX(CREATED_AT) LAST_CHECK_TS FROM &quot; + control + &quot;.RECONCILIATION_DETAIL GROUP BY RUN_ID,ENTITY_NAME&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;    if (context.dq_run_id == null || context.dq_run_id.trim().isEmpty()) {&#xD;&#xA;&#x9;        try (java.sql.ResultSet rs = st.executeQuery(&quot;SELECT RUN_ID FROM &quot; + control + &quot;.DQ_RUN WHERE STATUS LIKE 'COMPLETED%' ORDER BY END_TS DESC LIMIT 1&quot;)) {&#xD;&#xA;&#x9;            if (rs.next()) context.dq_run_id = rs.getString(1);&#xD;&#xA;&#x9;        }&#xD;&#xA;&#x9;    }&#xD;&#xA;&#x9;    if (context.dq_run_id == null || context.dq_run_id.trim().isEmpty()) {&#xD;&#xA;&#x9;        throw new IllegalStateException(&quot;No completed DQ run was found. Run MJ_QTC_STORAGE_TO_CURATED_DQ first or supply dq_run_id.&quot;);&#xD;&#xA;&#x9;    }&#xD;&#xA;&#xD;&#xA;&#x9;    st.executeUpdate(&quot;DELETE FROM &quot; + control + &quot;.RECONCILIATION_DETAIL WHERE RUN_ID='&quot; + runId.replace(&quot;'&quot;, &quot;''&quot;) + &quot;'&quot;);&#xD;&#xA;&#x9;    st.executeUpdate(&quot;DELETE FROM &quot; + control + &quot;.RECONCILIATION_RUN WHERE RUN_ID='&quot; + runId.replace(&quot;'&quot;, &quot;''&quot;) + &quot;'&quot;);&#xD;&#xA;&#x9;    try (java.sql.PreparedStatement ps = sf.prepareStatement(&quot;INSERT INTO &quot; + control + &quot;.RECONCILIATION_RUN (RUN_ID,DQ_RUN_ID,CUTOFF_TS,ENVIRONMENT,START_TS,STATUS) SELECT ?,?,TO_TIMESTAMP_NTZ(?),?,CURRENT_TIMESTAMP(),'RUNNING'&quot;)) {&#xD;&#xA;&#x9;        ps.setString(1, runId); ps.setString(2, context.dq_run_id); ps.setString(3, cutoff); ps.setString(4, context.environment); ps.executeUpdate();&#xD;&#xA;&#x9;    }&#xD;&#xA;&#xD;&#xA;&#x9;    // ===================== CUSTOMER =====================&#xD;&#xA;&#x9;    {&#xD;&#xA;&#x9;        java.math.BigDecimal sourceCount = h.scalar(mysql, &quot;SELECT COUNT(*) FROM customer WHERE updated_at &lt;= ?&quot;, cutoff);&#xD;&#xA;&#x9;        java.math.BigDecimal rawCount = h.scalar(sf, &quot;SELECT COUNT(*) FROM &quot; + rawCustomer + &quot; WHERE \&quot;updated_at\&quot; &lt;= TO_TIMESTAMP_NTZ(?)&quot;, cutoff);&#xD;&#xA;&#x9;        String status = h.status(sourceCount, rawCount, java.math.BigDecimal.ZERO);&#xD;&#xA;&#x9;        h.add(&quot;SOURCE_TO_QTC_STORAGE_ROW_COUNT&quot;, &quot;CUSTOMER&quot;, &quot;CRITICAL&quot;, sourceCount, rawCount, status, &quot;MySQL eligible rows versus the QTC Snowflake Storage/current table at the common cutoff&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;        java.math.BigDecimal curatedCount = h.scalar(sf, &quot;SELECT COUNT(*) FROM &quot; + curated + &quot;.CUSTOMER WHERE UPDATED_AT &lt;= TO_TIMESTAMP_NTZ(?)&quot;, cutoff);&#xD;&#xA;&#x9;        java.math.BigDecimal rejectCount;&#xD;&#xA;&#x9;        try (java.sql.PreparedStatement ps = sf.prepareStatement(&quot;SELECT COUNT(DISTINCT RECORD_KEY) FROM &quot; + exception + &quot;.DQ_EXCEPTION WHERE RUN_ID=? AND ENTITY_NAME=? AND SEVERITY IN ('CRITICAL','MAJOR')&quot;)) {&#xD;&#xA;&#x9;            ps.setString(1, context.dq_run_id); ps.setString(2, &quot;CUSTOMER&quot;);&#xD;&#xA;&#x9;            try (java.sql.ResultSet rs = ps.executeQuery()) { rs.next(); rejectCount = rs.getBigDecimal(1); if (rejectCount == null) rejectCount = java.math.BigDecimal.ZERO; }&#xD;&#xA;&#x9;        }&#xD;&#xA;&#x9;        java.math.BigDecimal accounted = curatedCount.add(rejectCount);&#xD;&#xA;&#x9;        status = h.status(rawCount, accounted, java.math.BigDecimal.ZERO);&#xD;&#xA;&#x9;        h.add(&quot;QTC_STORAGE_TO_CURATED_PLUS_REJECTS&quot;, &quot;CUSTOMER&quot;, &quot;CRITICAL&quot;, rawCount, accounted, status, &quot;QTC Storage rows must equal CURATED rows plus distinct blocking rejected keys&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;        java.util.Set&lt;String> sourceKeys = h.keys(mysql, &quot;SELECT customer_id FROM customer WHERE updated_at &lt;= ?&quot;, cutoff);&#xD;&#xA;&#x9;        java.util.Set&lt;String> rawKeys = h.keys(sf, &quot;SELECT \&quot;customer_id\&quot; FROM &quot; + rawCustomer + &quot; WHERE \&quot;updated_at\&quot; &lt;= TO_TIMESTAMP_NTZ(?)&quot;, cutoff);&#xD;&#xA;&#x9;        java.util.Set&lt;String> missing = new java.util.HashSet&lt;String>(sourceKeys); missing.removeAll(rawKeys);&#xD;&#xA;&#x9;        java.util.Set&lt;String> extra = new java.util.HashSet&lt;String>(rawKeys); extra.removeAll(sourceKeys);&#xD;&#xA;&#x9;        h.add(&quot;MISSING_KEYS_IN_QTC_STORAGE&quot;, &quot;CUSTOMER&quot;, &quot;CRITICAL&quot;, java.math.BigDecimal.ZERO, new java.math.BigDecimal(missing.size()), missing.isEmpty()?&quot;PASSED&quot;:&quot;FAILED&quot;, &quot;Keys present in MySQL but absent from QTC Storage&quot;);&#xD;&#xA;&#x9;        h.add(&quot;EXTRA_KEYS_IN_QTC_STORAGE&quot;, &quot;CUSTOMER&quot;, &quot;CRITICAL&quot;, java.math.BigDecimal.ZERO, new java.math.BigDecimal(extra.size()), extra.isEmpty()?&quot;PASSED&quot;:&quot;FAILED&quot;, &quot;Keys present in QTC Storage but absent from MySQL at cutoff&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;        java.math.BigDecimal duplicates = h.scalar(sf, &quot;SELECT COALESCE(SUM(CNT-1),0) FROM (SELECT COUNT(*) CNT FROM &quot; + rawCustomer + &quot; WHERE \&quot;updated_at\&quot; &lt;= TO_TIMESTAMP_NTZ(?) GROUP BY \&quot;customer_id\&quot; HAVING COUNT(*)>1)&quot;, cutoff);&#xD;&#xA;&#x9;        h.add(&quot;QTC_STORAGE_DUPLICATE_KEYS&quot;, &quot;CUSTOMER&quot;, &quot;CRITICAL&quot;, java.math.BigDecimal.ZERO, duplicates, duplicates.compareTo(java.math.BigDecimal.ZERO)==0?&quot;PASSED&quot;:&quot;FAILED&quot;, &quot;Duplicate business-key rows in QTC Storage&quot;);&#xD;&#xA;&#x9;        java.math.BigDecimal nullKeys = h.scalar(sf, &quot;SELECT COUNT(*) FROM &quot; + rawCustomer + &quot; WHERE \&quot;updated_at\&quot; &lt;= TO_TIMESTAMP_NTZ(?) AND \&quot;customer_id\&quot; IS NULL&quot;, cutoff);&#xD;&#xA;&#x9;        h.add(&quot;QTC_STORAGE_NULL_KEYS&quot;, &quot;CUSTOMER&quot;, &quot;CRITICAL&quot;, java.math.BigDecimal.ZERO, nullKeys, nullKeys.compareTo(java.math.BigDecimal.ZERO)==0?&quot;PASSED&quot;:&quot;FAILED&quot;, &quot;Null primary keys in QTC Storage&quot;);&#xD;&#xA;&#x9;    }&#xD;&#xA;&#xD;&#xA;&#x9;    // ===================== ORDERS =====================&#xD;&#xA;&#x9;    {&#xD;&#xA;&#x9;        java.math.BigDecimal sourceCount = h.scalar(mysql, &quot;SELECT COUNT(*) FROM orders WHERE updated_at &lt;= ?&quot;, cutoff);&#xD;&#xA;&#x9;        java.math.BigDecimal rawCount = h.scalar(sf, &quot;SELECT COUNT(*) FROM &quot; + rawOrders + &quot; WHERE \&quot;updated_at\&quot; &lt;= TO_TIMESTAMP_NTZ(?)&quot;, cutoff);&#xD;&#xA;&#x9;        String status = h.status(sourceCount, rawCount, java.math.BigDecimal.ZERO);&#xD;&#xA;&#x9;        h.add(&quot;SOURCE_TO_QTC_STORAGE_ROW_COUNT&quot;, &quot;ORDERS&quot;, &quot;CRITICAL&quot;, sourceCount, rawCount, status, &quot;MySQL eligible rows versus the QTC Snowflake Storage/current table at the common cutoff&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;        java.math.BigDecimal curatedCount = h.scalar(sf, &quot;SELECT COUNT(*) FROM &quot; + curated + &quot;.ORDERS WHERE UPDATED_AT &lt;= TO_TIMESTAMP_NTZ(?)&quot;, cutoff);&#xD;&#xA;&#x9;        java.math.BigDecimal rejectCount;&#xD;&#xA;&#x9;        try (java.sql.PreparedStatement ps = sf.prepareStatement(&quot;SELECT COUNT(DISTINCT RECORD_KEY) FROM &quot; + exception + &quot;.DQ_EXCEPTION WHERE RUN_ID=? AND ENTITY_NAME=? AND SEVERITY IN ('CRITICAL','MAJOR')&quot;)) {&#xD;&#xA;&#x9;            ps.setString(1, context.dq_run_id); ps.setString(2, &quot;ORDERS&quot;);&#xD;&#xA;&#x9;            try (java.sql.ResultSet rs = ps.executeQuery()) { rs.next(); rejectCount = rs.getBigDecimal(1); if (rejectCount == null) rejectCount = java.math.BigDecimal.ZERO; }&#xD;&#xA;&#x9;        }&#xD;&#xA;&#x9;        java.math.BigDecimal accounted = curatedCount.add(rejectCount);&#xD;&#xA;&#x9;        status = h.status(rawCount, accounted, java.math.BigDecimal.ZERO);&#xD;&#xA;&#x9;        h.add(&quot;QTC_STORAGE_TO_CURATED_PLUS_REJECTS&quot;, &quot;ORDERS&quot;, &quot;CRITICAL&quot;, rawCount, accounted, status, &quot;QTC Storage rows must equal CURATED rows plus distinct blocking rejected keys&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;        java.util.Set&lt;String> sourceKeys = h.keys(mysql, &quot;SELECT order_id FROM orders WHERE updated_at &lt;= ?&quot;, cutoff);&#xD;&#xA;&#x9;        java.util.Set&lt;String> rawKeys = h.keys(sf, &quot;SELECT \&quot;order_id\&quot; FROM &quot; + rawOrders + &quot; WHERE \&quot;updated_at\&quot; &lt;= TO_TIMESTAMP_NTZ(?)&quot;, cutoff);&#xD;&#xA;&#x9;        java.util.Set&lt;String> missing = new java.util.HashSet&lt;String>(sourceKeys); missing.removeAll(rawKeys);&#xD;&#xA;&#x9;        java.util.Set&lt;String> extra = new java.util.HashSet&lt;String>(rawKeys); extra.removeAll(sourceKeys);&#xD;&#xA;&#x9;        h.add(&quot;MISSING_KEYS_IN_QTC_STORAGE&quot;, &quot;ORDERS&quot;, &quot;CRITICAL&quot;, java.math.BigDecimal.ZERO, new java.math.BigDecimal(missing.size()), missing.isEmpty()?&quot;PASSED&quot;:&quot;FAILED&quot;, &quot;Keys present in MySQL but absent from QTC Storage&quot;);&#xD;&#xA;&#x9;        h.add(&quot;EXTRA_KEYS_IN_QTC_STORAGE&quot;, &quot;ORDERS&quot;, &quot;CRITICAL&quot;, java.math.BigDecimal.ZERO, new java.math.BigDecimal(extra.size()), extra.isEmpty()?&quot;PASSED&quot;:&quot;FAILED&quot;, &quot;Keys present in QTC Storage but absent from MySQL at cutoff&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;        java.math.BigDecimal duplicates = h.scalar(sf, &quot;SELECT COALESCE(SUM(CNT-1),0) FROM (SELECT COUNT(*) CNT FROM &quot; + rawOrders + &quot; WHERE \&quot;updated_at\&quot; &lt;= TO_TIMESTAMP_NTZ(?) GROUP BY \&quot;order_id\&quot; HAVING COUNT(*)>1)&quot;, cutoff);&#xD;&#xA;&#x9;        h.add(&quot;QTC_STORAGE_DUPLICATE_KEYS&quot;, &quot;ORDERS&quot;, &quot;CRITICAL&quot;, java.math.BigDecimal.ZERO, duplicates, duplicates.compareTo(java.math.BigDecimal.ZERO)==0?&quot;PASSED&quot;:&quot;FAILED&quot;, &quot;Duplicate business-key rows in QTC Storage&quot;);&#xD;&#xA;&#x9;        java.math.BigDecimal nullKeys = h.scalar(sf, &quot;SELECT COUNT(*) FROM &quot; + rawOrders + &quot; WHERE \&quot;updated_at\&quot; &lt;= TO_TIMESTAMP_NTZ(?) AND \&quot;order_id\&quot; IS NULL&quot;, cutoff);&#xD;&#xA;&#x9;        h.add(&quot;QTC_STORAGE_NULL_KEYS&quot;, &quot;ORDERS&quot;, &quot;CRITICAL&quot;, java.math.BigDecimal.ZERO, nullKeys, nullKeys.compareTo(java.math.BigDecimal.ZERO)==0?&quot;PASSED&quot;:&quot;FAILED&quot;, &quot;Null primary keys in QTC Storage&quot;);&#xD;&#xA;&#x9;    }&#xD;&#xA;&#xD;&#xA;&#x9;    // ===================== PAYMENTS =====================&#xD;&#xA;&#x9;    {&#xD;&#xA;&#x9;        java.math.BigDecimal sourceCount = h.scalar(mysql, &quot;SELECT COUNT(*) FROM payments WHERE updated_at &lt;= ?&quot;, cutoff);&#xD;&#xA;&#x9;        java.math.BigDecimal rawCount = h.scalar(sf, &quot;SELECT COUNT(*) FROM &quot; + rawPayments + &quot; WHERE \&quot;updated_at\&quot; &lt;= TO_TIMESTAMP_NTZ(?)&quot;, cutoff);&#xD;&#xA;&#x9;        String status = h.status(sourceCount, rawCount, java.math.BigDecimal.ZERO);&#xD;&#xA;&#x9;        h.add(&quot;SOURCE_TO_QTC_STORAGE_ROW_COUNT&quot;, &quot;PAYMENTS&quot;, &quot;CRITICAL&quot;, sourceCount, rawCount, status, &quot;MySQL eligible rows versus the QTC Snowflake Storage/current table at the common cutoff&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;        java.math.BigDecimal curatedCount = h.scalar(sf, &quot;SELECT COUNT(*) FROM &quot; + curated + &quot;.PAYMENTS WHERE UPDATED_AT &lt;= TO_TIMESTAMP_NTZ(?)&quot;, cutoff);&#xD;&#xA;&#x9;        java.math.BigDecimal rejectCount;&#xD;&#xA;&#x9;        try (java.sql.PreparedStatement ps = sf.prepareStatement(&quot;SELECT COUNT(DISTINCT RECORD_KEY) FROM &quot; + exception + &quot;.DQ_EXCEPTION WHERE RUN_ID=? AND ENTITY_NAME=? AND SEVERITY IN ('CRITICAL','MAJOR')&quot;)) {&#xD;&#xA;&#x9;            ps.setString(1, context.dq_run_id); ps.setString(2, &quot;PAYMENTS&quot;);&#xD;&#xA;&#x9;            try (java.sql.ResultSet rs = ps.executeQuery()) { rs.next(); rejectCount = rs.getBigDecimal(1); if (rejectCount == null) rejectCount = java.math.BigDecimal.ZERO; }&#xD;&#xA;&#x9;        }&#xD;&#xA;&#x9;        java.math.BigDecimal accounted = curatedCount.add(rejectCount);&#xD;&#xA;&#x9;        status = h.status(rawCount, accounted, java.math.BigDecimal.ZERO);&#xD;&#xA;&#x9;        h.add(&quot;QTC_STORAGE_TO_CURATED_PLUS_REJECTS&quot;, &quot;PAYMENTS&quot;, &quot;CRITICAL&quot;, rawCount, accounted, status, &quot;QTC Storage rows must equal CURATED rows plus distinct blocking rejected keys&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;        java.util.Set&lt;String> sourceKeys = h.keys(mysql, &quot;SELECT payment_id FROM payments WHERE updated_at &lt;= ?&quot;, cutoff);&#xD;&#xA;&#x9;        java.util.Set&lt;String> rawKeys = h.keys(sf, &quot;SELECT \&quot;payment_id\&quot; FROM &quot; + rawPayments + &quot; WHERE \&quot;updated_at\&quot; &lt;= TO_TIMESTAMP_NTZ(?)&quot;, cutoff);&#xD;&#xA;&#x9;        java.util.Set&lt;String> missing = new java.util.HashSet&lt;String>(sourceKeys); missing.removeAll(rawKeys);&#xD;&#xA;&#x9;        java.util.Set&lt;String> extra = new java.util.HashSet&lt;String>(rawKeys); extra.removeAll(sourceKeys);&#xD;&#xA;&#x9;        h.add(&quot;MISSING_KEYS_IN_QTC_STORAGE&quot;, &quot;PAYMENTS&quot;, &quot;CRITICAL&quot;, java.math.BigDecimal.ZERO, new java.math.BigDecimal(missing.size()), missing.isEmpty()?&quot;PASSED&quot;:&quot;FAILED&quot;, &quot;Keys present in MySQL but absent from QTC Storage&quot;);&#xD;&#xA;&#x9;        h.add(&quot;EXTRA_KEYS_IN_QTC_STORAGE&quot;, &quot;PAYMENTS&quot;, &quot;CRITICAL&quot;, java.math.BigDecimal.ZERO, new java.math.BigDecimal(extra.size()), extra.isEmpty()?&quot;PASSED&quot;:&quot;FAILED&quot;, &quot;Keys present in QTC Storage but absent from MySQL at cutoff&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;        java.math.BigDecimal duplicates = h.scalar(sf, &quot;SELECT COALESCE(SUM(CNT-1),0) FROM (SELECT COUNT(*) CNT FROM &quot; + rawPayments + &quot; WHERE \&quot;updated_at\&quot; &lt;= TO_TIMESTAMP_NTZ(?) GROUP BY \&quot;payment_id\&quot; HAVING COUNT(*)>1)&quot;, cutoff);&#xD;&#xA;&#x9;        h.add(&quot;QTC_STORAGE_DUPLICATE_KEYS&quot;, &quot;PAYMENTS&quot;, &quot;CRITICAL&quot;, java.math.BigDecimal.ZERO, duplicates, duplicates.compareTo(java.math.BigDecimal.ZERO)==0?&quot;PASSED&quot;:&quot;FAILED&quot;, &quot;Duplicate business-key rows in QTC Storage&quot;);&#xD;&#xA;&#x9;        java.math.BigDecimal nullKeys = h.scalar(sf, &quot;SELECT COUNT(*) FROM &quot; + rawPayments + &quot; WHERE \&quot;updated_at\&quot; &lt;= TO_TIMESTAMP_NTZ(?) AND \&quot;payment_id\&quot; IS NULL&quot;, cutoff);&#xD;&#xA;&#x9;        h.add(&quot;QTC_STORAGE_NULL_KEYS&quot;, &quot;PAYMENTS&quot;, &quot;CRITICAL&quot;, java.math.BigDecimal.ZERO, nullKeys, nullKeys.compareTo(java.math.BigDecimal.ZERO)==0?&quot;PASSED&quot;:&quot;FAILED&quot;, &quot;Null primary keys in QTC Storage&quot;);&#xD;&#xA;&#x9;    }&#xD;&#xA;&#xD;&#xA;&#x9;    java.math.BigDecimal orphanOrders = h.scalar(sf, &quot;SELECT COUNT(*) FROM &quot; + rawOrders + &quot; O LEFT JOIN &quot; + rawCustomer + &quot; C ON C.\&quot;customer_id\&quot;=O.\&quot;customer_id\&quot; WHERE O.\&quot;updated_at\&quot;&lt;=TO_TIMESTAMP_NTZ(?) AND C.\&quot;customer_id\&quot; IS NULL&quot;, cutoff);&#xD;&#xA;&#x9;    h.add(&quot;ORPHAN_ORDERS&quot;, &quot;ORDERS&quot;, &quot;CRITICAL&quot;, java.math.BigDecimal.ZERO, orphanOrders, orphanOrders.signum()==0?&quot;PASSED&quot;:&quot;FAILED&quot;, &quot;Orders whose CUSTOMER_ID is absent&quot;);&#xD;&#xA;&#x9;    java.math.BigDecimal orphanPayments = h.scalar(sf, &quot;SELECT COUNT(*) FROM &quot; + rawPayments + &quot; P LEFT JOIN &quot; + rawOrders + &quot; O ON O.\&quot;order_id\&quot;=P.\&quot;order_id\&quot; WHERE P.\&quot;updated_at\&quot;&lt;=TO_TIMESTAMP_NTZ(?) AND O.\&quot;order_id\&quot; IS NULL&quot;, cutoff);&#xD;&#xA;&#x9;    h.add(&quot;ORPHAN_PAYMENTS&quot;, &quot;PAYMENTS&quot;, &quot;CRITICAL&quot;, java.math.BigDecimal.ZERO, orphanPayments, orphanPayments.signum()==0?&quot;PASSED&quot;:&quot;FAILED&quot;, &quot;Payments whose ORDER_ID is absent&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;    java.math.BigDecimal mysqlOrderAmount = h.scalar(mysql, &quot;SELECT COALESCE(SUM(order_amount),0) FROM orders WHERE updated_at &lt;= ?&quot;, cutoff);&#xD;&#xA;&#x9;    java.math.BigDecimal sfOrderAmount = h.scalar(sf, &quot;SELECT COALESCE(SUM(\&quot;order_amount\&quot;),0) FROM &quot; + rawOrders + &quot; WHERE \&quot;updated_at\&quot; &lt;= TO_TIMESTAMP_NTZ(?)&quot;, cutoff);&#xD;&#xA;&#x9;    h.add(&quot;ORDER_AMOUNT_TOTAL&quot;, &quot;ORDERS&quot;, &quot;CRITICAL&quot;, mysqlOrderAmount, sfOrderAmount, h.status(mysqlOrderAmount,sfOrderAmount,tolerance), &quot;MySQL versus QTC Storage order total&quot;);&#xD;&#xA;&#x9;    java.math.BigDecimal mysqlPaid = h.scalar(mysql, &quot;SELECT COALESCE(SUM(payment_amount),0) FROM payments WHERE UPPER(payment_status)='SUCCESS' AND updated_at &lt;= ?&quot;, cutoff);&#xD;&#xA;&#x9;    java.math.BigDecimal sfPaid = h.scalar(sf, &quot;SELECT COALESCE(SUM(\&quot;payment_amount\&quot;),0) FROM &quot; + rawPayments + &quot; WHERE UPPER(\&quot;payment_status\&quot;)='SUCCESS' AND \&quot;updated_at\&quot; &lt;= TO_TIMESTAMP_NTZ(?)&quot;, cutoff);&#xD;&#xA;&#x9;    h.add(&quot;SUCCESS_PAYMENT_TOTAL&quot;, &quot;PAYMENTS&quot;, &quot;CRITICAL&quot;, mysqlPaid, sfPaid, h.status(mysqlPaid,sfPaid,tolerance), &quot;MySQL versus QTC Storage successful-payment total&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;    java.math.BigDecimal overpayments = h.scalar(sf, &quot;SELECT COUNT(*) FROM (SELECT O.ORDER_ID FROM &quot; + curated + &quot;.ORDERS O JOIN &quot; + curated + &quot;.PAYMENTS P ON P.ORDER_ID=O.ORDER_ID AND UPPER(P.PAYMENT_STATUS)='SUCCESS' WHERE O.UPDATED_AT&lt;=TO_TIMESTAMP_NTZ(?) GROUP BY O.ORDER_ID HAVING SUM(P.PAYMENT_AMOUNT)>MAX(O.ORDER_AMOUNT)+&quot; + tolerance.toPlainString() + &quot;)&quot;, cutoff);&#xD;&#xA;&#x9;    h.add(&quot;OVERPAID_ORDERS&quot;, &quot;ORDER_PAYMENT_BALANCE&quot;, &quot;WARNING&quot;, java.math.BigDecimal.ZERO, overpayments, overpayments.signum()==0?&quot;PASSED&quot;:&quot;WARNING&quot;, &quot;Orders where successful payments exceed order amount&quot;);&#xD;&#xA;&#xD;&#xA;&#x9;    java.math.BigDecimal failed = h.scalar(sf, &quot;SELECT COUNT(*) FROM &quot; + control + &quot;.RECONCILIATION_DETAIL WHERE RUN_ID='&quot; + runId.replace(&quot;'&quot;, &quot;''&quot;) + &quot;' AND STATUS='FAILED'&quot;, null);&#xD;&#xA;&#x9;    java.math.BigDecimal warnings = h.scalar(sf, &quot;SELECT COUNT(*) FROM &quot; + control + &quot;.RECONCILIATION_DETAIL WHERE RUN_ID='&quot; + runId.replace(&quot;'&quot;, &quot;''&quot;) + &quot;' AND STATUS='WARNING'&quot;, null);&#xD;&#xA;&#x9;    java.math.BigDecimal total = h.scalar(sf, &quot;SELECT COUNT(*) FROM &quot; + control + &quot;.RECONCILIATION_DETAIL WHERE RUN_ID='&quot; + runId.replace(&quot;'&quot;, &quot;''&quot;) + &quot;'&quot;, null);&#xD;&#xA;&#x9;    failedControls = failed.intValue();&#xD;&#xA;&#x9;    String overall = failed.signum()>0 ? &quot;FAILED&quot; : (warnings.signum()>0 ? &quot;PASSED_WITH_WARNINGS&quot; : &quot;PASSED&quot;);&#xD;&#xA;&#x9;    try (java.sql.PreparedStatement ps = sf.prepareStatement(&quot;UPDATE &quot; + control + &quot;.RECONCILIATION_RUN SET END_TS=CURRENT_TIMESTAMP(),STATUS=?,TOTAL_CONTROLS=?,FAILED_CONTROLS=?,WARNING_CONTROLS=? WHERE RUN_ID=?&quot;)) {&#xD;&#xA;&#x9;        ps.setString(1, overall); ps.setBigDecimal(2,total); ps.setBigDecimal(3,failed); ps.setBigDecimal(4,warnings); ps.setString(5,runId); ps.executeUpdate();&#xD;&#xA;&#x9;    }&#xD;&#xA;&#x9;    sf.commit();&#xD;&#xA;&#x9;    System.out.println(&quot;Reconciliation run &quot; + runId + &quot; completed with status &quot; + overall);&#xD;&#xA;&#x9;} catch (Exception e) {&#xD;&#xA;&#x9;    try { sf.rollback(); } catch (Exception ignored) {}&#xD;&#xA;&#x9;    try {&#xD;&#xA;&#x9;        sf.setAutoCommit(true);&#xD;&#xA;&#x9;        try (java.sql.PreparedStatement ps = sf.prepareStatement(&quot;INSERT INTO &quot; + control + &quot;.RECONCILIATION_RUN (RUN_ID,DQ_RUN_ID,CUTOFF_TS,ENVIRONMENT,START_TS,END_TS,STATUS,ERROR_MESSAGE) SELECT ?,?,TO_TIMESTAMP_NTZ(?),?,CURRENT_TIMESTAMP(),CURRENT_TIMESTAMP(),'ERROR',?&quot;)) {&#xD;&#xA;&#x9;            ps.setString(1,runId); ps.setString(2,context.dq_run_id); ps.setString(3,cutoff); ps.setString(4,context.environment); ps.setString(5,e.getMessage()); ps.executeUpdate();&#xD;&#xA;&#x9;        }&#xD;&#xA;&#x9;    } catch (Exception auditError) {&#xD;&#xA;&#x9;        System.err.println(&quot;Unable to record reconciliation error: &quot; + auditError.getMessage());&#xD;&#xA;&#x9;    }&#xD;&#xA;&#x9;    throw new RuntimeException(&quot;Reconciliation Job failed for run &quot; + runId, e);&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;if (failedControls > 0 &amp;&amp; java.lang.Boolean.TRUE.equals(context.fail_on_recon_error)) {&#xD;&#xA;&#x9;    throw new RuntimeException(&quot;Reconciliation produced &quot; + failedControls + &quot; critical failed controls. See &quot; + control + &quot;.RECONCILIATION_DETAIL for run &quot; + runId);&#xD;&#xA;&#x9;}"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tMysqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlClose_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMysqlConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="SnowflakeClose" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeClose_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dAClose" show="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="configuration.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tSnowflakeClose_1"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+  </node>
+  <node componentName="SnowflakeConnection" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="SnowflakeConnection" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dAConnection" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="1" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Snowflake" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Z4j8AKhAEfGrYqkUV-fn_w"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="conn_tSnowflakeConnection_1"/>
+    <elementParameter field="TEXT" name="configuration.account" value="&quot;MIFUFTZ-XF99458&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.snowflakeAuth.authenticationType" value="BASIC"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.userId" value="&quot;saianudeep40&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.snowflakeAuth.password" value="enc:system.encryption.key.v1:rXeFY2XAewAWlnYjLpomGR2vTQWyX2MCqmEgCN6/oqCKSS9sjjNV7Jeavok="/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.keyAlias" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.oauthTokenEndpoint" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.clientId" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.oauthUsername" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.snowflakeAuth.scope" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.warehouse" value="&quot;QTC_DEMO_WH&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dbSchema" value="&quot;PUBLIC&quot;"/>
+    <elementParameter field="TEXT" name="configuration.database" value="&quot;QTC_DEMO_DB&quot;"/>
+    <elementParameter field="CHECK" name="configuration.shareConnection" value="false"/>
+    <elementParameter field="CHECK" name="configuration.autoCommit" value="true"/>
+    <elementParameter field="TEXT" name="configuration.jdbcParameters" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.loginTimeout" value="15"/>
+    <elementParameter field="TEXT" name="configuration.role" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.jdbcUrlSuffix" value="&quot;.snowflakecomputing.com&quot;"/>
+    <elementParameter field="TECHNICAL" name="configuration.__version" value="-1" show="false"/>
+    <elementParameter field="TEXT" name="___TACOKIT_COMPONENT_PLUGIN_NAME___" value="snowflake" show="false"/>
+    <metadata connector="FLOW" name="tDBConnection_1"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT"/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnComponentOk" lineStyle="1" metaname="tJava_InitRun_to_tMysqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tJava_InitRun" target="tMysqlConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_InitRun_to_tMysqlConnection_1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnComponentOk" lineStyle="1" metaname="tMysqlConnection_1_to_tSnowflakeConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlConnection_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlConnection_1_to_tSnowflakeConnection_1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnComponentOk" lineStyle="1" metaname="tMysqlClose_1_to_tSnowflakeClose_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlClose_1" target="tSnowflakeClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlClose_1_to_tSnowflakeClose_1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnComponentOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tJava_ExecuteRecon">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeConnection_1_to_tJava_ExecuteRecon" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_InitRun">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tMysqlClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_InitRun" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="RECONCILIATION"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_ExecuteRecon" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlClose_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeClose_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+</talendfile:ProcessType>
