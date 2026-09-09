@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_ewVGkIEMEfGuP_unMQfsXg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_ewVGkYEMEfGuP_unMQfsXg" comment="" name="PostgreSQL_Connection_Login" prompt="PostgreSQL_Connection_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+  <contextParameter xmi:id="_ewVGkoEMEfGuP_unMQfsXg" comment="" name="PostgreSQL_Connection_Database" prompt="PostgreSQL_Connection_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+  <contextParameter xmi:id="_ewVGk4EMEfGuP_unMQfsXg" comment="" name="PostgreSQL_Connection_Password" prompt="PostgreSQL_Connection_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:uoSbfZXx7KV/xERKwGfe3Pkh0wqQJnRLHG7VNGCST00/bWZAYNIzjldR"/>
+  <contextParameter xmi:id="_ewVGlIEMEfGuP_unMQfsXg" comment="" name="PostgreSQL_Connection_Server" prompt="PostgreSQL_Connection_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="13.200.86.168"/>
+  <contextParameter xmi:id="_ewVGlYEMEfGuP_unMQfsXg" comment="" name="PostgreSQL_Connection_AdditionalParams" prompt="PostgreSQL_Connection_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ewVGloEMEfGuP_unMQfsXg" comment="" name="PostgreSQL_Connection_Port" prompt="PostgreSQL_Connection_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+  <contextParameter xmi:id="_ewVGl4EMEfGuP_unMQfsXg" comment="" name="PostgreSQL_Connection_Landing_Schema" prompt="PostgreSQL_Connection_Landing_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="landing"/>
+  <contextParameter xmi:id="_zYA2oIGYEfGuP_unMQfsXg" comment="" name="PostgreSQL_Connection_Staging_Schema" prompt="PostgreSQL_Connection_Staging_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="staging"/>
+  <contextParameter xmi:id="_zYA2oYGYEfGuP_unMQfsXg" comment="" name="PostgreSQL_Connection_DW_Schema" prompt="PostgreSQL_Connection_DW_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dw"/>
+  <contextParameter xmi:id="_zYA2ooGYEfGuP_unMQfsXg" comment="" name="PostgreSQL_Connection_DM_Schema" prompt="PostgreSQL_Connection_DM_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="datamart"/>
+</talendfile:ContextType>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="DEV" xmi:id="_PurjEFQGEeuJgom7eX6COQ">
+    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:vTFncJr/nz8WP3ZgIEqeTeWS015PNr3CzxRfkuZh/X+R" xmi:id="_PurjEVQGEeuJgom7eX6COQ"/>
+    <contextParameter comment="" name="AMC_AdditionalParams" prompt="AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;autoReconnect=TRUE" xmi:id="_PurjElQGEeuJgom7eX6COQ"/>
+    <contextParameter comment="" name="AMC_Server" prompt="AMC_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.1.51.25" xmi:id="_PurjE1QGEeuJgom7eX6COQ"/>
+    <contextParameter comment="" name="AMC_Port" prompt="AMC_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3307" xmi:id="_PurjFFQGEeuJgom7eX6COQ"/>
+    <contextParameter comment="" name="AMC_Database" prompt="AMC_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="AMC" xmi:id="_PurjFVQGEeuJgom7eX6COQ"/>
+    <contextParameter comment="" name="AMC_Login" prompt="AMC_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend" xmi:id="_PurjFlQGEeuJgom7eX6COQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="QA" xmi:id="_nl9kgO0VEeupYZCEXTUFLQ">
+    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:PfirdITNYnj7C9TRsfDguGdgqNIH8jIP03L2aUteaN+v" xmi:id="_nl9kge0VEeupYZCEXTUFLQ"/>
+    <contextParameter comment="" name="AMC_AdditionalParams" prompt="AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;autoReconnect=TRUE" xmi:id="_nl9kgu0VEeupYZCEXTUFLQ"/>
+    <contextParameter comment="" name="AMC_Server" prompt="AMC_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.1.51.25" xmi:id="_nl9kg-0VEeupYZCEXTUFLQ"/>
+    <contextParameter comment="" name="AMC_Port" prompt="AMC_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3307" xmi:id="_nl9khO0VEeupYZCEXTUFLQ"/>
+    <contextParameter comment="" name="AMC_Database" prompt="AMC_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="AMC" xmi:id="_nl9khe0VEeupYZCEXTUFLQ"/>
+    <contextParameter comment="" name="AMC_Login" prompt="AMC_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend" xmi:id="_nl9khu0VEeupYZCEXTUFLQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="PROD" xmi:id="_PurjF1QGEeuJgom7eX6COQ">
+    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:OUrgewDFSo+hd+xAdgM5/DSckH5pGwkfdjR15PbET66C" xmi:id="_PurjGFQGEeuJgom7eX6COQ"/>
+    <contextParameter comment="" name="AMC_AdditionalParams" prompt="AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;autoReconnect=TRUE" xmi:id="_PurjGVQGEeuJgom7eX6COQ"/>
+    <contextParameter comment="" name="AMC_Server" prompt="AMC_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TLDPDB1W16" xmi:id="_PurjGlQGEeuJgom7eX6COQ"/>
+    <contextParameter comment="" name="AMC_Port" prompt="AMC_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3308" xmi:id="_PurjG1QGEeuJgom7eX6COQ"/>
+    <contextParameter comment="" name="AMC_Database" prompt="AMC_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="AMC" xmi:id="_PurjHFQGEeuJgom7eX6COQ"/>
+    <contextParameter comment="" name="AMC_Login" prompt="AMC_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend" xmi:id="_PurjHVQGEeuJgom7eX6COQ"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8bd95610-7b67-46c7-851f-1c31cede62c3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uvkL5VbZ3ve91+lRp0/vxl1z+PmX/eQJ+Uq3X2Sgsl9DWhGEucI9IqnIpWm+vQJuPBs+ovDl1jZr&#13;
+AX9ld5hNQA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9b82524f-7286-43f8-99a8-5e11c4fd9bd7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hB6dYn15NUeWc7M/9vdN46D59G00RxXXeX6TPFiGwrUCVugM4scndOaCJNN7N9brdObypwR6bMGb&#13;
+/el+bVrPfw==</DigestValue></Reference></SignedInfo><SignatureValue>Sv91MW+uLIhrGFgp6TUP1Pjk78We3GWe5L4sv5lcUzkAFmwmKe9Jv2STgbTFSbDWRKuukA1ONKaG&#13;
+MjaTYf5Oq/w0wjTtmxZ8Djzw2UrGbea4qZjn7sQMoAAmKH5Cmr14RvTi+BRG3eDTEAQ4cMIJa5GF&#13;
+EpYNdkWhzngKaQsFtLpMGEBxNUFCIb6w+Xx38O0pSNorTr9fnFvc1J7o6N8WiWxPB6RZMxo6Nssa&#13;
++tsleg4kDTa1fqefc1q6SxpWakyMyegIXsZA4qaFOKvL41QOFXDvqV123kRHBePSNWjPbYTTgYyk&#13;
+p04m/c4VR8CfjPFNkwcowSQFoLfbBPj1+Fem4A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9b82524f-7286-43f8-99a8-5e11c4fd9bd7" Target="#_8bd95610-7b67-46c7-851f-1c31cede62c3"><Timestamp>2024-02-15 11:46:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

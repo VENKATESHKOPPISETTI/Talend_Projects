@@ -1,0 +1,69 @@
+{
+  "itemId" : "_CzAYcEh8Ee6TXdlm8cjMOA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_4UceEEbqEe60FaOPyKoaUg",
+    "parameterList" : [ {
+      "id" : "_Xp3wEUrhEe6FwKgKG9hdZw",
+      "name" : "end_time"
+    }, {
+      "id" : "_Xp3wG0rhEe6FwKgKG9hdZw",
+      "name" : "error_msg"
+    }, {
+      "id" : "_Xp3wEkrhEe6FwKgKG9hdZw",
+      "name" : "exec_key"
+    }, {
+      "id" : "_Xp3wE0rhEe6FwKgKG9hdZw",
+      "name" : "job_name"
+    }, {
+      "id" : "_Xp3wFErhEe6FwKgKG9hdZw",
+      "name" : "job_pid"
+    }, {
+      "id" : "_Xp3wFUrhEe6FwKgKG9hdZw",
+      "name" : "job_status"
+    }, {
+      "id" : "_Xp3wFkrhEe6FwKgKG9hdZw",
+      "name" : "lkp_cnt"
+    }, {
+      "id" : "_Xp3wHErhEe6FwKgKG9hdZw",
+      "name" : "msg"
+    }, {
+      "id" : "_Xp3wF0rhEe6FwKgKG9hdZw",
+      "name" : "rej_cnt"
+    }, {
+      "id" : "_Xp3wGErhEe6FwKgKG9hdZw",
+      "name" : "src_cnt"
+    }, {
+      "id" : "_Xp3wGkrhEe6FwKgKG9hdZw",
+      "name" : "start_time"
+    }, {
+      "id" : "_Xp3wGUrhEe6FwKgKG9hdZw",
+      "name" : "tgt_cnt"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_-fauwEJZEe6Ie8ymgmmwnQ",
+    "parameterList" : [ {
+      "id" : "_tIS1dUJaEe6Ie8ymgmmwnQ",
+      "name" : "SQLServer_connection_AdditionalParams"
+    }, {
+      "id" : "_tIS1cUJaEe6Ie8ymgmmwnQ",
+      "name" : "SQLServer_connection_Database"
+    }, {
+      "id" : "_tIS1ckJaEe6Ie8ymgmmwnQ",
+      "name" : "SQLServer_connection_Login"
+    }, {
+      "id" : "_tIS1dEJaEe6Ie8ymgmmwnQ",
+      "name" : "SQLServer_connection_Password"
+    }, {
+      "id" : "_tIS1c0JaEe6Ie8ymgmmwnQ",
+      "name" : "SQLServer_connection_Port"
+    }, {
+      "id" : "_2No8IEZGEe6qH4IaKQhX0g",
+      "name" : "SQLServer_connection_Schema"
+    }, {
+      "id" : "_tIS1cEJaEe6Ie8ymgmmwnQ",
+      "name" : "SQLServer_connection_Server"
+    } ]
+  } ]
+}

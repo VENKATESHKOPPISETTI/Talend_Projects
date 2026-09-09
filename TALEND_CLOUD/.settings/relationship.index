@@ -133,6 +133,33 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_CzAYcEh8Ee6TXdlm8cjMOA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_-fauwEJZEe6Ie8ymgmmwnQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_4UceEEbqEe60FaOPyKoaUg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "TALEND_BIGDATA:__tST4EbqEe60FaOPyKoaUg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_6BZ2gEbnEe60FaOPyKoaUg",
+    "version" : "Latest",
+    "type" : "joblet"
+  }, {
+    "id" : "r",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_D-m9MIfPEe2Hj8KJp_95ng",
     "version" : "0.1",
     "type" : "job"

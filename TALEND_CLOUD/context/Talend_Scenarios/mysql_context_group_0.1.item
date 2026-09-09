@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_qFceMJAnEe6QEumtqDpUBw">
+    <contextParameter comment="" name="Mysql_connection_Server" prompt="Mysql_connection_Server?" promptNeeded="false" type="id_String" value="localhost" xmi:id="_qFceMZAnEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_Port" prompt="Mysql_connection_Port?" promptNeeded="false" type="id_String" value="3306" xmi:id="_qFceMpAnEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_source_Database" prompt="Mysql_connection_source_Database?" promptNeeded="false" type="id_String" value="talend" xmi:id="_qFceM5AnEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_Login" prompt="Mysql_connection_Login?" promptNeeded="false" type="id_String" value="root" xmi:id="_qFceNJAnEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_Password" prompt="Mysql_connection_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:vQHIgNjSuhYJoQRXoFBPamoWfGNMTBgdR5ztDFD7KETo" xmi:id="_qFceNZAnEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_AdditionalParams" prompt="Mysql_connection_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true" xmi:id="_qFceNpAnEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_target_Database" prompt="Mysql_connection_target_Database?" promptNeeded="false" type="id_String" value="sys" xmi:id="_Xu1y8JAqEe6QEumtqDpUBw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_dHM-wJAqEe6QEumtqDpUBw">
+    <contextParameter comment="" name="Mysql_connection_Server" prompt="Mysql_connection_Server?" promptNeeded="false" type="id_String" value="localhost" xmi:id="_dHM-wZAqEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_Port" prompt="Mysql_connection_Port?" promptNeeded="false" type="id_String" value="3306" xmi:id="_dHM-wpAqEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_source_Database" prompt="Mysql_connection_source_Database?" promptNeeded="false" type="id_String" value="talend" xmi:id="_dHM-w5AqEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_Login" prompt="Mysql_connection_Login?" promptNeeded="false" type="id_String" value="root" xmi:id="_dHM-xJAqEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_Password" prompt="Mysql_connection_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:df3JnDdfzzjchNELmIUa/ccs48h3nXQqh0p4x/p/GtHT" xmi:id="_dHM-xZAqEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_AdditionalParams" prompt="Mysql_connection_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true" xmi:id="_dHM-xpAqEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_target_Database" prompt="Mysql_connection_target_Database?" promptNeeded="false" type="id_String" value="sys" xmi:id="_dHM-x5AqEe6QEumtqDpUBw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="QA" xmi:id="_dHM-yJAqEe6QEumtqDpUBw">
+    <contextParameter comment="" name="Mysql_connection_Server" prompt="Mysql_connection_Server?" promptNeeded="false" type="id_String" value="localhost" xmi:id="_dHM-yZAqEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_Port" prompt="Mysql_connection_Port?" promptNeeded="false" type="id_String" value="3306" xmi:id="_dHM-ypAqEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_source_Database" prompt="Mysql_connection_source_Database?" promptNeeded="false" type="id_String" value="talend" xmi:id="_dHM-y5AqEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_Login" prompt="Mysql_connection_Login?" promptNeeded="false" type="id_String" value="root" xmi:id="_dHM-zJAqEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_Password" prompt="Mysql_connection_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:A9lqoWm/EjczFCDHK2VqsT4N0A18N2Nid1m1X/NGw6JW" xmi:id="_dHM-zZAqEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_AdditionalParams" prompt="Mysql_connection_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true" xmi:id="_dHM-zpAqEe6QEumtqDpUBw"/>
+    <contextParameter comment="" name="Mysql_connection_target_Database" prompt="Mysql_connection_target_Database?" promptNeeded="false" type="id_String" value="sys" xmi:id="_dHM-z5AqEe6QEumtqDpUBw"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_69dcd360-0897-498c-ab8d-682e9a98d22f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Irvy9AgrhO/1TBGgyAmJRgUcQ3fGm2SFI28S5e2gT7vvMaoO23a0r+R6cDd0Ed2UZlxt6WtcdIQ+&#13;
+hGwLizFLdw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_99f7332a-4e0c-4186-80f2-b898de05c644"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wDZ0Smbo7oNBN1ByCy7j2VLmvbAuO5zS2SLr0EoP3brb9dWMY1xKSqSDxdyuhcnAAJIgjdPd8uhe&#13;
+9QObqFd22g==</DigestValue></Reference></SignedInfo><SignatureValue>EambpsK+7e2MWRmOpu+DapsAet6687fyS12gRweXbW0uaod1k7zU2NTiFdNJOMR/fHi8R1alPo4a&#13;
+01E8L7I3A0Lv8+PwCFTyLxhOUOx81N3tFCnxG/rpZMVCH2EQTBXyzUMzC5xtL0t3j1fYEbB+Ee5D&#13;
+h7td+AGEf/JW6G9AbUfZ9ptVv77M3vBpie8415V20yvCiv24avXbVo6UmcLuicsCRCkAtSt5v/xn&#13;
+a6WWx4PkVaL6kWQjL1aucRDZoAhaMqVAVz/RQE0sSb282kQM7RPHEowJUALxzTnN08FSoWtCojR6&#13;
+no8z78gvuLppBPVHJ4UUAy1qwsPVZaKU1N9zJw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_99f7332a-4e0c-4186-80f2-b898de05c644" Target="#_69dcd360-0897-498c-ab8d-682e9a98d22f"><Timestamp>2024-02-09 09:00:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
