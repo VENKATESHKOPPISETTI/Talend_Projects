@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_CMTxEIzAEfGw4fwo1TybbA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_CMTxEYzAEfGw4fwo1TybbA" comment="" name="sakila_target_database_Password" prompt="sakila_target_database_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:YpLcSFRqyVYTZ6FRZdp0kKvf767wNwWNxz50o9s8A0eIsTJ08Q=="/>
+  <contextParameter xmi:id="_CMTxEozAEfGw4fwo1TybbA" comment="" name="sakila_target_database_Server" prompt="sakila_target_database_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="192.168.1.104"/>
+  <contextParameter xmi:id="_CMTxE4zAEfGw4fwo1TybbA" comment="" name="sakila_target_database_Port" prompt="sakila_target_database_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_CMTxFIzAEfGw4fwo1TybbA" comment="" name="sakila_target_database_Database" prompt="sakila_target_database_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="sakila"/>
+  <contextParameter xmi:id="_CMTxFYzAEfGw4fwo1TybbA" comment="" name="sakila_target_database_AdditionalParams" prompt="sakila_target_database_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="encrypt=true;trustServerCertificate=true"/>
+  <contextParameter xmi:id="_CMTxFozAEfGw4fwo1TybbA" comment="" name="sakila_target_database_Schema" prompt="sakila_target_database_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="dbo"/>
+  <contextParameter xmi:id="_CMTxF4zAEfGw4fwo1TybbA" comment="" name="sakila_target_database_Login" prompt="sakila_target_database_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="anudeep Ch"/>
+</talendfile:ContextType>

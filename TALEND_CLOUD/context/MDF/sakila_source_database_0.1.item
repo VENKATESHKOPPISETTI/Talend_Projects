@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_iNxNUIy-EfGw4fwo1TybbA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_iNxNUYy-EfGw4fwo1TybbA" comment="" name="sakila_source_database_Password" prompt="sakila_source_database_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:jI7zQV9Blh589ihB7CrDr2M7TXdL0lFh9p+PfMOvchgd"/>
+  <contextParameter xmi:id="_iNxNUoy-EfGw4fwo1TybbA" comment="" name="sakila_source_database_Server" prompt="sakila_source_database_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_iNxNU4y-EfGw4fwo1TybbA" comment="" name="sakila_source_database_Port" prompt="sakila_source_database_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
+  <contextParameter xmi:id="_iNxNVIy-EfGw4fwo1TybbA" comment="" name="sakila_source_database_Database" prompt="sakila_source_database_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sakila"/>
+  <contextParameter xmi:id="_iNxNVYy-EfGw4fwo1TybbA" comment="" name="sakila_source_database_AdditionalParams" prompt="sakila_source_database_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+  <contextParameter xmi:id="_iNxNVoy-EfGw4fwo1TybbA" comment="" name="sakila_source_database_Login" prompt="sakila_source_database_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="root"/>
+</talendfile:ContextType>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_ZdpGkIzhEfGw4fwo1TybbA" name="sqlserver_source_database" id="_645cwIzeEfGw4fwo1TybbA" label="sqlserver_source_database" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://localhost:1433;DatabaseName=AdventureWorksDW2025;encrypt=false" dbVersionString="MSSQL_PROP" Port="1433" Username="ADS-LA-81\Admin" Password="" ServerName="localhost" DatasourceName="" FileFieldName="" SID="AdventureWorksDW2025" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="encrypt=false" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
+  <taggedValue xmi:id="_ZdpGkYzhEfGw4fwo1TybbA" tag="Is Conn Need Reload" value="false"/>
+  <taggedValue xmi:id="_ZeWRMIzhEfGw4fwo1TybbA" tag="package filter" value=""/>
+  <taggedValue xmi:id="_ZeW4QIzhEfGw4fwo1TybbA" tag="Status" value=""/>
+  <taggedValue xmi:id="_ZeW4QYzhEfGw4fwo1TybbA" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_ZeW4QozhEfGw4fwo1TybbA" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_ZeW4Q4zhEfGw4fwo1TybbA" tag="Description" value=""/>
+  <taggedValue xmi:id="_ZeW4RIzhEfGw4fwo1TybbA" tag="Author" value=""/>
+  <taggedValue xmi:id="_ZeW4RYzhEfGw4fwo1TybbA" tag="otherParameter"/>
+  <parameters xmi:id="_ZdpGkozhEfGw4fwo1TybbA" key="CONN_PARA_KEY_USERNAME" value="ADS-LA-81\Admin"/>
+</TalendMetadata:DatabaseConnection>

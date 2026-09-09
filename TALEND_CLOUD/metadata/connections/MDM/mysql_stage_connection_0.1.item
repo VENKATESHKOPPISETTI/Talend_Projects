@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_RDwR0I8CEfGw4fwo1TybbA" name="mysql_stage_connection" id="_RDNfQI8CEfGw4fwo1TybbA" label="mysql_stage_connection" dataPackage="_WVeDEI8CEfGw4fwo1TybbA" ContextMode="true" ContextId="_V_aTgI8CEfGw4fwo1TybbA" contextName="Default" DatabaseType="MySQL" DriverJarPath="" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://localhost:3306/MDM_STG?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2" dbVersionString="MYSQL_8" Port="context.mysql_stage_connection_Port" Username="context.mysql_stage_connection_Login" Password="context.mysql_stage_connection_Password" ServerName="context.mysql_stage_connection_Server" DatasourceName="" FileFieldName="" SID="context.mysql_stage_connection_Database" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" DBRootPath="" AdditionalParams="context.mysql_stage_connection_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_Eob9cY7-EfGw4fwo1TybbA" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_Eo8TwI7-EfGw4fwo1TybbA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_Eo8TwY7-EfGw4fwo1TybbA" tag="Status" value=""/>
+    <taggedValue xmi:id="_Eo8Two7-EfGw4fwo1TybbA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Eo8Tw47-EfGw4fwo1TybbA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_Eo8TxI7-EfGw4fwo1TybbA" tag="Description" value=""/>
+    <taggedValue xmi:id="_Eo8TxY7-EfGw4fwo1TybbA" tag="Author" value=""/>
+    <taggedValue xmi:id="_Eo8Txo7-EfGw4fwo1TybbA" tag="otherParameter"/>
+    <taggedValue xmi:id="_EpRq8I7-EfGw4fwo1TybbA" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_EpRq8Y7-EfGw4fwo1TybbA" tag="DB ProductVersion" value="8.0.46"/>
+    <taggedValue xmi:id="_EpRq8o7-EfGw4fwo1TybbA" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_Eob9co7-EfGw4fwo1TybbA" key="CONN_PARA_KEY_USERNAME" value="context.mysql_stage_connection_Login"/>
+    <parameters xmi:id="_T1YowI7-EfGw4fwo1TybbA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_WVeDEI8CEfGw4fwo1TybbA" name="MDM_STG" dataManager="_RDwR0I8CEfGw4fwo1TybbA"/>
+</xmi:XMI>
