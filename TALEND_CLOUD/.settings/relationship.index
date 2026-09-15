@@ -133,6 +133,29 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_CzAYcEh8Ee6TXdlm8cjMOA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_-fauwEJZEe6Ie8ymgmmwnQ",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_4UceEEbqEe60FaOPyKoaUg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "TALEND_BIGDATA:__tST4EbqEe60FaOPyKoaUg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "r",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_D-m9MIfPEe2Hj8KJp_95ng",
     "version" : "0.1",
     "type" : "job"
@@ -498,6 +521,25 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_d7tD4K7hEe660qMM2TXMSA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_9n-bMHSzEe6w_aOh_nEP7Q",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_OP5X4EYeEe6qH4IaKQhX0g",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_ejbHQJvMEfG8oPVtB5afCw",
     "version" : "0.1",
     "type" : "job"
@@ -570,6 +612,52 @@
     "type" : "schema"
   }, {
     "id" : "_qrNc8IMFEe2A_4unGhUM-Q - EMPOUT123",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_gLJnIEyuEe6fQYETPY4tZQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_l_6XcNq-Ee6tW9ZTuL8ihw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_X3OwQNrkEe6tW9ZTuL8ihw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_CrJe8NriEe6tW9ZTuL8ihw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_hKPJwI6SEe69FNDt4FWrpw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_CrJe8NriEe6tW9ZTuL8ihw - regions",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_YDbHENrBEe6tW9ZTuL8ihw - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_iaqQkNrVEe6tW9ZTuL8ihw - metadata",
     "version" : "Latest",
     "type" : "schema"
   } ]

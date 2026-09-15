@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_4xe_EE-gEe68-Zk4-6pBQQ" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_4xe_EU-gEe68-Zk4-6pBQQ" comment="" name="exec_key" prompt="exec_key?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_4xe_Ek-gEe68-Zk4-6pBQQ" comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_4xe_FE-gEe68-Zk4-6pBQQ" comment="" name="job_status" prompt="job_status?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_4xe_GU-gEe68-Zk4-6pBQQ" comment="" name="start_time" prompt="start_time?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value=""/>
+  <contextParameter xmi:id="_4xe_Gk-gEe68-Zk4-6pBQQ" comment="" name="end_time" prompt="end_time?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value=""/>
+  <contextParameter xmi:id="_4xe_G0-gEe68-Zk4-6pBQQ" comment="" name="error_msg" prompt="error_msg?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

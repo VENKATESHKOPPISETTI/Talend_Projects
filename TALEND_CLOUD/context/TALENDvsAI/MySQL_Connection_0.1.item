@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_bnz8oIDvEfGfua4isJS8XA" confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_bnz8oYDvEfGfua4isJS8XA" comment="" name="MySQL_Connection_Server" prompt="MySQL_Connection_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="13.200.86.168"/>
+    <contextParameter xmi:id="_bnz8ooDvEfGfua4isJS8XA" comment="" name="MySQL_Connection_Login" prompt="MySQL_Connection_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="remote"/>
+    <contextParameter xmi:id="_bnz8o4DvEfGfua4isJS8XA" comment="" name="MySQL_Connection_Password" prompt="MySQL_Connection_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:ApoqFMBbS5MUbx3b7Fv+igZYcQTHJk49iRytVWqaNy+PyO+plbAor2An"/>
+    <contextParameter xmi:id="_bnz8pIDvEfGfua4isJS8XA" comment="" name="MySQL_Connection_Port" prompt="MySQL_Connection_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_bnz8pYDvEfGfua4isJS8XA" comment="" name="MySQL_Connection_Database" prompt="MySQL_Connection_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="sakila"/>
+    <contextParameter xmi:id="_bnz8poDvEfGfua4isJS8XA" comment="" name="MySQL_Connection_AdditionalParams" prompt="MySQL_Connection_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_bnz8p4DvEfGfua4isJS8XA" confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter xmi:id="_bnz8qIDvEfGfua4isJS8XA" comment="" name="MySQL_Connection_Server" prompt="MySQL_Connection_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="13.200.86.168"/>
+    <contextParameter xmi:id="_bnz8qYDvEfGfua4isJS8XA" comment="" name="MySQL_Connection_Login" prompt="MySQL_Connection_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="remote"/>
+    <contextParameter xmi:id="_bnz8qoDvEfGfua4isJS8XA" comment="" name="MySQL_Connection_Password" prompt="MySQL_Connection_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:w/iTfhZx2H7bcqb7pDBiOsgCyXvGnjM7FelA0UklYL5MLIOIpq0WvBsx"/>
+    <contextParameter xmi:id="_bnz8q4DvEfGfua4isJS8XA" comment="" name="MySQL_Connection_Port" prompt="MySQL_Connection_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_bnz8rIDvEfGfua4isJS8XA" comment="" name="MySQL_Connection_Database" prompt="MySQL_Connection_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="sakila"/>
+    <contextParameter xmi:id="_bnz8rYDvEfGfua4isJS8XA" comment="" name="MySQL_Connection_AdditionalParams" prompt="MySQL_Connection_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2"/>
+  </talendfile:ContextType>
+</xmi:XMI>

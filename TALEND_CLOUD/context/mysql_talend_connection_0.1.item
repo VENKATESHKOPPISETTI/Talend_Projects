@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_nYHmUJIkEfG1-OMwf2bPKQ" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_nYHmUZIkEfG1-OMwf2bPKQ" comment="" name="mysql_talend_connection_AdditionalParams" prompt="mysql_talend_connection_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2"/>
+  <contextParameter xmi:id="_nYHmUpIkEfG1-OMwf2bPKQ" comment="" name="mysql_talend_connection_Password" prompt="mysql_talend_connection_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:RQFOeRMcY2hR6Vq/cVYe6JOz2W27nEQZe90W6RBKyNzD"/>
+  <contextParameter xmi:id="_nYHmU5IkEfG1-OMwf2bPKQ" comment="" name="mysql_talend_connection_Server" prompt="mysql_talend_connection_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_nYHmVJIkEfG1-OMwf2bPKQ" comment="" name="mysql_talend_connection_Port" prompt="mysql_talend_connection_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="3306"/>
+  <contextParameter xmi:id="_nYHmVZIkEfG1-OMwf2bPKQ" comment="" name="mysql_talend_connection_Database" prompt="mysql_talend_connection_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="talend"/>
+  <contextParameter xmi:id="_nYHmVpIkEfG1-OMwf2bPKQ" comment="" name="mysql_talend_connection_Login" prompt="mysql_talend_connection_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="root"/>
+</talendfile:ContextType>

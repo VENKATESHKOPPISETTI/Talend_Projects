@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="Redshift_connection_Host" prompt="Redshift_connection_Host?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="default-workgroup.975050278775.eu-north-1.redshift-default-workgroup.646949264197.eu-north-1.redshift-serverless.amazonaws.com" internalId="_5R8vsO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Redshift_connection_Port" prompt="Redshift_connection_Port?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="5439" internalId="_5R8vse-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Redshift_connection_Database" prompt="Redshift_connection_Database?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="dev" internalId="_5R8vsu-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Redshift_connection_Username" prompt="Redshift_connection_Username?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="admin" internalId="_5R8vs--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Redshift_connection_Password" prompt="Redshift_connection_Password?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_Password" value="enc:system.encryption.key.v1:3p/tx24KaE57pGv8pFeT647U8egoUB0pBm6Ep1VpKcdbv8Uq" internalId="_5R8vtO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Redshift_connection_Schema_Stg" prompt="Redshift_connection_Schema_Stg?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="STAGING" internalId="_5R8vte-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Redshift_connection_Schema_Dm" prompt="Redshift_connection_Schema_Dm?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="DATAMART" internalId="_5R8vtu-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Host" prompt="SQL_server_connection_Host?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="192.168.1.104" internalId="_5R8vt--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Port" prompt="SQL_server_connection_Port?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="1433" internalId="_5R8vuO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Database" prompt="SQL_server_connection_Database?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="venkateshk" internalId="_5R8vue-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Schema_Src" prompt="SQL_server_connection_Schema_Src?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="dbo" internalId="_5R8vuu-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Schema_Audit" prompt="SQL_server_connection_Schema_Audit?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="audit" internalId="_5R8vu--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Username" prompt="SQL_server_connection_Username?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="venkateshk" internalId="_5R8vvO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Password" prompt="SQL_server_connection_Password?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_Password" value="enc:system.encryption.key.v1:hlMCj/847gA/3swCm1fsInASIbD5RHxJLEP4L4tlj5zwdWCc7A==" internalId="_5R8vve-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Additional_params" prompt="SQL_server_connection_Additional_params?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="noDatetimeStringSync=true" internalId="_5R8vvu-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="S3_Access_Key" prompt="S3_Access_Key?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="AKIAZNIJOLNCQ5LYG5H2" internalId="_5R8vv--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="S3_Secret_Key" prompt="S3_Secret_Key?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="VcSXEQCL0KB6XnPh0JvZj+rZKAnbIhxytxPgRGEW" internalId="_5R8vwO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="S3_input_path" prompt="S3_input_path?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="pre-stg-lake/input/" internalId="_5R8vwe-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="S3_output_path" prompt="S3_output_path?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="pre-stg-lake/output/" internalId="_5R8vwu-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="S3_get_path" prompt="S3_get_path?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="D:/talend/S3Get/" internalId="_5R8vw--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="File_input_path" prompt="File_input_path?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="D:/talend/input/" internalId="_5R8vxO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="File_output_path" prompt="File_output_path?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="D:/talend/output/" internalId="_5R8vxe-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="File_output_bulk_path" prompt="File_output_bulk_path?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="D:/talend/output/bulk_load/bulkload.csv" internalId="_5R8vxu-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Src_customers" prompt="Src_customers?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="customers" internalId="_5R8vx--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Src_products" prompt="Src_products?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="products" internalId="_5R8vyO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Stg_table1" prompt="Stg_table1?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="stg_countries" internalId="_5R8vye-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Stg_table2" prompt="Stg_table2?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="stg_customers" internalId="_5R8vyu-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Stg_table3" prompt="Stg_table3?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="stg_date" internalId="_5R8vy--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Stg_table4" prompt="Stg_table4?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="stg_events" internalId="_5R8vzO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Stg_table5" prompt="Stg_table5?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="stg_products" internalId="_5R8vze-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="job_status" prompt="job_status?" promptNeeded="false" repositoryContextId="_4xLdEE-gEe68-Zk4-6pBQQ" type="id_String" value="" internalId="_5SGgsO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="start_time" prompt="start_time?" promptNeeded="false" repositoryContextId="_4xLdEE-gEe68-Zk4-6pBQQ" type="id_Date" value="" internalId="_5SGgse-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="error_msg" prompt="error_msg?" promptNeeded="false" repositoryContextId="_4xLdEE-gEe68-Zk4-6pBQQ" type="id_String" value="" internalId="_5SGgsu-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="_4xLdEE-gEe68-Zk4-6pBQQ" type="id_String" value="" internalId="_5SGgs--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="end_time" prompt="end_time?" promptNeeded="false" repositoryContextId="_4xLdEE-gEe68-Zk4-6pBQQ" type="id_Date" value="" internalId="_5SGgtO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="exec_key" prompt="exec_key?" promptNeeded="false" repositoryContextId="_4xLdEE-gEe68-Zk4-6pBQQ" type="id_Integer" value="" internalId="_5SGgte-BEe6-GN6uZw72_A"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Dev">
+    <contextParameter comment="" name="Redshift_connection_Host" prompt="Redshift_connection_Host?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgtu-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Redshift_connection_Port" prompt="Redshift_connection_Port?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgt--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Redshift_connection_Database" prompt="Redshift_connection_Database?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGguO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Redshift_connection_Username" prompt="Redshift_connection_Username?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgue-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Redshift_connection_Password" prompt="Redshift_connection_Password?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_Password" value="" internalId="_5SGguu-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Redshift_connection_Schema_Stg" prompt="Redshift_connection_Schema_Stg?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgu--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Redshift_connection_Schema_Dm" prompt="Redshift_connection_Schema_Dm?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgvO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Host" prompt="SQL_server_connection_Host?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgve-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Port" prompt="SQL_server_connection_Port?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgvu-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Database" prompt="SQL_server_connection_Database?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgv--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Schema_Src" prompt="SQL_server_connection_Schema_Src?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgwO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Schema_Audit" prompt="SQL_server_connection_Schema_Audit?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgwe-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Username" prompt="SQL_server_connection_Username?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgwu-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Password" prompt="SQL_server_connection_Password?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_Password" value="" internalId="_5SGgw--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="SQL_server_connection_Additional_params" prompt="SQL_server_connection_Additional_params?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgxO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="S3_Access_Key" prompt="S3_Access_Key?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgxe-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="S3_Secret_Key" prompt="S3_Secret_Key?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgxu-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="S3_input_path" prompt="S3_input_path?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgx--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="S3_output_path" prompt="S3_output_path?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgyO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="S3_get_path" prompt="S3_get_path?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgye-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="File_input_path" prompt="File_input_path?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgyu-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="File_output_path" prompt="File_output_path?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgy--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="File_output_bulk_path" prompt="File_output_bulk_path?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgzO-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Src_customers" prompt="Src_customers?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgze-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Src_products" prompt="Src_products?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgzu-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Stg_table1" prompt="Stg_table1?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGgz--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Stg_table2" prompt="Stg_table2?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGg0O-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Stg_table3" prompt="Stg_table3?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGg0e-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Stg_table4" prompt="Stg_table4?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGg0u-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="Stg_table5" prompt="Stg_table5?" promptNeeded="false" repositoryContextId="_X3OwQNrkEe6tW9ZTuL8ihw" type="id_String" value="" internalId="_5SGg0--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="job_status" prompt="job_status?" promptNeeded="false" repositoryContextId="_4xLdEE-gEe68-Zk4-6pBQQ" type="id_String" value="" internalId="_5SGg1O-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="start_time" prompt="start_time?" promptNeeded="false" repositoryContextId="_4xLdEE-gEe68-Zk4-6pBQQ" type="id_Date" value="" internalId="_5SGg1e-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="error_msg" prompt="error_msg?" promptNeeded="false" repositoryContextId="_4xLdEE-gEe68-Zk4-6pBQQ" type="id_String" value="" internalId="_5SGg1u-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="_4xLdEE-gEe68-Zk4-6pBQQ" type="id_String" value="" internalId="_5SGg1--BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="end_time" prompt="end_time?" promptNeeded="false" repositoryContextId="_4xLdEE-gEe68-Zk4-6pBQQ" type="id_Date" value="" internalId="_5SGg2O-BEe6-GN6uZw72_A"/>
+    <contextParameter comment="" name="exec_key" prompt="exec_key?" promptNeeded="false" repositoryContextId="_4xLdEE-gEe68-Zk4-6pBQQ" type="id_Integer" value="" internalId="_5SGg2e-BEe6-GN6uZw72_A"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="true"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="true" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="tMSSqlInput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;192.168.1.104&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;venkateshk&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;audit&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;venkateshk&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:x1KBBBmoPiHiKxjqUNTPOCPh/5jiQ+9epiGEcATS2uKFpM8bA8EI" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;contextall&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/8wksp/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vOGXpbgUwKZgbk3hvmgGJExoUxtp/7/FBjBtemBR" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <routinesParameter id="_wAVOYNebEe6fp-GruiugPQ" name="DataOperation"/>
+    <routinesParameter id="_wAaG4NebEe6fp-GruiugPQ" name="Mathematical"/>
+    <routinesParameter id="_wAe_YNebEe6fp-GruiugPQ" name="Numeric"/>
+    <routinesParameter id="_wAj34NebEe6fp-GruiugPQ" name="Relational"/>
+    <routinesParameter id="_v-_KkNebEe6fp-GruiugPQ" name="SQLike"/>
+    <routinesParameter id="_wAowYNebEe6fp-GruiugPQ" name="StringHandling"/>
+    <routinesParameter id="_wAto4NebEe6fp-GruiugPQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_wAx6UNebEe6fp-GruiugPQ" name="TalendDate"/>
+    <routinesParameter id="_wA6dMNebEe6fp-GruiugPQ" name="TalendStringUtil"/>
+    <routinesParameter id="_wA1ksNebEe6fp-GruiugPQ" name="TalendString"/>
+  </parameters>
+  <node componentName="S3Get" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="32" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Get_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tS3Connection_1"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.credentialProvider" value="STATIC_CREDENTIALS" show="false"/>
+    <elementParameter field="FILE" name="configuration.dataset.datastore.ProfileCredentialConfiguration.profilePath" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.ProfileCredentialConfiguration.profileName" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.staticCredentialConfiguration.accessKey" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="configuration.dataset.datastore.staticCredentialConfiguration.secretKey" value="enc:system.encryption.key.v1:2Kk1n50uPQIH23x/rIL3vHArE1T6zV7r+79721WC" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.assumeRole" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.assumeRoleConfiguration.arn" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.assumeRoleConfiguration.roleSessionName" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.assumeRoleConfiguration.sessionDuration" value="15" show="false"/>
+    <elementParameter field="OPENED_LIST" name="configuration.dataset.datastore.region" value="DEFAULT" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.clientSideEncrypt" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.keyType" value="KMS_CMK" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.algorithmSymmetricMasterKey" value="AES" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.algorithmAsymmetricMasterKey" value="RSA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.encoding" value="BASE64" show="false"/>
+    <elementParameter field="PASSWORD" name="configuration.dataset.datastore.kmsKey" value="enc:system.encryption.key.v1:1b54XOMFpGJPkMESCLzGPVJ30XHAYm91L+4Zfc6z" show="false"/>
+    <elementParameter field="PASSWORD" name="configuration.dataset.datastore.encryptedKeyBase64" value="enc:system.encryption.key.v1:4CkjSfOWyk4ua+L2qVVf0Od3d6tLd4OF90dV2DP5" show="false"/>
+    <elementParameter field="FILE" name="configuration.dataset.datastore.encryptedFileX509" value="&quot;&quot;" show="false"/>
+    <elementParameter field="FILE" name="configuration.dataset.datastore.publicKey" value="&quot;&quot;" show="false"/>
+    <elementParameter field="FILE" name="configuration.dataset.datastore.privateKey" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.bucket" value="context.S3_input_path + &quot;events/&quot;+TalendDate.formatDate(&quot;MM-dd-yyyy&quot;,TalendDate.getCurrentDate())"/>
+    <elementParameter field="TEXT" name="configuration.key" value="&quot;events_&quot;+TalendDate.formatDate(&quot;MMddyyyy&quot;,TalendDate.getCurrentDate())+&quot;.csv&quot;"/>
+    <elementParameter field="FILE" name="configuration.file" value="context.S3_get_path + &quot;events/&quot;+TalendDate.formatDate(&quot;MM-dd-yyyy&quot;,TalendDate.getCurrentDate())+&quot;/&quot;+&quot;events_&quot;+TalendDate.formatDate(&quot;MMddyyyy&quot;,TalendDate.getCurrentDate())+&quot;.csv&quot;"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="FILE" name="configuration.dataset.datastore.webTokenCredentialConfiguration.webIdentityTokenFile" value="" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.webTokenCredentialConfiguration.webTokenArn" value="" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.webTokenCredentialConfiguration.webTokenRoleSessionName" value="" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.configClient" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.datastore.clientConfiguration" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.assumeRoleConfiguration.specifySTSEndpoint" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.assumeRoleConfiguration.stsEndpoint" value="&quot;&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="configuration.dataset.datastore.signingRegion" value="DEFAULT" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.assumeRoleConfiguration.externalId" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.assumeRoleConfiguration.serialNumber" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataset.datastore.assumeRoleConfiguration.tokenCode" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.datastore.assumeRoleConfiguration.tags" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataset.datastore.assumeRoleConfiguration.policyArns" show="false"/>
+    <elementParameter field="MEMO" name="configuration.dataset.datastore.assumeRoleConfiguration.policy" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataset.datastore.enableAccelerate" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useSelect" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.fileType" value="CSV" show="false"/>
+    <elementParameter field="TEXT" name="configuration.query" value="&quot;select s._1 from S3Object s&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.compressedType" value="NONE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.jsonType" value="LINES" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.headerType" value="USE" show="false"/>
+    <elementParameter field="TEXT" name="configuration.fieldSeparator" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="CHECK" name="configuration.advanceCsv" value="false" show="false"/>
+    <elementParameter field="TABLE" name="configuration.csvConfiguration" show="false"/>
+    <elementParameter field="CHECK" name="configuration.globalMapInputStream" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.configOutput" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.outputType" value="CSV" show="false"/>
+    <elementParameter field="TABLE" name="configuration.outputCsvConfig" show="false"/>
+    <elementParameter field="TEXT" name="configuration.jsonRecordDelimiter" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useTempFilesForParallelDownload" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="YXdzLXMzI1MzI0dldA"/>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_EMM64OZ7Ee61Q7CkMDrnCg - event" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.S3_get_path + &quot;events/&quot;+TalendDate.formatDate(&quot;MM-dd-yyyy&quot;,TalendDate.getCurrentDate())+&quot;/&quot;+&quot;events_&quot;+TalendDate.formatDate(&quot;MMddyyyy&quot;,TalendDate.getCurrentDate())+&quot;.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/8wksp&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="event_business_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="event_time"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="product_business_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_business_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="event_business_id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="event_time"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="product_business_id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_business_id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="event" name="tFileInputDelimited_2">
+      <column comment="" key="false" length="-1" name="event_business_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="event_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="product_business_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="customer_business_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="event" name="REJECT">
+      <column comment="" key="false" length="-1" name="event_business_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="event_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="product_business_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="customer_business_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRedshiftOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutputBulk_1" show="false"/>
+    <elementParameter field="FILE" name="FILE" value="context.File_output_bulk_path"/>
+    <elementParameter field="CHECK" name="APPEND" value="false" show="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSION" value="GZIP" show="false"/>
+    <elementParameter field="CHECK" name="ENCRYPT" value="false" show="false"/>
+    <elementParameter field="PASSWORD" name="ENCRYPTED_KEY" value="enc:system.encryption.key.v1:ShO2rpeb0yPhwpL6Urt9XkzGU+lyBbojC4QEzeC3" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tS3Connection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CREDENTIAL_PROVIDER" value="STATIC_CREDENTIALS" show="false"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY" value="enc:system.encryption.key.v1:nLjIUi/nN9jIm72hx/mhKmMjledp0PcHtTaAauyQ" show="false"/>
+    <elementParameter field="CHECK" name="ASSUME_ROLE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ARN" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="ROLE_SESSION_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SESSION_DURATION" value="15" show="false"/>
+    <elementParameter field="OPENED_LIST" name="REGION" value="DEFAULT" show="false"/>
+    <elementParameter field="TEXT" name="BUCKET" value="context.S3_output_path + &quot;events/&quot;+TalendDate.formatDate(&quot;MM-dd-yyyy&quot;,TalendDate.getCurrentDate())"/>
+    <elementParameter field="TEXT" name="KEY" value="&quot;events_&quot;+TalendDate.formatDate(&quot;MMddyyyy&quot;,TalendDate.getCurrentDate())+&quot;.csv&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="','"/>
+    <elementParameter field="OPENED_LIST" name="TEXT_ENCLOSURE" value="EMPTY"/>
+    <elementParameter field="CHECK" name="DELETE_LOCALFILE" value="true"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="ENCODING" value="&quot;UTF8&quot;"/>
+    <elementParameter field="FILE" name="WEB_IDENTITY_TOKEN_FILE" value="" show="false"/>
+    <elementParameter field="TEXT" name="WEB_TOKEN_ARN" value="" show="false"/>
+    <elementParameter field="TEXT" name="WEB_TOKEN_ROLE_SESSION_NAME" value="" show="false"/>
+    <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false"/>
+    <elementParameter field="TABLE" name="CLIENT_CONFIGURATION" show="false"/>
+    <elementParameter field="CHECK" name="SET_STS_ENDPOINT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="STS_ENDPOINT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="SIGNING_REGION" value="DEFAULT" show="false"/>
+    <elementParameter field="TEXT" name="EXTERNALID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERIALNUMBER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TOKENCODE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="TAGS" show="false"/>
+    <elementParameter field="TABLE" name="POLICY_TABLE" show="false"/>
+    <elementParameter field="MEMO" name="POLICY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="event" name="tDBOutputBulk_1">
+      <column comment="" key="false" length="-1" name="event_business_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="event_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="product_business_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="customer_business_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRedshiftBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBBulkExec_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER_VERSION" value="DRIVER_V2" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5439&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Redshift" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kyP4ncH0RkEBTtNKlFqbTImPg/A5d4rWPzkKSzYb" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_STRING_PROPERTIES" value="false" show="false"/>
+    <elementParameter field="TABLE" name="ENTRY_PROPERTIES" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_events&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_hFmSQO_2Ee6KBqtLLNplJw - stg_events" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="redshift_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_SOURCE_TYPE" value="S3"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION_S3" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_S3" value="tS3Connection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CREDENTIAL_PROVIDER" value="STATIC_CREDENTIALS" show="false"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY" value="enc:system.encryption.key.v1:9NTNuPcygX/la9/uTlLwjfSKxiitojPaTxZ7F3Hx" show="false"/>
+    <elementParameter field="TEXT" name="BUCKET" value="context.S3_output_path + &quot;events/&quot;+TalendDate.formatDate(&quot;MM-dd-yyyy&quot;,TalendDate.getCurrentDate())"/>
+    <elementParameter field="TEXT" name="KEY" value="&quot;events_&quot;+TalendDate.formatDate(&quot;MMddyyyy&quot;,TalendDate.getCurrentDate())+&quot;.csv&quot;"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY_EMR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY_EMR" value="enc:system.encryption.key.v1:nROlDHYxM67msIciUSyoBXwXmg7uSXlBNJtIVdCL" show="false"/>
+    <elementParameter field="TEXT" name="EMR_CLUSTER_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HDFS_FILEPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY_DYNAMODB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY_DYNAMODB" value="enc:system.encryption.key.v1:d1dY+ZQ1FxKDAWDMRvqrITvfCmi6FCo2f5JcPWFp" show="false"/>
+    <elementParameter field="TEXT" name="TABLENAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="READRATIO" value="50" show="false"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY_SSH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY_SSH" value="enc:system.encryption.key.v1:I0ednIYcanq7n2TI2r35e4Jd4RLKwOcvQyvf14CE" show="false"/>
+    <elementParameter field="TEXT" name="BUCKET_SSH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KEY_SSH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ASSUME_ROLE" value="false" show="false"/>
+    <elementParameter field="TABLE" name="ROLE_TABLE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORT_TYPE" value="DELIMITED_OR_CSV"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="','"/>
+    <elementParameter field="OPENED_LIST" name="TEXT_ENCLOSURE" value="EMPTY"/>
+    <elementParameter field="TEXT" name="JSON_MAPPING" value="&quot;s3://jsonpaths_file&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIXEDWIDTH_MAPPING" value="&quot;column1:8,column2:64&quot;" show="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSION" value="GZIP" show="false"/>
+    <elementParameter field="CHECK" name="ENCRYPT" value="false" show="false"/>
+    <elementParameter field="PASSWORD" name="ENCRYPTED_KEY" value="enc:system.encryption.key.v1:mFH9VuPcoN+KJPttJBzUALT1j7tO9CUm4dlxiQAW" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ENCODING" value="&quot;UTF8&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DATEFORMAT" value="AUTO"/>
+    <elementParameter field="TEXT" name="DATE_PATTERN" value="&quot;YYYY-MM-DD&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="TIMEFORMAT" value="AUTO"/>
+    <elementParameter field="TEXT" name="TIME_PATTERN" value="&quot;YYYY-MM-DD HH:MI:SS&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PARQUE_STATUPDATE" value="ON" show="false"/>
+    <elementParameter field="TABLE" name="OTHER_CONFIGURATION"/>
+    <elementParameter field="CLOSED_LIST" name="JDBC_URL" value="STANDARD" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="stg_events" name="tDBBulkExec_1">
+      <column comment="" key="true" length="38" name="event_business_id" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="event_time" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="product_business_id" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="customer_business_id" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Open connections"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;the Redshift connection cannot be established&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Error Redshift"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Close connections"/>
+  </node>
+  <node componentName="tRedshiftConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER_VERSION" value="DRIVER_V2"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Redshift_connection_Host"/>
+    <elementParameter field="TEXT" name="TYPE" value="REDSHIFT" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Redshift_connection_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Redshift_connection_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Redshift_connection_Schema_Stg"/>
+    <elementParameter field="TEXT" name="USER" value="context.Redshift_connection_Username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.Redshift_connection_Password"/>
+    <elementParameter field="CHECK" name="USE_STRING_PROPERTIES" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="ENTRY_PROPERTIES"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_LOG_FILE" value="false"/>
+    <elementParameter field="FILE" name="LOG_FILE" value="&quot;D:/8wksp/redshift-jdbc.log&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOG_LEVEL" value="1"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="JDBC_URL" value="STANDARD"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>STAGING"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Redshift Connection"/>
+  </node>
+  <node componentName="tRedshiftClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBClose_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Close STAGING"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tS3Connection" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Connection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.credentialProvider" value="STATIC_CREDENTIALS"/>
+    <elementParameter field="FILE" name="configuration.ProfileCredentialConfiguration.profilePath" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.ProfileCredentialConfiguration.profileName" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.staticCredentialConfiguration.accessKey" value="context.S3_Access_Key"/>
+    <elementParameter field="PASSWORD" name="configuration.staticCredentialConfiguration.secretKey" value="context.S3_Secret_Key"/>
+    <elementParameter field="CHECK" name="configuration.assumeRole" value="false"/>
+    <elementParameter field="TEXT" name="configuration.assumeRoleConfiguration.arn" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.assumeRoleConfiguration.roleSessionName" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.assumeRoleConfiguration.sessionDuration" value="15" show="false"/>
+    <elementParameter field="OPENED_LIST" name="configuration.region" value="DEFAULT"/>
+    <elementParameter field="CHECK" name="configuration.clientSideEncrypt" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.keyType" value="KMS_CMK" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.algorithmSymmetricMasterKey" value="AES" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.algorithmAsymmetricMasterKey" value="RSA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.encoding" value="BASE64" show="false"/>
+    <elementParameter field="PASSWORD" name="configuration.kmsKey" value="enc:system.encryption.key.v1:9MoBLL//PAv625H+WWvBpvErrehyEAFG4kUYk7Kj" show="false"/>
+    <elementParameter field="PASSWORD" name="configuration.encryptedKeyBase64" value="enc:system.encryption.key.v1:OQGHVRT7Llzbzjsr7o6IXehRciPARqlXy+P5SRN5" show="false"/>
+    <elementParameter field="FILE" name="configuration.encryptedFileX509" value="&quot;&quot;" show="false"/>
+    <elementParameter field="FILE" name="configuration.publicKey" value="&quot;&quot;" show="false"/>
+    <elementParameter field="FILE" name="configuration.privateKey" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useRegionEndpoint" value="false"/>
+    <elementParameter field="TEXT" name="configuration.regionEndpoint" value="&quot;s3.amazonaws.com&quot;" show="false"/>
+    <elementParameter field="CHECK" name="configuration.enablePathStyleAccess" value="false" show="false"/>
+    <elementParameter field="FILE" name="configuration.webTokenCredentialConfiguration.webIdentityTokenFile" value="" show="false"/>
+    <elementParameter field="TEXT" name="configuration.webTokenCredentialConfiguration.webTokenArn" value="" show="false"/>
+    <elementParameter field="TEXT" name="configuration.webTokenCredentialConfiguration.webTokenRoleSessionName" value="" show="false"/>
+    <elementParameter field="CHECK" name="configuration.configClient" value="false"/>
+    <elementParameter field="TABLE" name="configuration.clientConfiguration" show="false"/>
+    <elementParameter field="CHECK" name="configuration.assumeRoleConfiguration.specifySTSEndpoint" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.assumeRoleConfiguration.stsEndpoint" value="&quot;&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="configuration.signingRegion" value="DEFAULT" show="false"/>
+    <elementParameter field="TEXT" name="configuration.assumeRoleConfiguration.externalId" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.assumeRoleConfiguration.serialNumber" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.assumeRoleConfiguration.tokenCode" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="configuration.assumeRoleConfiguration.tags" show="false"/>
+    <elementParameter field="TABLE" name="configuration.assumeRoleConfiguration.policyArns" show="false"/>
+    <elementParameter field="MEMO" name="configuration.assumeRoleConfiguration.policy" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="configuration.checkAccessibility" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.checkMethod" value="BY_ACCOUNT_OWNER"/>
+    <elementParameter field="CHECK" name="configuration.enableAccelerate" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>S3 connection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="YXdzLXMzI1MzI0xpc3QConnection"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;the S3 Bucket connection cannot be established&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Error S3 Bucket"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_2"/>
+  </node>
+  <node componentName="tS3Close" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Close_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tS3Connection_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Close S3"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="YXdzLXMzI1MzI0xpc3QClose"/>
+  </node>
+  <node componentName="explicit_context_load_from_table" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="explicit_context_load_from_file_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="COMPONENT_OK"/>
+    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="explicit_context_load_from_table"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="capture_audit_stats"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="DEV"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TALEND_REDSHIFT_DEMO:__tST4EbqEe60FaOPyKoaUg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="job_name"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="jobName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="exec_key"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="0"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="job_status"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;Started&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="false"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="capture_audit_stats"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="DEV"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TALEND_REDSHIFT_DEMO:__tST4EbqEe60FaOPyKoaUg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="job_name"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="jobName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="job_status"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;Succeeded&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="exec_key"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="false"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="capture_audit_stats"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="DEV"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="TALEND_REDSHIFT_DEMO:__tST4EbqEe60FaOPyKoaUg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="job_name"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="jobName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="exec_key"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="1"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="job_status"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;Failed&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="error_msg"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.error_msg"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="false"/>
+    <metadata connector="FLOW" name="tRunJob_3"/>
+  </node>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogCatcher_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;&#xD;&#xA;context.error_msg = StringHandling.EREPLACE(input_row.message,&quot;'&quot;,&quot;&quot;);&#xD;&#xA;&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Storing_Error_Message"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tS3Get_1" offsetLabelX="-37" offsetLabelY="-2" source="tS3Get_1" target="tFileInputDelimited_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tDBOutputBulk_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="-11" source="tFileInputDelimited_2" target="tDBBulkExec_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBBulkExec_1" offsetLabelX="0" offsetLabelY="0" source="tDBBulkExec_1" target="tRunJob_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="-19" offsetLabelY="0" source="tPrejob_1" target="explicit_context_load_from_file_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="14" offsetLabelY="3" source="tPostjob_1" target="tDBClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tS3Connection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBConnection_1" offsetLabelX="-15" offsetLabelY="2" source="tDBConnection_1" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBClose_1" offsetLabelX="15" offsetLabelY="-2" source="tDBClose_1" target="tS3Close_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tS3Connection_1" offsetLabelX="0" offsetLabelY="0" source="tS3Connection_1" target="tDie_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tS3Connection_1" offsetLabelX="0" offsetLabelY="0" source="tS3Connection_1" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
+  </connection>
+  <connection connectorName="TRIGGER_OUTPUT_1" label="OnComponentOk (TRIGGER_OUTPUT_1)" lineStyle="3" metaname="explicit_context_load_from_file_1" offsetLabelX="0" offsetLabelY="0" source="explicit_context_load_from_file_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="-10" source="tLogCatcher_1" target="tRunJob_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Get_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Getting data from s3 lake"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="192;192;192"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Loading events file data into s3 bucket by using Redshift OutputBulk"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="192;192;192"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBBulkExec_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="S3 Bulk file to Redshift stage table"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="192;192;192"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBClose_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Connection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Close_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="explicit_context_load_from_file_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Load context table"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="192;192;192"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Job Start Status"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="192;192;192"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Job Success Status"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="192;192;192"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Job Failed Status"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="192;192;192"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Catching error messages"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="192;192;192"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

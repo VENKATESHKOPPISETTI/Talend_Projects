@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_OPUPMOzJEe6FsONKOYP33w" name="customers" id="_OPTBEOzJEe6FsONKOYP33w" dataPackage="_OPUPMezJEe6FsONKOYP33w" Server="Localhost 127.0.0.1" FilePath="D:/talend/S3Get/customers/03-30-2024/customers_03302024.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_OPUPMezJEe6FsONKOYP33w" name="default" dataManager="_OPUPMOzJEe6FsONKOYP33w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_OPUPMuzJEe6FsONKOYP33w" id="_GkG3AOzJEe6FsONKOYP33w" label="customers">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_OPUPM-zJEe6FsONKOYP33w" label="customer_business_id" length="-1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_OPUPNOzJEe6FsONKOYP33w" label="gender" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_OPUPNezJEe6FsONKOYP33w" label="email" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_OPUPNuzJEe6FsONKOYP33w" label="country_code" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_OPUPN-zJEe6FsONKOYP33w" label="birthday" length="23" talendType="id_String" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

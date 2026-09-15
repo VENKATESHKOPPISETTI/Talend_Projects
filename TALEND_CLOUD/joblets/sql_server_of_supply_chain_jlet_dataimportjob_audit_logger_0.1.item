@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmi:version="2.0">
+  <model:JobletProcess defaultContext="Dev" jobType="Standard">
+    <context confirmationNeeded="false" name="Dev">
+      <contextParameter comment="" internalId="_i089wD3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_AdditionalParams" prompt="Hsi_Cdp_MySQL_AdditionalParams?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+      <contextParameter comment="" internalId="_i089wT3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_Database" prompt="Hsi_Cdp_MySQL_Database?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_String" value="CDH_SCIBI_METADATA"/>
+      <contextParameter comment="" internalId="_i089wj3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_Login" prompt="Hsi_Cdp_MySQL_Login?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_String" value="tmetadata"/>
+      <contextParameter comment="" internalId="_i089wz3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_Password" prompt="Hsi_Cdp_MySQL_Password?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_Password" value="enc:system.encryption.key.v1:YS2VEN/a4PL0tV0VTt0ebvR7JxAtz4YsTgMQlAK8mvR1o2Nfr7Mm1tI="/>
+      <contextParameter comment="" internalId="_i089xD3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_Port" prompt="Hsi_Cdp_MySQL_Port?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_String" value="3306"/>
+      <contextParameter comment="" internalId="_i089xT3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_Server" prompt="Hsi_Cdp_MySQL_Server?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_String" value="172.20.120.15"/>
+      <contextParameter comment="" internalId="_i0-y8D3CEe6B_IPndzU9bg" name="sc_execution_audit_table" prompt="sc_execution_audit_table?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_String" value="SUPPLY_CHAIN_JOB_EXECUTION"/>
+      <contextParameter comment="" internalId="_i0-y8T3CEe6B_IPndzU9bg" name="sc_execution_date_conversion" prompt="sc_execution_date_conversion?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_Integer" value=""/>
+      <contextParameter comment="" internalId="_i0-y8j3CEe6B_IPndzU9bg" name="sc_execution_job_id" prompt="sc_execution_job_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i0-y8z3CEe6B_IPndzU9bg" name="sc_execution_project_id" prompt="sc_execution_project_id?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_Integer" value="2"/>
+      <contextParameter comment="" internalId="_i0-y9D3CEe6B_IPndzU9bg" name="sc_execution_run_date" prompt="sc_execution_run_date?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_Long" value=""/>
+      <contextParameter comment="" internalId="_i0-y9T3CEe6B_IPndzU9bg" name="sc_execution_run_date_table" prompt="sc_execution_run_date_table?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_String" value="SUPPLY_CHAIN_JOB_RUN_DATE"/>
+      <contextParameter comment="" internalId="_i0-y9j3CEe6B_IPndzU9bg" name="sc_execution_run_id" prompt="sc_execution_run_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+      <contextParameter comment="" internalId="_i0-y9z3CEe6B_IPndzU9bg" name="sc_execution_table_id" prompt="sc_execution_table_id?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_Integer" value=""/>
+      <contextParameter comment="" internalId="_i0-y-D3CEe6B_IPndzU9bg" name="sc_metadata_columns" prompt="sc_metadata_columns?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_CDH_COLUMN"/>
+      <contextParameter comment="" internalId="_i0-y-T3CEe6B_IPndzU9bg" name="sc_metadata_db_conn_table" prompt="sc_metadata_db_conn_table?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_CDH_DB_CONNECTION"/>
+      <contextParameter comment="" internalId="_i0-y-j3CEe6B_IPndzU9bg" name="sc_metadata_job" prompt="sc_metadata_job?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_JOB"/>
+      <contextParameter comment="" internalId="_i0-y-z3CEe6B_IPndzU9bg" name="sc_metadata_project" prompt="sc_metadata_project?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_CDH_PROJECT"/>
+      <contextParameter comment="" internalId="_i0-y_D3CEe6B_IPndzU9bg" name="sc_metadata_schema_name" prompt="sc_metadata_schema_name?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="CDH_METADATA"/>
+      <contextParameter comment="" internalId="_i0-y_T3CEe6B_IPndzU9bg" name="sc_metadata_stage_query_table" prompt="sc_metadata_stage_query_table?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_STAGE_LOAD_QUERY"/>
+      <contextParameter comment="" internalId="_i0-y_j3CEe6B_IPndzU9bg" name="sc_metadata_tables" prompt="sc_metadata_tables?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_CDH_TABLE"/>
+      <contextParameter comment="" internalId="_i1AoID3CEe6B_IPndzU9bg" name="connect_to" prompt="connect_to?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1AoIT3CEe6B_IPndzU9bg" name="is_csv" prompt="is_csv?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1AoIj3CEe6B_IPndzU9bg" name="is_full_load" prompt="is_full_load?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_Integer" value="0"/>
+      <contextParameter comment="" internalId="_i1AoIz3CEe6B_IPndzU9bg" name="level_1" prompt="level_1?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1AoJD3CEe6B_IPndzU9bg" name="level_2" prompt="level_2?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1AoJT3CEe6B_IPndzU9bg" name="schema_name" prompt="schema_name?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1AoJj3CEe6B_IPndzU9bg" name="subject_area" prompt="subject_area?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1AoJz3CEe6B_IPndzU9bg" name="table_descr_name" prompt="table_descr_name?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1AoKD3CEe6B_IPndzU9bg" name="table_id" prompt="table_id?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_Integer" value=""/>
+      <contextParameter comment="" internalId="_i1AoKT3CEe6B_IPndzU9bg" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1CdUD3CEe6B_IPndzU9bg" name="AS400_additional_params" prompt="AS400_additional_params?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1CdUT3CEe6B_IPndzU9bg" name="AS400_CSV_SFTP" prompt="AS400_CSV_SFTP?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value="/DropZone/Supply_Chain"/>
+      <contextParameter comment="" internalId="_i1CdUj3CEe6B_IPndzU9bg" name="AS400_DB_ID" prompt="AS400_DB_ID?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_Integer" value="3"/>
+      <contextParameter comment="" internalId="_i1CdUz3CEe6B_IPndzU9bg" name="AS400_login" prompt="AS400_login?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1CdVD3CEe6B_IPndzU9bg" name="AS400_password" prompt="AS400_password?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1CdVT3CEe6B_IPndzU9bg" name="AS400_server" prompt="AS400_server?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1CdVj3CEe6B_IPndzU9bg" name="ca_schema" prompt="ca_schema?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value="hsi_staging_ca"/>
+      <contextParameter comment="" internalId="_i1CdVz3CEe6B_IPndzU9bg" name="run_date_id" prompt="run_date_id?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_Integer" value="20170101"/>
+      <contextParameter comment="" internalId="_i1CdWD3CEe6B_IPndzU9bg" name="supply_chain_HDFS_Folder" prompt="supply_chain_HDFS_Folder?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value="/hsidatalake/raw/test/supply_chain/"/>
+      <contextParameter comment="" internalId="_i1CdWT3CEe6B_IPndzU9bg" name="supply_chain_remote_engine" prompt="supply_chain_remote_engine?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value="/hsidatadisk/marketo/tmp/supply_chain/"/>
+      <contextParameter comment="" internalId="_i1CdWj3CEe6B_IPndzU9bg" name="us_schema" prompt="us_schema?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value="hsi_staging"/>
+      <contextParameter comment="" internalId="_7tu1MD3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_ImpalaSSLTrustStorePassword" prompt="Hsi_Cdp_Impala_ImpalaSSLTrustStorePassword?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_Password" value="enc:system.encryption.key.v1:VlqBufz9p4kiZOLVR9yu+/+EgQONM30y6u6WsZQx50liUKJDcOyRfUerDtk="/>
+      <contextParameter comment="" internalId="_7tu1MT3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_Port" prompt="Hsi_Cdp_Impala_Port?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="21051"/>
+      <contextParameter comment="" internalId="_7tu1Mj3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_Server" prompt="Hsi_Cdp_Impala_Server?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="mgmnt0142621devtest.hsdevtest.henryschein.com"/>
+      <contextParameter comment="" internalId="_7tu1Mz3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_hiveAdditionalJDBCParameters" prompt="Hsi_Cdp_Impala_hiveAdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="Marlabs"/>
+      <contextParameter comment="" internalId="_7tu1ND3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_ImpalaPrincipal" prompt="Hsi_Cdp_Impala_ImpalaPrincipal?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="impala/_HOST@HSDEVTEST.HENRYSCHEIN.COM"/>
+      <contextParameter comment="" internalId="_7tu1NT3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_ImpalaKeyTabPrincipal" prompt="Hsi_Cdp_Impala_ImpalaKeyTabPrincipal?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="tldcdhuser@HSDEVTEST.HENRYSCHEIN.COM"/>
+      <contextParameter comment="" internalId="_7tu1Nj3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_ImpalaSSLTrustStorePath" prompt="Hsi_Cdp_Impala_ImpalaSSLTrustStorePath?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="/home/tldcdhuser/truststore.jks"/>
+      <contextParameter comment="" internalId="_7tu1Nz3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_Database" prompt="Hsi_Cdp_Impala_Database?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="sc_hsi_consumption"/>
+      <contextParameter comment="" internalId="_7tu1OD3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_Password" prompt="Hsi_Cdp_Impala_Password?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_Password" value="enc:system.encryption.key.v1:bmwnRMCjKWi3FN+aVQY+fwjxZm9JdizoANiv342xB1MIXB5ZMsdtk31+"/>
+      <contextParameter comment="" internalId="_7tu1OT3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_Login" prompt="Hsi_Cdp_Impala_Login?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="tldcdhuser"/>
+      <contextParameter comment="" internalId="_7tu1Oj3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_ImpalaKeyTab" prompt="Hsi_Cdp_Impala_ImpalaKeyTab?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="/home/tldcdhuser/tldcdhuser.keytab"/>
+    </context>
+    <context confirmationNeeded="false" name="Prod">
+      <contextParameter comment="" internalId="_i1CdWz3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_AdditionalParams" prompt="Hsi_Cdp_MySQL_AdditionalParams?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_String" value="useSSL=false"/>
+      <contextParameter comment="" internalId="_i1CdXD3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_Database" prompt="Hsi_Cdp_MySQL_Database?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_String" value="CDH_METADATA"/>
+      <contextParameter comment="" internalId="_i1CdXT3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_Login" prompt="Hsi_Cdp_MySQL_Login?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_String" value="tmetadata"/>
+      <contextParameter comment="" internalId="_i1CdXj3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_Password" prompt="Hsi_Cdp_MySQL_Password?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_Password" value="enc:system.encryption.key.v1:xtwT2otqSM5wj6hMD61zKv+vxnoudOXHhimGWit4rnqyv5N4yK+esPM="/>
+      <contextParameter comment="" internalId="_i1CdXz3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_Port" prompt="Hsi_Cdp_MySQL_Port?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_String" value="3306"/>
+      <contextParameter comment="" internalId="_i1CdYD3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_Server" prompt="Hsi_Cdp_MySQL_Server?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_String" value="172.20.121.7"/>
+      <contextParameter comment="" internalId="_i1CdYT3CEe6B_IPndzU9bg" name="sc_execution_audit_table" prompt="sc_execution_audit_table?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_String" value="SUPPLY_CHAIN_JOB_EXECUTION"/>
+      <contextParameter comment="" internalId="_i1CdYj3CEe6B_IPndzU9bg" name="sc_execution_date_conversion" prompt="sc_execution_date_conversion?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_Integer" value=""/>
+      <contextParameter comment="" internalId="_i1CdYz3CEe6B_IPndzU9bg" name="sc_execution_job_id" prompt="sc_execution_job_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1CdZD3CEe6B_IPndzU9bg" name="sc_execution_project_id" prompt="sc_execution_project_id?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_Integer" value="2"/>
+      <contextParameter comment="" internalId="_i1CdZT3CEe6B_IPndzU9bg" name="sc_execution_run_date" prompt="sc_execution_run_date?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_Long" value=""/>
+      <contextParameter comment="" internalId="_i1CdZj3CEe6B_IPndzU9bg" name="sc_execution_run_date_table" prompt="sc_execution_run_date_table?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_String" value="SUPPLY_CHAIN_JOB_RUN_DATE"/>
+      <contextParameter comment="" internalId="_i1CdZz3CEe6B_IPndzU9bg" name="sc_execution_run_id" prompt="sc_execution_run_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+      <contextParameter comment="" internalId="_i1CdaD3CEe6B_IPndzU9bg" name="sc_execution_table_id" prompt="sc_execution_table_id?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_Integer" value=""/>
+      <contextParameter comment="" internalId="_i1CdaT3CEe6B_IPndzU9bg" name="sc_metadata_columns" prompt="sc_metadata_columns?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_CDH_COLUMN"/>
+      <contextParameter comment="" internalId="_i1Cdaj3CEe6B_IPndzU9bg" name="sc_metadata_db_conn_table" prompt="sc_metadata_db_conn_table?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_CDH_DB_CONNECTION"/>
+      <contextParameter comment="" internalId="_i1Cdaz3CEe6B_IPndzU9bg" name="sc_metadata_job" prompt="sc_metadata_job?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_JOB"/>
+      <contextParameter comment="" internalId="_i1CdbD3CEe6B_IPndzU9bg" name="sc_metadata_project" prompt="sc_metadata_project?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_CDH_PROJECT"/>
+      <contextParameter comment="" internalId="_i1CdbT3CEe6B_IPndzU9bg" name="sc_metadata_schema_name" prompt="sc_metadata_schema_name?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="CDH_METADATA"/>
+      <contextParameter comment="" internalId="_i1Cdbj3CEe6B_IPndzU9bg" name="sc_metadata_stage_query_table" prompt="sc_metadata_stage_query_table?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_STAGE_LOAD_QUERY"/>
+      <contextParameter comment="" internalId="_i1Cdbz3CEe6B_IPndzU9bg" name="sc_metadata_tables" prompt="sc_metadata_tables?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_CDH_TABLE"/>
+      <contextParameter comment="" internalId="_i1ESgD3CEe6B_IPndzU9bg" name="connect_to" prompt="connect_to?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESgT3CEe6B_IPndzU9bg" name="is_csv" prompt="is_csv?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESgj3CEe6B_IPndzU9bg" name="is_full_load" prompt="is_full_load?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_Integer" value="0"/>
+      <contextParameter comment="" internalId="_i1ESgz3CEe6B_IPndzU9bg" name="level_1" prompt="level_1?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1EShD3CEe6B_IPndzU9bg" name="level_2" prompt="level_2?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1EShT3CEe6B_IPndzU9bg" name="schema_name" prompt="schema_name?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1EShj3CEe6B_IPndzU9bg" name="subject_area" prompt="subject_area?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1EShz3CEe6B_IPndzU9bg" name="table_descr_name" prompt="table_descr_name?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESiD3CEe6B_IPndzU9bg" name="table_id" prompt="table_id?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_Integer" value=""/>
+      <contextParameter comment="" internalId="_i1ESiT3CEe6B_IPndzU9bg" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESij3CEe6B_IPndzU9bg" name="AS400_additional_params" prompt="AS400_additional_params?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESiz3CEe6B_IPndzU9bg" name="AS400_CSV_SFTP" prompt="AS400_CSV_SFTP?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value="/DropZone/Supply_Chain"/>
+      <contextParameter comment="" internalId="_i1ESjD3CEe6B_IPndzU9bg" name="AS400_DB_ID" prompt="AS400_DB_ID?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_Integer" value="3"/>
+      <contextParameter comment="" internalId="_i1ESjT3CEe6B_IPndzU9bg" name="AS400_login" prompt="AS400_login?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESjj3CEe6B_IPndzU9bg" name="AS400_password" prompt="AS400_password?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESjz3CEe6B_IPndzU9bg" name="AS400_server" prompt="AS400_server?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESkD3CEe6B_IPndzU9bg" name="ca_schema" prompt="ca_schema?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value="hsi_staging_ca"/>
+      <contextParameter comment="" internalId="_i1ESkT3CEe6B_IPndzU9bg" name="run_date_id" prompt="run_date_id?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_Integer" value="20170101"/>
+      <contextParameter comment="" internalId="_i1ESkj3CEe6B_IPndzU9bg" name="supply_chain_HDFS_Folder" prompt="supply_chain_HDFS_Folder?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value="/hsidatalake/raw/test/supply_chain/"/>
+      <contextParameter comment="" internalId="_i1ESkz3CEe6B_IPndzU9bg" name="supply_chain_remote_engine" prompt="supply_chain_remote_engine?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value="/hsidatadisk/marketo/tmp/supply_chain/"/>
+      <contextParameter comment="" internalId="_i1ESlD3CEe6B_IPndzU9bg" name="us_schema" prompt="us_schema?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value="hsi_staging"/>
+      <contextParameter comment="" internalId="_7tu1Oz3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_ImpalaSSLTrustStorePassword" prompt="Hsi_Cdp_Impala_ImpalaSSLTrustStorePassword?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_Password" value="enc:system.encryption.key.v1:LpddNnO2IoOeVae+QzZWwmrI8K4zx5Zp4//1zdE1l9Jk9i7RsobE1RF0"/>
+      <contextParameter comment="" internalId="_7tu1PD3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_Port" prompt="Hsi_Cdp_Impala_Port?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="21051"/>
+      <contextParameter comment="" internalId="_7tu1PT3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_Server" prompt="Hsi_Cdp_Impala_Server?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="useazrcldrm1.henryschein.com"/>
+      <contextParameter comment="" internalId="_7tu1Pj3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_hiveAdditionalJDBCParameters" prompt="Hsi_Cdp_Impala_hiveAdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_7tu1Pz3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_ImpalaPrincipal" prompt="Hsi_Cdp_Impala_ImpalaPrincipal?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="impala/_HOST@HENRYSCHEIN.COM"/>
+      <contextParameter comment="" internalId="_7tu1QD3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_ImpalaKeyTabPrincipal" prompt="Hsi_Cdp_Impala_ImpalaKeyTabPrincipal?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="tldcdhuser@HENRYSCHEIN.COM"/>
+      <contextParameter comment="" internalId="_7tu1QT3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_ImpalaSSLTrustStorePath" prompt="Hsi_Cdp_Impala_ImpalaSSLTrustStorePath?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="/tmp/truststore.jks"/>
+      <contextParameter comment="" internalId="_7tu1Qj3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_Database" prompt="Hsi_Cdp_Impala_Database?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="sc_hsi_consumption"/>
+      <contextParameter comment="" internalId="_7tu1Qz3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_Password" prompt="Hsi_Cdp_Impala_Password?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_Password" value="enc:system.encryption.key.v1:vw/OrfExeP3crH+7Y1Ofux7qylAuQJFVkpfl/PXbwyHuhNDIuvNpA8Ly"/>
+      <contextParameter comment="" internalId="_7tu1RD3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_Login" prompt="Hsi_Cdp_Impala_Login?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="tldcdhuser"/>
+      <contextParameter comment="" internalId="_7tu1RT3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_ImpalaKeyTab" prompt="Hsi_Cdp_Impala_ImpalaKeyTab?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="/tmp/tldcdhuser.keytab"/>
+    </context>
+    <context confirmationNeeded="false" name="Qa">
+      <contextParameter comment="" internalId="_i1ESlT3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_AdditionalParams" prompt="Hsi_Cdp_MySQL_AdditionalParams?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+      <contextParameter comment="" internalId="_i1ESlj3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_Database" prompt="Hsi_Cdp_MySQL_Database?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_String" value="CDH_METADATA"/>
+      <contextParameter comment="" internalId="_i1ESlz3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_Login" prompt="Hsi_Cdp_MySQL_Login?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_String" value="tmetadata"/>
+      <contextParameter comment="" internalId="_i1ESmD3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_Password" prompt="Hsi_Cdp_MySQL_Password?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_Password" value="enc:system.encryption.key.v1:hK+GL+BNoB6Qn6F27ExS2fcsIseZDRKD0qhA1wgXXfUbZh3Hqggmoxqm"/>
+      <contextParameter comment="" internalId="_i1ESmT3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_Port" prompt="Hsi_Cdp_MySQL_Port?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_String" value="3306"/>
+      <contextParameter comment="" internalId="_i1ESmj3CEe6B_IPndzU9bg" name="Hsi_Cdp_MySQL_Server" prompt="Hsi_Cdp_MySQL_Server?" promptNeeded="false" repositoryContextId="_cBSF8ECoEe21k6Wzia3srA" type="id_String" value="172.20.121.90"/>
+      <contextParameter comment="" internalId="_i1ESmz3CEe6B_IPndzU9bg" name="sc_execution_audit_table" prompt="sc_execution_audit_table?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_String" value="SUPPLY_CHAIN_JOB_EXECUTION"/>
+      <contextParameter comment="" internalId="_i1ESnD3CEe6B_IPndzU9bg" name="sc_execution_date_conversion" prompt="sc_execution_date_conversion?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_Integer" value=""/>
+      <contextParameter comment="" internalId="_i1ESnT3CEe6B_IPndzU9bg" name="sc_execution_job_id" prompt="sc_execution_job_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESnj3CEe6B_IPndzU9bg" name="sc_execution_project_id" prompt="sc_execution_project_id?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_Integer" value="2"/>
+      <contextParameter comment="" internalId="_i1ESnz3CEe6B_IPndzU9bg" name="sc_execution_run_date" prompt="sc_execution_run_date?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_Long" value=""/>
+      <contextParameter comment="" internalId="_i1ESoD3CEe6B_IPndzU9bg" name="sc_execution_run_date_table" prompt="sc_execution_run_date_table?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_String" value="SUPPLY_CHAIN_JOB_RUN_DATE"/>
+      <contextParameter comment="" internalId="_i1ESoT3CEe6B_IPndzU9bg" name="sc_execution_run_id" prompt="sc_execution_run_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+      <contextParameter comment="" internalId="_i1ESoj3CEe6B_IPndzU9bg" name="sc_execution_table_id" prompt="sc_execution_table_id?" promptNeeded="false" repositoryContextId="_Gz1M4AYaEeqYvtV0ZfGWSQ" type="id_Integer" value=""/>
+      <contextParameter comment="" internalId="_i1ESoz3CEe6B_IPndzU9bg" name="sc_metadata_columns" prompt="sc_metadata_columns?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_CDH_COLUMN"/>
+      <contextParameter comment="" internalId="_i1ESpD3CEe6B_IPndzU9bg" name="sc_metadata_db_conn_table" prompt="sc_metadata_db_conn_table?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_CDH_DB_CONNECTION"/>
+      <contextParameter comment="" internalId="_i1ESpT3CEe6B_IPndzU9bg" name="sc_metadata_job" prompt="sc_metadata_job?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_JOB"/>
+      <contextParameter comment="" internalId="_i1ESpj3CEe6B_IPndzU9bg" name="sc_metadata_project" prompt="sc_metadata_project?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_CDH_PROJECT"/>
+      <contextParameter comment="" internalId="_i1ESpz3CEe6B_IPndzU9bg" name="sc_metadata_schema_name" prompt="sc_metadata_schema_name?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="CDH_METADATA"/>
+      <contextParameter comment="" internalId="_i1ESqD3CEe6B_IPndzU9bg" name="sc_metadata_stage_query_table" prompt="sc_metadata_stage_query_table?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_STAGE_LOAD_QUERY"/>
+      <contextParameter comment="" internalId="_i1ESqT3CEe6B_IPndzU9bg" name="sc_metadata_tables" prompt="sc_metadata_tables?" promptNeeded="false" repositoryContextId="_TWUosB22EeqsGPEvCDRIqw" type="id_String" value="SUPPLY_CHAIN_CDH_TABLE"/>
+      <contextParameter comment="" internalId="_i1ESqj3CEe6B_IPndzU9bg" name="connect_to" prompt="connect_to?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESqz3CEe6B_IPndzU9bg" name="is_csv" prompt="is_csv?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESrD3CEe6B_IPndzU9bg" name="is_full_load" prompt="is_full_load?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_Integer" value="0"/>
+      <contextParameter comment="" internalId="_i1ESrT3CEe6B_IPndzU9bg" name="level_1" prompt="level_1?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESrj3CEe6B_IPndzU9bg" name="level_2" prompt="level_2?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESrz3CEe6B_IPndzU9bg" name="schema_name" prompt="schema_name?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESsD3CEe6B_IPndzU9bg" name="subject_area" prompt="subject_area?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESsT3CEe6B_IPndzU9bg" name="table_descr_name" prompt="table_descr_name?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESsj3CEe6B_IPndzU9bg" name="table_id" prompt="table_id?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_Integer" value=""/>
+      <contextParameter comment="" internalId="_i1ESsz3CEe6B_IPndzU9bg" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_9r_WoFsyEeirNK1Dhi0s6w" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1EStD3CEe6B_IPndzU9bg" name="AS400_additional_params" prompt="AS400_additional_params?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1EStT3CEe6B_IPndzU9bg" name="AS400_CSV_SFTP" prompt="AS400_CSV_SFTP?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value="/DropZone/Supply_Chain"/>
+      <contextParameter comment="" internalId="_i1EStj3CEe6B_IPndzU9bg" name="AS400_DB_ID" prompt="AS400_DB_ID?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_Integer" value="3"/>
+      <contextParameter comment="" internalId="_i1EStz3CEe6B_IPndzU9bg" name="AS400_login" prompt="AS400_login?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESuD3CEe6B_IPndzU9bg" name="AS400_password" prompt="AS400_password?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESuT3CEe6B_IPndzU9bg" name="AS400_server" prompt="AS400_server?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_i1ESuj3CEe6B_IPndzU9bg" name="ca_schema" prompt="ca_schema?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value="hsi_staging_ca"/>
+      <contextParameter comment="" internalId="_i1ESuz3CEe6B_IPndzU9bg" name="run_date_id" prompt="run_date_id?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_Integer" value="20170101"/>
+      <contextParameter comment="" internalId="_i1ESvD3CEe6B_IPndzU9bg" name="supply_chain_HDFS_Folder" prompt="supply_chain_HDFS_Folder?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value="/hsidatalake/raw/test/supply_chain/"/>
+      <contextParameter comment="" internalId="_i1ESvT3CEe6B_IPndzU9bg" name="supply_chain_remote_engine" prompt="supply_chain_remote_engine?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value="/hsidatadisk/marketo/tmp/supply_chain/"/>
+      <contextParameter comment="" internalId="_i1ESvj3CEe6B_IPndzU9bg" name="us_schema" prompt="us_schema?" promptNeeded="false" repositoryContextId="_LNteoAVTEeqctv6ePp7VLA" type="id_String" value="hsi_staging"/>
+      <contextParameter comment="" internalId="_7tu1Rj3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_ImpalaSSLTrustStorePassword" prompt="Hsi_Cdp_Impala_ImpalaSSLTrustStorePassword?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_Password" value="enc:system.encryption.key.v1:G71vhpEu9vZwgZlqRHXiKY5hJvFFMKKnBq4QZbCwEEeta4MR"/>
+      <contextParameter comment="" internalId="_7tu1Rz3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_Port" prompt="Hsi_Cdp_Impala_Port?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="21051"/>
+      <contextParameter comment="" internalId="_7tu1SD3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_Server" prompt="Hsi_Cdp_Impala_Server?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="mgmnt012023qa.hsqa.henryschein.com"/>
+      <contextParameter comment="" internalId="_7tu1ST3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_hiveAdditionalJDBCParameters" prompt="Hsi_Cdp_Impala_hiveAdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value=""/>
+      <contextParameter comment="" internalId="_7tu1Sj3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_ImpalaPrincipal" prompt="Hsi_Cdp_Impala_ImpalaPrincipal?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="impala/_HOST@HSQA.HENRYSCHEIN.COM"/>
+      <contextParameter comment="" internalId="_7tu1Sz3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_ImpalaKeyTabPrincipal" prompt="Hsi_Cdp_Impala_ImpalaKeyTabPrincipal?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="tldcdhuser@HSQA.HENRYSCHEIN.COM"/>
+      <contextParameter comment="" internalId="_7tu1TD3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_ImpalaSSLTrustStorePath" prompt="Hsi_Cdp_Impala_ImpalaSSLTrustStorePath?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="/home/tldcdhuser/truststore.jks"/>
+      <contextParameter comment="" internalId="_7tu1TT3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_Database" prompt="Hsi_Cdp_Impala_Database?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="sc_hsi_consumption"/>
+      <contextParameter comment="" internalId="_7tu1Tj3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_Password" prompt="Hsi_Cdp_Impala_Password?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_Password" value="enc:system.encryption.key.v1:+Ub+xlSgeZK84CseST0MZVLiqum2XM15pOGbXA8yOmQEJrbYBBqB"/>
+      <contextParameter comment="" internalId="_7tu1Tz3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_Login" prompt="Hsi_Cdp_Impala_Login?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="tldcdhuser"/>
+      <contextParameter comment="" internalId="_7tu1UD3CEe6B_IPndzU9bg" name="Hsi_Cdp_Impala_ImpalaKeyTab" prompt="Hsi_Cdp_Impala_ImpalaKeyTab?" promptNeeded="false" repositoryContextId="_44PzIEhcEe2ePIsTvlo6KA" type="id_String" value="/home/tldcdhuser/tldcdhuser.keytab"/>
+    </context>
+    <parameters>
+      <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" show="false" value="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" show="false" value="25000"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/codebase/SCDashboard/in.csv&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+      <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+      <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_12"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Y2kTL2zR5AjMV1DQNVrf7a17ZLyLHOs7tYogMATZ"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+      <routinesParameter id="_PtOhUFElEe24FNC7gwFCIg" name="DQTechnical"/>
+      <routinesParameter id="_PrDXEFElEe24FNC7gwFCIg" name="DataMasking"/>
+      <routinesParameter id="_PmtpoFElEe24FNC7gwFCIg" name="DataOperation"/>
+      <routinesParameter id="_PsFR0FElEe24FNC7gwFCIg" name="DataQualityDependencies"/>
+      <routinesParameter id="_Prs3UFElEe24FNC7gwFCIg" name="DataQuality"/>
+      <routinesParameter id="_Ps3U8FElEe24FNC7gwFCIg" name="DqStringHandling"/>
+      <routinesParameter id="_PnHSQFElEe24FNC7gwFCIg" name="Mathematical"/>
+      <routinesParameter id="_PnwygFElEe24FNC7gwFCIg" name="Numeric"/>
+      <routinesParameter id="_PoRI0FElEe24FNC7gwFCIg" name="Relational"/>
+      <routinesParameter id="_PghiEFElEe24FNC7gwFCIg" name="SQLike"/>
+      <routinesParameter id="_PoytQFElEe24FNC7gwFCIg" name="StringHandling"/>
+      <routinesParameter id="_PpLu0FElEe24FNC7gwFCIg" name="TalendDataGenerator"/>
+      <routinesParameter id="_PplXcFElEe24FNC7gwFCIg" name="TalendDate"/>
+      <routinesParameter id="_Pqq8kFElEe24FNC7gwFCIg" name="TalendStringUtil"/>
+      <routinesParameter id="_PqTJIFElEe24FNC7gwFCIg" name="TalendString"/>
+      <routinesParameter id="_uDi24CvPEemn7J3ssWShHg" name="r"/>
+    </parameters>
+    <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+      <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+      <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+      <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
+      <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tLogCatcher_1">
+        <column key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;job_error_type&quot;, input_row.type);&#10;//System.out.println(&quot;Type:&quot;+input_row.type);&#10;&#10;globalMap.put(&quot;job_error_message&quot;, input_row.message);&#10;//System.out.println(&quot;job_error_message:&quot;+input_row.message);&#10;&#10;globalMap.put(&quot;job_error_code&quot;, input_row.code);&#10;//System.out.println(&quot;job_error_code:&quot;+input_row.code);&#10;&#10;&#10;"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJavaRow_2">
+        <column key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tStatCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="160" posY="320">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tStatCatcher_1"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tStatCatcher_1">
+        <column key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="8" name="system_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="job_repository_id" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="job_version" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="message_type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="8" name="duration" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="320">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_3"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#10;//&#10;// multiply by 2 the row identifier&#10;// output_row.id = input_row.id * 2;&#10;//&#10;// lowercase the name&#10;// output_row.name = input_row.name.toLowerCase();&#10;&#10;if (input_row.message_type.equals(&quot;begin&quot;)) {&#10;&#9;globalMap.put(&quot;job_start_time&quot;, input_row.moment);&#10;}&#10;&#10;if (input_row.message_type.equals(&quot;end&quot;)) {&#10;&#9;&#10;&#9;globalMap.put(&quot;job_end_time&quot;, input_row.moment);&#10;&#9;globalMap.put(&quot;job_execution_status&quot;, input_row.message);&#10;&#9;globalMap.put(&quot;job_execution_duration&quot;, input_row.duration);&#10;&#10;&#9;// place holder error field values in case no errros occured&#10;&#9;if (globalMap.get(&quot;job_error_type&quot;) == null) {&#10;&#9;&#9;globalMap.put(&quot;job_error_type&quot;, &quot;&quot;);&#10;&#9;&#9;globalMap.put(&quot;job_error_message&quot;, &quot;&quot;);&#10;&#9;&#9;globalMap.put(&quot;job_error_code&quot;, 0);&#9;&#10;&#9;}&#10;&#9;&#10;&#9;&#10;&#9;//System.out.println(&quot;aaaa:&quot;+globalMap.get(&quot;job_execution_duration&quot;));&#10;&#9;// Global var - triggers sending audit logs to DB&#10;&#9;globalMap.put(&quot;job_ended&quot;, &quot;YES&quot;);&#10;}&#10;&#10;/*System.out.println(&quot;-----------------&quot;);&#10;if(globalMap.get(&quot;job_ended&quot;).equals(&quot;YES&quot;)) {&#10;System.out.println(&quot;***************************&quot;);&#10;System.out.println(&quot;RUN_DATE:&quot;+context.sc_execution_run_date);&#10;System.out.println(&quot;JOB_ID:&quot;+context.sc_execution_job_id);&#10;System.out.println(&quot;RUN_ID:&quot;+context.sc_execution_run_id);&#10;System.out.println(&quot;START_TIME:&quot;+(java.util.Date) globalMap.get(&quot;job_start_time&quot;));&#10;System.out.println(&quot;END_TIME:&quot;+(java.util.Date) globalMap.get(&quot;job_end_time&quot;));&#10;System.out.println(&quot;Duration: &quot; + ((Long)globalMap.get(&quot;job_execution_duration&quot;)) /1000);&#10;System.out.println(&quot;INPUTPUT_ROWS:&quot;+(Integer) globalMap.get(&quot;job_number_of_rows_input&quot;));&#10;System.out.println(&quot;OUTPUT_ROWS:&quot;+(Integer) globalMap.get(&quot;job_number_of_rows_output&quot;));&#10;System.out.println(&quot;ERROR_TYPE:&quot;+(String) globalMap.get(&quot;job_error_type&quot;));&#10;System.out.println(&quot;ERROR_MESSAGE:&quot;+(String) globalMap.get(&quot;job_error_message&quot;));&#10;System.out.println(&quot;ERROR_CODE:&quot;+(Integer) globalMap.get(&quot;job_error_code&quot;));&#10;System.out.println(&quot;STATUS:&quot;+(String)globalMap.get(&quot;job_execution_status&quot;));&#10;System.out.println(&quot;JOB_ENDED:&quot;+(String) globalMap.get(&quot;job_ended&quot;));&#10;System.out.println(&quot;***************************&quot;);&#10;}&#10;*/"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJavaRow_3">
+        <column key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="8" name="system_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="job_repository_id" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="job_version" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="message_type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="8" name="duration" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="320">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="//int num_input_rows = (Integer) globalMap.get(&quot;job_number_of_rows_input&quot;);&#10;//int num_output_rows = (Integer) globalMap.get(&quot;job_number_of_rows_output&quot;);&#10;int num_input_rows = (Integer) globalMap.get(&quot;NUM_INPUT_ROWS&quot;);&#10;int num_output_rows =(Integer) globalMap.get(&quot;NUM_OUTPUT_ROWS&quot;);&#10;&#10;System.out.println(&quot;input:&quot;+num_input_rows);&#10;System.out.println(&quot;output:&quot;+num_output_rows);&#10;String job_execution_status = (String)globalMap.get(&quot;job_execution_status&quot;);&#10;&#10; if((boolean)((job_execution_status.equals(&quot;success&quot;)) &amp;&amp; (num_input_rows==num_output_rows)))&#10; { &#10;  globalMap.put(&quot;STATUS&quot;, &quot;Y&quot;);&#10;  System.out.println(&quot;INSIDE SUCCESS BLOCK&quot;);&#10;  //System.out.println(&quot;STATUS:&quot;+(String)globalMap.get(&quot;job_execution_status&quot;));&#10;  }&#10;  else &#10; {&#10; globalMap.put(&quot;STATUS&quot;, &quot;N&quot;);&#10; System.out.println(&quot;INSIDE FAILURE BLOCK&quot;);&#10; //System.out.println(&quot;STATUS:&quot;+(String)globalMap.get(&quot;job_execution_status&quot;));&#10; }&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;if(globalMap.get(&quot;job_ended&quot;).equals(&quot;YES&quot;)) {&#10;System.out.println(&quot;***************************&quot;);&#10;System.out.println(&quot;RUN_DATE:&quot;+context.sc_execution_run_date);&#10;System.out.println(&quot;JOB_ID:&quot;+context.sc_execution_job_id);&#10;System.out.println(&quot;RUN_ID:&quot;+context.sc_execution_run_id);&#10;System.out.println(&quot;START_TIME:&quot;+(java.util.Date) globalMap.get(&quot;job_start_time&quot;));&#10;System.out.println(&quot;END_TIME:&quot;+(java.util.Date) globalMap.get(&quot;job_end_time&quot;));&#10;System.out.println(&quot;Duration: &quot; + ((Long)globalMap.get(&quot;job_execution_duration&quot;)) /1000);&#10;System.out.println(&quot;INPUTPUT_ROWS:&quot;+(Integer) globalMap.get(&quot;NUM_INPUT_ROWS&quot;));&#10;System.out.println(&quot;OUTPUT_ROWS:&quot;+(Integer) globalMap.get(&quot;NUM_OUTPUT_ROWS&quot;));&#10;System.out.println(&quot;ERROR_TYPE:&quot;+(String) globalMap.get(&quot;job_error_type&quot;));&#10;System.out.println(&quot;ERROR_MESSAGE:&quot;+(String) globalMap.get(&quot;job_error_message&quot;));&#10;System.out.println(&quot;ERROR_CODE:&quot;+(Integer) globalMap.get(&quot;job_error_code&quot;));&#10;System.out.println(&quot;STATUS:&quot;+(String)globalMap.get(&quot;job_execution_status&quot;));&#10;System.out.println(&quot;JOB_ENDED:&quot;+(String) globalMap.get(&quot;job_ended&quot;));&#10;System.out.println(&quot;***************************&quot;);&#10;}&#10;&#10;"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJava_1"/>
+    </node>
+    <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_N3HFgFErEe24FNC7gwFCIg"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+      <elementParameter field="TEXT" name="HOST" value="context.Hsi_Cdp_MySQL_Server"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+      <elementParameter field="TEXT" name="PORT" value="context.Hsi_Cdp_MySQL_Port"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.Hsi_Cdp_MySQL_Database"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.Hsi_Cdp_MySQL_AdditionalParams"/>
+      <elementParameter field="TEXT" name="USER" value="context.Hsi_Cdp_MySQL_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ExHlyX9hY+H2gLt/mWRUb00hA9SUGPvsYhAvVGWrdrpvsVMvqB/jUOIVCl35cYn9KJc9plh2gix4xA=="/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="Hsi_Cdp_MySQL"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    </node>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="32">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="int num_input_rows = (Integer) globalMap.get(&quot;NUM_INPUT_ROWS&quot;);&#10;int num_output_rows =(Integer) globalMap.get(&quot;NUM_OUTPUT_ROWS&quot;);&#10;&#10;System.out.println(&quot;input:&quot;+num_input_rows);&#10;System.out.println(&quot;output:&quot;+num_output_rows);"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJava_2"/>
+    </node>
+    <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="320">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_3"/>
+      <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+      <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+      <elementParameter field="TABLE" name="VALUES">
+        <elementValue elementRef="SCHEMA_COLUMN" value="RUN_DATE"/>
+        <elementValue elementRef="VALUE" value="Long.parseLong(TalendDate.formatDate(&quot;yyyyMMddHHmmss&quot;,TalendDate.getCurrentDate()))"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="JOB_ID"/>
+        <elementValue elementRef="VALUE" value="context.sc_execution_job_id"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="RUN_ID"/>
+        <elementValue elementRef="VALUE" value="context.sc_execution_run_id"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="START_TIME"/>
+        <elementValue elementRef="VALUE" value="(java.util.Date)globalMap.get(&quot;job_start_time&quot;)"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="END_TIME"/>
+        <elementValue elementRef="VALUE" value="(java.util.Date)globalMap.get(&quot;job_end_time&quot;)"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="DURATION"/>
+        <elementValue elementRef="VALUE" value="((Long)globalMap.get(&quot;job_execution_duration&quot;)) /1000"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="NUM_INPUT_ROWS"/>
+        <elementValue elementRef="VALUE" value="(Integer) globalMap.get(&quot;NUM_INPUT_ROWS&quot;)"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="NUM_OUTPUT_ROWS"/>
+        <elementValue elementRef="VALUE" value="(Integer) globalMap.get(&quot;NUM_OUTPUT_ROWS&quot;)"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="ERROR_CODE"/>
+        <elementValue elementRef="VALUE" value="((Integer) globalMap.get(&quot;job_error_code&quot;))"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="ERROR_TYPE"/>
+        <elementValue elementRef="VALUE" value="(String) globalMap.get(&quot;job_error_type&quot;)"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="ERROR_MESSAGE"/>
+        <elementValue elementRef="VALUE" value="(String) globalMap.get(&quot;job_error_message&quot;)"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="SUCCESS"/>
+        <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;STATUS&quot;)"/>
+      </elementParameter>
+      <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+      <elementParameter field="TABLE" name="INTABLE" show="false"/>
+      <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+      <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tFixedFlowInput_3">
+        <column comment="" key="true" length="-1" name="RUN_DATE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="true" length="-1" name="JOB_ID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="true" length="-1" name="RUN_ID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="START_TIME" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd hh:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="END_TIME" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd hh:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="DURATION" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="NUM_INPUT_ROWS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="NUM_OUTPUT_ROWS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ERROR_CODE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ERROR_TYPE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ERROR_MESSAGE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="SUCCESS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="VALIDATION_REJECT" name="VALIDATION_REJECT">
+        <column comment="" key="true" length="-1" name="RUN_DATE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="true" length="-1" name="JOB_ID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="true" length="-1" name="RUN_ID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="START_TIME" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="END_TIME" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="DURATION" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="NUM_INPUT_ROWS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="NUM_OUTPUT_ROWS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ERROR_CODE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ERROR_TYPE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ERROR_MESSAGE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="SUCCESS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="6" offsetLabelY="0" posX="1056" posY="320">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_5"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+      <elementParameter field="TEXT" name="HOST" show="false" value="context.Hsi_Cdp_MYSQL_Server"/>
+      <elementParameter field="TEXT" name="PORT" show="false" value="context.Hsi_Cdp_MYSQL_Port"/>
+      <elementParameter field="TEXT" name="DBNAME" show="false" value="context.Hsi_Cdp_MYSQL_Database"/>
+      <elementParameter field="TEXT" name="USER" show="false" value="context.Hsi_Cdp_MYSQL_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:fvuAM0bV/JJ9DFZWuxRZbaP15k2tcg1JGNG14fi8uY9fropC8oya7yh4m7QllIB8pl7hZmsWVVt5Zg=="/>
+      <elementParameter field="DBTABLE" name="TABLE" value="context.sc_execution_audit_table"/>
+      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+      <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+      <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.Hsi_Cdp_MYSQL_AdditionalParams"/>
+      <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+      <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+      <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+      <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+      <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+      <elementParameter field="TABLE" name="ADD_COLS"/>
+      <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="true"/>
+      <elementParameter field="TABLE" name="FIELD_OPTIONS">
+        <elementValue elementRef="SCHEMA_COLUMN" value="RUN_DATE"/>
+        <elementValue elementRef="UPDATE_KEY" value="true"/>
+        <elementValue elementRef="DELETE_KEY" value="true"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="JOB_ID"/>
+        <elementValue elementRef="UPDATE_KEY" value="true"/>
+        <elementValue elementRef="DELETE_KEY" value="true"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="RUN_ID"/>
+        <elementValue elementRef="UPDATE_KEY" value="true"/>
+        <elementValue elementRef="DELETE_KEY" value="true"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="START_TIME"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="true"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="END_TIME"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="DURATION"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="NUM_INPUT_ROWS"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="NUM_OUTPUT_ROWS"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="ERROR_CODE"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="ERROR_TYPE"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="ERROR_MESSAGE"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="SUCCESS"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+      <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="true"/>
+      <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+      <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" show="false" value="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tDBOutput_1">
+        <column comment="" key="true" length="-1" name="RUN_DATE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="true" length="-1" name="JOB_ID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="true" length="-1" name="RUN_ID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="START_TIME" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="END_TIME" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="DURATION" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="NUM_INPUT_ROWS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="NUM_OUTPUT_ROWS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ERROR_CODE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ERROR_TYPE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ERROR_MESSAGE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="SUCCESS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="REJECT" name="REJECT">
+        <column comment="" key="true" length="-1" name="RUN_DATE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="true" length="-1" name="JOB_ID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="true" length="-1" name="RUN_ID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="START_TIME" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="END_TIME" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="DURATION" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="NUM_INPUT_ROWS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="NUM_OUTPUT_ROWS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ERROR_CODE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ERROR_TYPE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ERROR_MESSAGE" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="SUCCESS" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tJavaRow_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+    </connection>
+    <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tStatCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tStatCatcher_1" target="tJavaRow_3">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaRow_3" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_3" target="tJava_1">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="globalMap.get(&quot;job_ended&quot;)!=null"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFixedFlowInput_3">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tLogCatcher_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+    </connection>
+    <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tFixedFlowInput_3" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_3" target="tDBOutput_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tStatCatcher_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_3"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a0df84d5-2c45-476e-9dcd-b0bad46af38d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5S+pa90x+BdQLo7wjQIDXAa6pxWzdJnrMTMS5SNaEM40MVPG3+3mOGWzNzpaQK4OoaqTVP+DXxDK&#13;
+kX4J48qaOA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c7acdb98-a5a3-401a-96cf-1350487b5417"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aTL9jNZNNfyerw/KXI9CoiMILnfr632qOZ8rlYvcmR5aHxCp/Eis6GYqR60V8f410r7FJXuUbR34&#13;
+IAwZ/y2Osw==</DigestValue></Reference></SignedInfo><SignatureValue>IEgM+dL7cZkUDZxqcrPVChQOmDdxYIfA3Ov5iLM68I4JgkNdO9KqWTn1i3M9pxGmtZyzf1PDfNCb&#13;
+9+WU2SmQEZAI5YQEZpL7X7FWoebnWUw1id+XD12/MEqIbgbTKc94DYAYrVxl+wMSPcLU6GOKm47u&#13;
+32rqNQG68A8TEdSWQ5D3oeJV3qQ61VA1Xm6iUr86hDrVd+mjW9ADU+FYki0D8bW4v4KpEci14hg3&#13;
+t21DeDA8IrBoPKJ83dX55Ghz7YsUTEmaz+Oo8UP3wQ1TlmH70exXLLAsve6xD6ZTodE4E0xVifMa&#13;
+eyRqtCuxWTpzhOkim2AEU/9nXW4t+Fyk3mBldw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c7acdb98-a5a3-401a-96cf-1350487b5417" Target="#_a0df84d5-2c45-476e-9dcd-b0bad46af38d"><Timestamp>2024-03-18 10:29:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

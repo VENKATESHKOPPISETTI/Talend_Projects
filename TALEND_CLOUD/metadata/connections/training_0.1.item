@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:DatabaseConnection AdditionalParams="noDatetimeStringSync=true" DatabaseType="MySQL" DatasourceName="" DbmsId="mysql_id" DriverClass="com.mysql.cj.jdbc.Driver" FileFieldName="" NullChar="" Password="enc:system.encryption.key.v1:91XEaExJw5DzwVvHEXyj12eaECYW4WEuG7zKSrMNL8x/" Port="3306" ProductId="MYSQL" SID="training" SQLMode="false" ServerName="localhost" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:mysql://localhost:3306/training?noDatetimeStringSync=true" UiSchema="" Username="root" dataPackage="_ZAC5oGzfEe6RVrTGvSnOZA" dbVersionString="MYSQL_8" id="_uez9wGzeEe6RVrTGvSnOZA" label="training" name="training" supportNLS="false" xmi:id="_Y7_gEGzfEe6RVrTGvSnOZA">
+    <taggedValue tag="Is Conn Need Reload" value="true" xmi:id="_Y8IqAGzfEe6RVrTGvSnOZA"/>
+    <taggedValue tag="package filter" value="" xmi:id="_Y-s10GzfEe6RVrTGvSnOZA"/>
+    <taggedValue tag="Status" value="" xmi:id="_Y-2m0GzfEe6RVrTGvSnOZA"/>
+    <taggedValue tag="Version" value="0.1" xmi:id="_Y-2m0WzfEe6RVrTGvSnOZA"/>
+    <taggedValue tag="Purpose" value="" xmi:id="_Y-2m0mzfEe6RVrTGvSnOZA"/>
+    <taggedValue tag="Description" value="" xmi:id="_Y-2m02zfEe6RVrTGvSnOZA"/>
+    <taggedValue tag="Author" value="" xmi:id="_Y-2m1GzfEe6RVrTGvSnOZA"/>
+    <taggedValue tag="otherParameter" xmi:id="_Y-2m1WzfEe6RVrTGvSnOZA"/>
+    <taggedValue tag="DB ProductName" value="MySQL" xmi:id="_Y_JhwGzfEe6RVrTGvSnOZA"/>
+    <taggedValue tag="DB ProductVersion" value="8.0.35" xmi:id="_Y_JhwWzfEe6RVrTGvSnOZA"/>
+    <taggedValue tag="DB IdentifierQuoteString" value="`" xmi:id="_Y_JhwmzfEe6RVrTGvSnOZA"/>
+    <parameters key="CONN_PARA_KEY_USERNAME" value="root" xmi:id="_Y8IqAWzfEe6RVrTGvSnOZA"/>
+    <parameters key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value="" xmi:id="_N2HRMOKmEe6vmezr7eyR0g"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_Y7_gEGzfEe6RVrTGvSnOZA" name="training" xmi:id="_ZAC5oGzfEe6RVrTGvSnOZA">
+    <ownedElement id="_jFnbcGzfEe6RVrTGvSnOZA" label="countries" name="countries" tableType="TABLE" xmi:id="_jFnbcWzfEe6RVrTGvSnOZA" xsi:type="relational:TdTable">
+      <feature key="true" label="country_business_id" length="10" name="country_business_id" nullable="false" sourceType="INT" talendType="id_Integer" xmi:id="_jFnbcmzfEe6RVrTGvSnOZA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_jFnbc2zfEe6RVrTGvSnOZA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_jFnbdGzfEe6RVrTGvSnOZA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_jFnbdWzfEe6RVrTGvSnOZA"/>
+      </feature>
+      <feature label="country_name" length="14" name="country_name" sourceType="VARCHAR" talendType="id_String" xmi:id="_jFnbdmzfEe6RVrTGvSnOZA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_jFnbd2zfEe6RVrTGvSnOZA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_jFnbeGzfEe6RVrTGvSnOZA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_jFnbeWzfEe6RVrTGvSnOZA"/>
+      </feature>
+      <feature label="country_code" length="2" name="country_code" sourceType="VARCHAR" talendType="id_String" xmi:id="_jFnbemzfEe6RVrTGvSnOZA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_jFnbe2zfEe6RVrTGvSnOZA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_jFnbfGzfEe6RVrTGvSnOZA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_jFnbfWzfEe6RVrTGvSnOZA"/>
+      </feature>
+    </ownedElement>
+    <ownedElement id="_jFwlYGzfEe6RVrTGvSnOZA" label="products" name="products" tableType="TABLE" xmi:id="_jFwlYWzfEe6RVrTGvSnOZA" xsi:type="relational:TdTable">
+      <feature key="true" label="product_business_id" length="10" name="product_business_id" nullable="false" sourceType="INT" talendType="id_Integer" xmi:id="_jFwlYmzfEe6RVrTGvSnOZA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_jFwlY2zfEe6RVrTGvSnOZA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_jFwlZGzfEe6RVrTGvSnOZA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_jFwlZWzfEe6RVrTGvSnOZA"/>
+      </feature>
+      <feature label="product_name" length="255" name="product_name" sourceType="VARCHAR" talendType="id_String" xmi:id="_jFwlZmzfEe6RVrTGvSnOZA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_jFwlZ2zfEe6RVrTGvSnOZA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_jFwlaGzfEe6RVrTGvSnOZA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_jFwlaWzfEe6RVrTGvSnOZA"/>
+      </feature>
+      <feature label="price" length="10" name="price" sourceType="INT" talendType="id_Integer" xmi:id="_jFwlamzfEe6RVrTGvSnOZA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_jFwla2zfEe6RVrTGvSnOZA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_jFwlbGzfEe6RVrTGvSnOZA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="4" name="INT" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_jFwlbWzfEe6RVrTGvSnOZA"/>
+      </feature>
+    </ownedElement>
+    <ownedElement id="_jF6WYGzfEe6RVrTGvSnOZA" label="events" name="events" tableType="TABLE" xmi:id="_jF6WYWzfEe6RVrTGvSnOZA" xsi:type="relational:TdTable">
+      <feature key="true" label="event_business_id" length="10" name="event_business_id" nullable="false" sourceType="INT" talendType="id_Integer" xmi:id="_jF6WYmzfEe6RVrTGvSnOZA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_jF6WY2zfEe6RVrTGvSnOZA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_jF6WZGzfEe6RVrTGvSnOZA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_jF6WZWzfEe6RVrTGvSnOZA"/>
+      </feature>
+      <feature label="event_time" length="19" name="event_time" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATETIME" talendType="id_Date" xmi:id="_jF6WZmzfEe6RVrTGvSnOZA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_jF6WZ2zfEe6RVrTGvSnOZA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_jF6WaGzfEe6RVrTGvSnOZA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATETIME" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_jF6WaWzfEe6RVrTGvSnOZA"/>
+      </feature>
+      <feature label="product_business_id" length="10" name="product_business_id" sourceType="INT" talendType="id_Integer" xmi:id="_jF6WamzfEe6RVrTGvSnOZA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_jF6Wa2zfEe6RVrTGvSnOZA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_jF6WbGzfEe6RVrTGvSnOZA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="4" name="INT" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_jF6WbWzfEe6RVrTGvSnOZA"/>
+      </feature>
+      <feature label="customer_business_id" length="10" name="customer_business_id" sourceType="INT" talendType="id_Integer" xmi:id="_jF6WbmzfEe6RVrTGvSnOZA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_jF6Wb2zfEe6RVrTGvSnOZA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_jF6WcGzfEe6RVrTGvSnOZA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="4" name="INT" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_jF6WcWzfEe6RVrTGvSnOZA"/>
+      </feature>
+    </ownedElement>
+    <ownedElement id="_jF6WcmzfEe6RVrTGvSnOZA" label="customers" name="customers" tableType="TABLE" xmi:id="_jF6Wc2zfEe6RVrTGvSnOZA" xsi:type="relational:TdTable">
+      <feature key="true" label="customer_business_id" length="10" name="customer_business_id" nullable="false" sourceType="INT" talendType="id_Integer" xmi:id="_jF6WdGzfEe6RVrTGvSnOZA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_jF6WdWzfEe6RVrTGvSnOZA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_jF6WdmzfEe6RVrTGvSnOZA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="4" name="INT" numericPrecisionRadix="10" xmi:id="_jF6Wd2zfEe6RVrTGvSnOZA"/>
+      </feature>
+      <feature label="gender" length="6" name="gender" sourceType="VARCHAR" talendType="id_String" xmi:id="_jF6WeGzfEe6RVrTGvSnOZA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_jF6WeWzfEe6RVrTGvSnOZA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_jF6WemzfEe6RVrTGvSnOZA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_jF6We2zfEe6RVrTGvSnOZA"/>
+      </feature>
+      <feature label="email" length="255" name="email" sourceType="VARCHAR" talendType="id_String" xmi:id="_jF6WfGzfEe6RVrTGvSnOZA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_jF6WfWzfEe6RVrTGvSnOZA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_jF6WfmzfEe6RVrTGvSnOZA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_jF6Wf2zfEe6RVrTGvSnOZA"/>
+      </feature>
+      <feature label="country_code" length="3" name="country_code" sourceType="VARCHAR" talendType="id_String" xmi:id="_jF6WgGzfEe6RVrTGvSnOZA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_jF6WgWzfEe6RVrTGvSnOZA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_jF6WgmzfEe6RVrTGvSnOZA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_jF6Wg2zfEe6RVrTGvSnOZA"/>
+      </feature>
+      <feature label="birthday" length="19" name="birthday" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" sourceType="DATETIME" talendType="id_Date" xmi:id="_jF6WhGzfEe6RVrTGvSnOZA" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="" xmi:id="_jF6WhWzfEe6RVrTGvSnOZA"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_jF6WhmzfEe6RVrTGvSnOZA" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATETIME" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_jF6Wh2zfEe6RVrTGvSnOZA"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ccd820a2-e786-434b-81d3-3af3457e4c9e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hn5ysPh0CiB2/0HQafQFt5UAwmUx21QnXiqPhq2JhBvbBFgRXpF1cXipcgqdV6l4QCBPBTDjiHx6&#13;
+aZq4G3I6KA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_08e02089-dde5-4c63-8781-b28c4c2add9c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8vfYGP5H6De3NRGlXsQvU3+4HZjcpkS16bH4qjB9pXmV+5tZIqGb8syWRjKXBVa3S6aa0AotpY2F&#13;
+n1dDZ//pxg==</DigestValue></Reference></SignedInfo><SignatureValue>QQGni99nErxkIk9dG9ffNJnmnkQ/uRYpYpyaZYIILzOoRUVGk+HECHuBwIxJbREmDjuE9SUKbRyK&#13;
+23mzGYW2kHWOaSm0plDBn5k0EWLVMrqvpwBLDEte4xqbxlmMuHENbx4PNmTEbrMLFcLoapnOzT6w&#13;
+BJQz7RtD6qgN62wFa4ezqdYn73OeSguDlmVIyYOJ0H56kZLDfaVTIlOgnYATe9gdgvKSc1m0d5LL&#13;
+9kXLqKBcakrcjqE3LVcwVCr9iYlWE3uwH/nZOTYbFsRb1QQ3vg1QEagneEIrH+aTJDw4WNosYyk9&#13;
+aNr036xKCHNzn9sJ/rGqYetLzYsHkYaUwvHhUw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_08e02089-dde5-4c63-8781-b28c4c2add9c" Target="#_ccd820a2-e786-434b-81d3-3af3457e4c9e"><Timestamp>2024-03-15 09:45:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_nGgagI8GEfGw4fwo1TybbA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_nGgagY8GEfGw4fwo1TybbA" comment="" name="mysql_mdm_connection_Password" prompt="mysql_mdm_connection_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:W+tFctxAKn1OHw5uglkCacnMjnIkmeiJMJE7QdkFnvC6"/>
+  <contextParameter xmi:id="_nGgago8GEfGw4fwo1TybbA" comment="" name="mysql_mdm_connection_Server" prompt="mysql_mdm_connection_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_nGgag48GEfGw4fwo1TybbA" comment="" name="mysql_mdm_connection_Port" prompt="mysql_mdm_connection_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="3306"/>
+  <contextParameter xmi:id="_nGgahI8GEfGw4fwo1TybbA" comment="" name="mysql_mdm_connection_Database" prompt="mysql_mdm_connection_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="MM_MDM"/>
+  <contextParameter xmi:id="_nGgahY8GEfGw4fwo1TybbA" comment="" name="mysql_mdm_connection_AdditionalParams" prompt="mysql_mdm_connection_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2"/>
+  <contextParameter xmi:id="_nGgaho8GEfGw4fwo1TybbA" comment="" name="mysql_mdm_connection_Login" prompt="mysql_mdm_connection_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="root"/>
+</talendfile:ContextType>

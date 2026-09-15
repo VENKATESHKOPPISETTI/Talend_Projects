@@ -1,0 +1,132 @@
+package routines;
+
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.Locale;
+import java.util.UUID;
+
+public class MDMHashUtils {
+
+    private static final String NULL_VALUE = "<NULL>";
+
+    /** SHA-256 implementation without Apache Commons Codec. */
+    public static String sha256(String input) {
+        String safeInput = input == null ? NULL_VALUE : input;
+
+        try {
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            byte[] hashBytes = digest.digest(safeInput.getBytes(StandardCharsets.UTF_8));
+            StringBuilder hexValue = new StringBuilder(64);
+
+            for (byte hashByte : hashBytes) {
+                int value = hashByte & 0xFF;
+                hexValue.append(Character.forDigit((value >>> 4) & 0x0F, 16));
+                hexValue.append(Character.forDigit(value & 0x0F, 16));
+            }
+
+            return hexValue.toString();
+        } catch (NoSuchAlgorithmException exception) {
+            throw new RuntimeException("SHA-256 algorithm is not available", exception);
+        }
+    }
+
+    /** Generates a deterministic staging GUID from entity name and Landing GUID. */
+    public static String stagingGuid(String entityName, Object sourceGuid) {
+        String input = entityName + "|" + String.valueOf(sourceGuid);
+        return UUID.nameUUIDFromBytes(input.getBytes(StandardCharsets.UTF_8)).toString();
+    }
+
+    /** null -> <NULL>; otherwise TRIM + UPPERCASE. Blank values remain blank. */
+    public static String normalizeCode(Object value) {
+        if (value == null) {
+            return NULL_VALUE;
+        }
+
+        return value.toString().trim().toUpperCase(Locale.ROOT);
+    }
+
+    /** null/blank -> <NULL>; otherwise TRIM. */
+    public static String normalizeText(Object value) {
+        if (value == null) {
+            return NULL_VALUE;
+        }
+
+        String normalizedValue = value.toString().trim();
+        return normalizedValue.isEmpty() ? NULL_VALUE : normalizedValue;
+    }
+
+    /** Company BK: COMPNY_CD. */
+    public static String companyBusinessKeyHash(Object companyCode) {
+        return sha256(normalizeCode(companyCode));
+    }
+
+    /**
+     * Company row-hash order:
+     * COMPNY_CD, COMPANY_NAME, PARNT_GROP, REPORT_STATUS,
+     * LEGAL_NAME, SHORT_NAME, DISPLAY_NAME, DELETED.
+     */
+    public static String companyRowHash(
+        Object companyCode,
+        Object companyName,
+        Object parentGroup,
+        Object reportStatus,
+        Object legalName,
+        Object shortName,
+        Object displayName,
+        Object deleted
+    ) {
+        String canonicalValue =
+              normalizeCode(companyCode)
+            + "|" + normalizeText(companyName)
+            + "|" + normalizeCode(parentGroup)
+            + "|" + normalizeCode(reportStatus)
+            + "|" + normalizeText(legalName)
+            + "|" + normalizeText(shortName)
+            + "|" + normalizeText(displayName)
+            + "|" + String.valueOf(deleted);
+
+        return sha256(canonicalValue);
+    }
+
+    /** Dealer Group BK: COMPNY_CD + PARNT_GROP. */
+    public static String dealerGroupBusinessKeyHash(
+        Object companyCode,
+        Object parentGroup
+    ) {
+        return sha256(
+              normalizeCode(companyCode)
+            + "|" + normalizeCode(parentGroup)
+        );
+    }
+
+    /**
+     * Dealer Group row-hash order:
+     * COMPNY_CD, PARNT_GROP, PARNT_NAME, PARNT_SHORT_NAME,
+     * PARNT_TYPE, PARNT_STATUS, GROUP_START_DATE, GROUP_END_DATE, DELETED.
+     */
+    public static String dealerGroupRowHash(
+        Object companyCode,
+        Object parentGroup,
+        Object groupName,
+        Object groupShortName,
+        Object groupType,
+        Object groupStatus,
+        Object groupStartDate,
+        Object groupEndDate,
+        Object deleted
+    ) {
+        String canonicalValue =
+              normalizeCode(companyCode)
+            + "|" + normalizeCode(parentGroup)
+            + "|" + normalizeText(groupName)
+            + "|" + normalizeText(groupShortName)
+            + "|" + normalizeCode(groupType)
+            + "|" + normalizeCode(groupStatus)
+            + "|" + String.valueOf(groupStartDate)
+            + "|" + String.valueOf(groupEndDate)
+            + "|" + String.valueOf(deleted);
+
+        return sha256(canonicalValue);
+    }
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Dev" xmi:id="_WTsyUNpzEe6n040-_uED9Q">
+    <contextParameter comment="" name="Azure_Synapse_Connection_Password" prompt="Azure_Synapse_Connection_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:2huIs3rXGNfHmOsmtsi37e0h7kVoKlsku51qPYl3LiUG+9Ok9KE6iA==" xmi:id="_WTsyUdpzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_Schema" prompt="Azure_Synapse_Connection_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sc_hsi_consumption" xmi:id="_WTsyUtpzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_Port" prompt="Azure_Synapse_Connection_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_WTsyU9pzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_Database" prompt="Azure_Synapse_Connection_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DEVDW" xmi:id="_WTsyVNpzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_Login" prompt="Azure_Synapse_Connection_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="lcdTalend" xmi:id="_WTsyVdpzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_Server" prompt="Azure_Synapse_Connection_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="synapse-dev-dw-workspace.sql.azuresynapse.net" xmi:id="_WTsyVtpzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_AdditionalParams" prompt="Azure_Synapse_Connection_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_WTsyV9pzEe6n040-_uED9Q"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Prod" xmi:id="_WTsyWNpzEe6n040-_uED9Q">
+    <contextParameter comment="" name="Azure_Synapse_Connection_Password" prompt="Azure_Synapse_Connection_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:QnaYYg9usxkmjPjaVboDS3PYaDQg+HPRi/O/14peKbukLU5vlAsQ1ss=" xmi:id="_WTsyWdpzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_Schema" prompt="Azure_Synapse_Connection_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sc_hsi_consumption" xmi:id="_WTsyWtpzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_Port" prompt="Azure_Synapse_Connection_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_WTsyW9pzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_Database" prompt="Azure_Synapse_Connection_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="PRDDW" xmi:id="_WTsyXNpzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_Login" prompt="Azure_Synapse_Connection_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="lcdTalend" xmi:id="_WTsyXdpzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_Server" prompt="Azure_Synapse_Connection_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="synapse-prod-dw-workspace.privatelink.sql.azuresynapse.net" xmi:id="_WTsyXtpzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_AdditionalParams" prompt="Azure_Synapse_Connection_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_WTsyX9pzEe6n040-_uED9Q"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Qa" xmi:id="_WTsyYNpzEe6n040-_uED9Q">
+    <contextParameter comment="" name="Azure_Synapse_Connection_Password" prompt="Azure_Synapse_Connection_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:h303HLcmZjz7iFS5RbHR22ram2kdjifspZKYFuqMj46Lz5/9XznbPQ==" xmi:id="_WTsyYdpzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_Schema" prompt="Azure_Synapse_Connection_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sc_hsi_consumption" xmi:id="_WTsyYtpzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_Port" prompt="Azure_Synapse_Connection_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_WTsyY9pzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_Database" prompt="Azure_Synapse_Connection_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="qadw" xmi:id="_WTsyZNpzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_Login" prompt="Azure_Synapse_Connection_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="lcdTalend" xmi:id="_WTsyZdpzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_Server" prompt="Azure_Synapse_Connection_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="synapse-qa-dw-workspace.privatelink.sql.azuresynapse.net" xmi:id="_WTsyZtpzEe6n040-_uED9Q"/>
+    <contextParameter comment="" name="Azure_Synapse_Connection_AdditionalParams" prompt="Azure_Synapse_Connection_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_WTsyZ9pzEe6n040-_uED9Q"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c0195cbc-e462-4ed5-83c4-c824f337545d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Nj20wUozm+q6tcVCEJqogQxnP8NtJ3I27sUrs+nVb9QJ7CEnIUUMYCAmdbLbP7tEkFBn0CidG58Y&#13;
+lalNJS5x9Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a4f53d61-0c6b-4b22-a5e1-0701806a18b8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qKaUbVHYRiuc1yit53sfWgcq/2asWjUJd7mgH4nnQ6YarOQVmSsL2hiy/mjaiD2tstpoHrH9mBr4&#13;
+8eSpbNzSxw==</DigestValue></Reference></SignedInfo><SignatureValue>PXW8CUtDL/XF8VrHqRApDtwiQEqw7pxHVHW5GurxJj3RFxSDgG1UfGZovEctFvVt8pe+dt/pfe66&#13;
+e02RedtBhskt3easBOdWZiNL2BFplxCIZs8C1Nq8zFbz2roKMpgC9kPn1qCYAeznWx59nGLsxxZq&#13;
+/6FZ6JRoOuyqZlNq0uVPlRzd66C7hBSnbHSsUrZ4LJN6LHeJMs+RdkdWrN+x1BElNupS52bL213L&#13;
+IRznAJPLGspl+lZBQ/r1emtwjrr5GSv7K3G/jdgt4yazCpXQ0lgS+oAJgpfJAePh9XvwLR0Ik73t&#13;
+GTpf7ZsYMOt0TNUGkBQeKTmT2MmbjkWpwsqSuw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a4f53d61-0c6b-4b22-a5e1-0701806a18b8" Target="#_c0195cbc-e462-4ed5-83c4-c824f337545d"><Timestamp>2024-03-18 10:29:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
