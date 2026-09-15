@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="dev" xmi:id="_SScTEEQdEeuqRaaUxQpYIQ">
+    <contextParameter comment="" name="AS400_DB_ID" prompt="AS400_DB_ID?" promptNeeded="false" type="id_Integer" value="3" xmi:id="_SScTEUQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="AS400_login" prompt="AS400_login?" promptNeeded="false" type="id_String" value="" xmi:id="_SScTEkQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="AS400_server" prompt="AS400_server?" promptNeeded="false" type="id_String" value="" xmi:id="_SScTE0QdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="AS400_additional_params" prompt="AS400_additional_params?" promptNeeded="false" type="id_String" value="" xmi:id="_SScTFEQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="AS400_password" prompt="AS400_password?" promptNeeded="false" type="id_String" value="" xmi:id="_SScTFUQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="AS400_CSV_SFTP" prompt="AS400_CSV_SFTP?" promptNeeded="false" type="id_String" value="/DropZone/Supply_Chain" xmi:id="_SScTFkQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="supply_chain_HDFS_Folder" prompt="supply_chain_HDFS_Folder?" promptNeeded="false" type="id_String" value="/hsidatalake/raw/test/supply_chain/" xmi:id="_SScTF0QdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="supply_chain_remote_engine" prompt="supply_chain_remote_engine?" promptNeeded="false" type="id_String" value="/hsidatadisk/marketo/tmp/supply_chain/" xmi:id="_SScTGEQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="us_schema" prompt="us_schema?" promptNeeded="false" type="id_String" value="hsi_staging" xmi:id="_SScTGUQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="ca_schema" prompt="ca_schema?" promptNeeded="false" type="id_String" value="hsi_staging_ca" xmi:id="_SScTGkQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="run_date_id" prompt="run_date_id?" promptNeeded="false" type="id_Integer" value="20170101" xmi:id="_SScTG0QdEeuqRaaUxQpYIQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="qa" xmi:id="_SScTHEQdEeuqRaaUxQpYIQ">
+    <contextParameter comment="" name="AS400_DB_ID" prompt="AS400_DB_ID?" promptNeeded="false" type="id_Integer" value="3" xmi:id="_SScTHUQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="AS400_login" prompt="AS400_login?" promptNeeded="false" type="id_String" value="" xmi:id="_SScTHkQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="AS400_server" prompt="AS400_server?" promptNeeded="false" type="id_String" value="" xmi:id="_SScTH0QdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="AS400_additional_params" prompt="AS400_additional_params?" promptNeeded="false" type="id_String" value="" xmi:id="_SScTIEQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="AS400_password" prompt="AS400_password?" promptNeeded="false" type="id_String" value="" xmi:id="_SScTIUQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="AS400_CSV_SFTP" prompt="AS400_CSV_SFTP?" promptNeeded="false" type="id_String" value="/DropZone/Supply_Chain" xmi:id="_SScTIkQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="supply_chain_HDFS_Folder" prompt="supply_chain_HDFS_Folder?" promptNeeded="false" type="id_String" value="/hsidatalake/raw/test/supply_chain/" xmi:id="_SScTI0QdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="supply_chain_remote_engine" prompt="supply_chain_remote_engine?" promptNeeded="false" type="id_String" value="/hsidatadisk/marketo/tmp/supply_chain/" xmi:id="_SScTJEQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="us_schema" prompt="us_schema?" promptNeeded="false" type="id_String" value="hsi_staging" xmi:id="_SScTJUQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="ca_schema" prompt="ca_schema?" promptNeeded="false" type="id_String" value="hsi_staging_ca" xmi:id="_SScTJkQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="run_date_id" prompt="run_date_id?" promptNeeded="false" type="id_Integer" value="20170101" xmi:id="_SScTJ0QdEeuqRaaUxQpYIQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="prod" xmi:id="_SScTKEQdEeuqRaaUxQpYIQ">
+    <contextParameter comment="" name="AS400_DB_ID" prompt="AS400_DB_ID?" promptNeeded="false" type="id_Integer" value="3" xmi:id="_SScTKUQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="AS400_login" prompt="AS400_login?" promptNeeded="false" type="id_String" value="" xmi:id="_SScTKkQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="AS400_server" prompt="AS400_server?" promptNeeded="false" type="id_String" value="" xmi:id="_SScTK0QdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="AS400_additional_params" prompt="AS400_additional_params?" promptNeeded="false" type="id_String" value="" xmi:id="_SScTLEQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="AS400_password" prompt="AS400_password?" promptNeeded="false" type="id_String" value="" xmi:id="_SScTLUQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="AS400_CSV_SFTP" prompt="AS400_CSV_SFTP?" promptNeeded="false" type="id_String" value="/DropZone/Supply_Chain" xmi:id="_SScTLkQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="supply_chain_HDFS_Folder" prompt="supply_chain_HDFS_Folder?" promptNeeded="false" type="id_String" value="/hsidatalake/raw/test/supply_chain/" xmi:id="_SScTL0QdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="supply_chain_remote_engine" prompt="supply_chain_remote_engine?" promptNeeded="false" type="id_String" value="/hsidatadisk/marketo/tmp/supply_chain/" xmi:id="_SScTMEQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="us_schema" prompt="us_schema?" promptNeeded="false" type="id_String" value="hsi_staging" xmi:id="_SScTMUQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="ca_schema" prompt="ca_schema?" promptNeeded="false" type="id_String" value="hsi_staging_ca" xmi:id="_SScTMkQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="run_date_id" prompt="run_date_id?" promptNeeded="false" type="id_Integer" value="20170101" xmi:id="_SScTM0QdEeuqRaaUxQpYIQ"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_026bcbeb-5f95-47b5-b030-e876ab18f812"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zr/QS4WUZ7TxpgWNL7NuTo8zV4GCd08HwCNEHPvKhDfHk7Jd1sbnLh+FkNmPi+gjoxueZtavmvID&#13;
+KuMj6LeenQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2ea815bd-87e9-4363-8587-cda1200fc3c9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Hq96bdkMISHuta/4biiDPbxhj0h+2pShHJncjdQva/Q2ferSzCuW7wqADzG243us74RlKxVESyZw&#13;
++Tfdy0jxSw==</DigestValue></Reference></SignedInfo><SignatureValue>Gh+tnEzFmSBVCgaf7h/AOBD6rX25Fuuq4a2C/yoN1kyU7PIgSNODB1U04XI0aPU66Aui3fXzz3Oj&#13;
+HW2ix+jAqTJwEZ5Beg9k5G+C9EHF2xxvr3jLvCYN2MuvnY4ogB/oSXGdWTzau2qcELC0dDgxPMLM&#13;
++7pRY1jhpfC4ekmNACE+VxxwbvKafgLUsbNNKvcj/9tnqSOJGxlwCUu65/kv8eKVtaPMy9AKJH3H&#13;
+3IUbsLc29WbyJ2Jv1QGegnuUXXWEOD1Ic48+tMhrkYj0npRTxNgXMcRhXiyOvBj3f6BHuzEZywKo&#13;
+3VTUotD5uipgptYeyzvz/FQcLemNKLwUrC9QeA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2ea815bd-87e9-4363-8587-cda1200fc3c9" Target="#_026bcbeb-5f95-47b5-b030-e876ab18f812"><Timestamp>2024-03-18 10:29:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

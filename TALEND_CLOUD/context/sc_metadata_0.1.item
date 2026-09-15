@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="dev" xmi:id="_SV4BkEQdEeuqRaaUxQpYIQ">
+    <contextParameter comment="" name="sc_metadata_schema_name" prompt="sc_metadata_schema_name?" promptNeeded="false" type="id_String" value="CDH_METADATA" xmi:id="_SV4BkUQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_tables" prompt="sc_metadata_tables?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_CDH_TABLE" xmi:id="_SV4BkkQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_columns" prompt="sc_metadata_columns?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_CDH_COLUMN" xmi:id="_SV4Bk0QdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_project" prompt="sc_metadata_project?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_CDH_PROJECT" xmi:id="_SV4BlEQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_db_conn_table" prompt="sc_metadata_db_conn_table?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_CDH_DB_CONNECTION" xmi:id="_SV4BlUQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_job" prompt="sc_metadata_job?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_JOB" xmi:id="_SV4BlkQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_stage_query_table" prompt="sc_metadata_stage_query_table?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_STAGE_LOAD_QUERY" xmi:id="_SV4Bl0QdEeuqRaaUxQpYIQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="prod" xmi:id="_SV4BmEQdEeuqRaaUxQpYIQ">
+    <contextParameter comment="" name="sc_metadata_schema_name" prompt="sc_metadata_schema_name?" promptNeeded="false" type="id_String" value="CDH_METADATA" xmi:id="_SV4BmUQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_tables" prompt="sc_metadata_tables?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_CDH_TABLE" xmi:id="_SV4BmkQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_columns" prompt="sc_metadata_columns?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_CDH_COLUMN" xmi:id="_SV4Bm0QdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_project" prompt="sc_metadata_project?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_CDH_PROJECT" xmi:id="_SV4BnEQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_db_conn_table" prompt="sc_metadata_db_conn_table?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_CDH_DB_CONNECTION" xmi:id="_SV4BnUQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_job" prompt="sc_metadata_job?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_JOB" xmi:id="_SV4BnkQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_stage_query_table" prompt="sc_metadata_stage_query_table?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_STAGE_LOAD_QUERY" xmi:id="_SV4Bn0QdEeuqRaaUxQpYIQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="qa" xmi:id="_SV4BoEQdEeuqRaaUxQpYIQ">
+    <contextParameter comment="" name="sc_metadata_schema_name" prompt="sc_metadata_schema_name?" promptNeeded="false" type="id_String" value="CDH_METADATA" xmi:id="_SV4BoUQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_tables" prompt="sc_metadata_tables?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_CDH_TABLE" xmi:id="_SV4BokQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_columns" prompt="sc_metadata_columns?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_CDH_COLUMN" xmi:id="_SV4Bo0QdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_project" prompt="sc_metadata_project?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_CDH_PROJECT" xmi:id="_SV4BpEQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_db_conn_table" prompt="sc_metadata_db_conn_table?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_CDH_DB_CONNECTION" xmi:id="_SV4BpUQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_job" prompt="sc_metadata_job?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_JOB" xmi:id="_SV4BpkQdEeuqRaaUxQpYIQ"/>
+    <contextParameter comment="" name="sc_metadata_stage_query_table" prompt="sc_metadata_stage_query_table?" promptNeeded="false" type="id_String" value="SUPPLY_CHAIN_STAGE_LOAD_QUERY" xmi:id="_SV4Bp0QdEeuqRaaUxQpYIQ"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_991b0585-c1a7-45da-9cfa-f15f6aa96f2d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7xsj0GbtH8MhxcMavmlH5V9kA7ibCWHACHv4odv40pr8hN+W/Aqu+jv+Rx/fWf57DJ9b9M+xqclR&#13;
+VsOOXYZE1Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8a56b2bc-cecc-4753-9253-1448f6dd7dc5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7Xgxp71STL0RaMmm3Sz/9Cpxdfmv2LBPjLdO9w5MOatnX+ZNKiEp2XURTHI+wcy2kh8oWQH/QHCA&#13;
+aDwKtJE0dg==</DigestValue></Reference></SignedInfo><SignatureValue>hJ1eJEp8wOokgJyQQqLrHurRFXXihOxc5/eZ7bS0Hr6EQesr058kUu9N5zy1hQ5/H97Rdvnzaw2P&#13;
+oXwHmmqQ9kWuOzvaX+Wx+agaCglhvf9qHUkH3V8KijS1Vf6X2Gf7oz2EAlndDg8nNlR5BLNFgpCr&#13;
+czdWO5Tiq4J4u79bDfBmN81LAtbItBB5BWVloHpu7kkNNh0nCXGXhLG/OtbIekCDI7LPfkLsgVfU&#13;
+UKfATriHzIaPRB4iEsOCvmQx5ay0Dc6sObZS0PerbK6wWVSaOsAtO7DyaVhovmUwHlyzfAAVoJI6&#13;
+/BJfWqpyg0Vwfu/7/WeE66BNtxrAIHfs4WQo3g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8a56b2bc-cecc-4753-9253-1448f6dd7dc5" Target="#_991b0585-c1a7-45da-9cfa-f15f6aa96f2d"><Timestamp>2024-03-18 10:29:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

@@ -1,0 +1,157 @@
+package routines;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class Tweets_Generator {
+
+    /**
+     * {talendTypes} String
+     * 
+     * {Category} Tweets_Generator
+     * 
+     * {example} getCountry() # Bill.
+     */
+    public static String getCountry() {
+        String[] list = { "Abu Dhabi","Adelaide","Alaska","Almaty","Amsterdam","Arizona","Astana","Athens","Atlantic Time (Canada)","Auckland","Azores","Baghdad","Baku","Bangkok","Beijing","Belgrade","Berlin","Bern","Bogota","Brasilia","Bratislava","Brisbane","Brussels","Bucharest","Budapest","Buenos Aires","Cairo","Canberra","Cape Verde Is.","Caracas","Casablanca","Central America","Central Time (US & Canada)","Chennai","Chihuahua","Chongqing","Copenhagen","Darwin","Dhaka","Dublin","Eastern Time (US & Canada)","Edinburgh","Ekaterinburg","Fiji","Georgetown","Greenland","Guadalajara","Guam","Hanoi","Harare","Hawaii","Helsinki","Hobart","Hong Kong","Indiana (East)","International Date Line West","Irkutsk","Islamabad","Istanbul","Jakarta","Jerusalem","Kabul","Kamchatka","Karachi","Kathmandu","Kolkata","Krasnoyarsk","Kuala Lumpur","Kuwait","Kyiv","La Paz","Lima","Lisbon","Ljubljana","London","Madrid","Magadan","Marshall Is.","Mazatlan","Melbourne","Mexico City","Mid-Atlantic","Midway Island","Minsk","Monrovia","Monterrey","Moscow","Mountain Time (US & Canada)","Mumbai","Muscat","Nairobi","New Caledonia","New Delhi","Newfoundland","Novosibirsk","Nuku'alofa","Osaka","Pacific Time (US & Canada)","Paris","Perth","Port Moresby","Prague","Pretoria","Quito","Rangoon","Riga","Riyadh","Rome","Samoa","Santiago","Sapporo","Sarajevo","Saskatchewan","Seoul","Singapore","Skopje","Sofia","Solomon Is.","Sri Jayawardenepura","St. Petersburg","Stockholm","Sydney","Taipei","Tallinn","Tashkent","Tbilisi","Tehran","Tijuana","Tokyo","Ulaan Bataar","Urumqi","Vienna","Vilnius","Vladivostok","Volgograd","Warsaw","Wellington","West Central Africa","Yakutsk","Yerevan","Zagreb" }; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$ //$NON-NLS-6$ //$NON-NLS-7$ //$NON-NLS-8$
+        Integer random = 0 + ((Long) Math.round(Math.random() * (list.length - 1 - 0))).intValue();
+        return list[random];
+    }
+    
+    public static String getCity(String location) {
+    	String city="";
+    	if ( location!=null && location.contains(","))
+    	{
+    		int index = location.indexOf(",");
+    		city = location.substring(0,index);
+    	} else {
+    		city = location;
+    	}
+        String[] list = { "Abu Dhabi","Adelaide","Alaska","Almaty","Amsterdam","Arizona","Astana","Athens","Atlantic Time (Canada)","Auckland","Azores","Baghdad","Baku","Bangkok","Beijing","Belgrade","Berlin","Bern","Bogota","Brasilia","Bratislava","Brisbane","Brussels","Bucharest","Budapest","Buenos Aires","Cairo","Canberra","Cape Verde Is.","Caracas","Casablanca","Central America","Central Time (US & Canada)","Chennai","Chihuahua","Chongqing","Copenhagen","Darwin","Dhaka","Dublin","Eastern Time (US & Canada)","Edinburgh","Ekaterinburg","Fiji","Georgetown","Greenland","Guadalajara","Guam","Hanoi","Harare","Hawaii","Helsinki","Hobart","Hong Kong","Indiana (East)","International Date Line West","Irkutsk","Islamabad","Istanbul","Jakarta","Jerusalem","Kabul","Kamchatka","Karachi","Kathmandu","Kolkata","Krasnoyarsk","Kuala Lumpur","Kuwait","Kyiv","La Paz","Lima","Lisbon","Ljubljana","London","Madrid","Magadan","Marshall Is.","Mazatlan","Melbourne","Mexico City","Mid-Atlantic","Midway Island","Minsk","Monrovia","Monterrey","Moscow","Mountain Time (US & Canada)","Mumbai","Muscat","Nairobi","New Caledonia","New Delhi","Newfoundland","Novosibirsk","Nuku'alofa","Osaka","Pacific Time (US & Canada)","Paris","Perth","Port Moresby","Prague","Pretoria","Quito","Rangoon","Riga","Riyadh","Rome","Samoa","Santiago","Sapporo","Sarajevo","Saskatchewan","Seoul","Singapore","Skopje","Sofia","Solomon Is.","Sri Jayawardenepura","St. Petersburg","Stockholm","Sydney","Taipei","Tallinn","Tashkent","Tbilisi","Tehran","Tijuana","Tokyo","Ulaan Bataar","Urumqi","Vienna","Vilnius","Vladivostok","Volgograd","Warsaw","Wellington","West Central Africa","Yakutsk","Yerevan","Zagreb" }; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$ //$NON-NLS-6$ //$NON-NLS-7$ //$NON-NLS-8$
+        for ( int i = 0; i <list.length; i++)
+        {
+        	if(city!=null && city.equals(list[i]))
+        	{
+        		return list[i];
+        	}
+        }
+        return "";
+    }
+    
+    public static String getCountry(String timezone, String location)
+    {
+    	// return getCountry ("FRANCE");
+    	return getCountry (location);
+    }
+    
+    public static String getCountry(String location)
+    {
+    	String country="";
+    	if ( location!=null && location.contains(","))
+    	{
+    		int index = location.indexOf(",");
+    		country = location.substring(index+1,location.length());
+    		country = country.trim();
+    	} else {
+    		country = location;
+    	}
+    	
+    	   String[] list = {"UNITED ARAB EMIRATES","AUSTRALIA","UNITED STATES","KAZAKHSTAN","NETHERLANDS","UNITED STATES","KAZAKHSTAN","GREECE","CANADA","NEW ZEALAND","SPAIN","IRAQ","AZERBAIJAN","THAILAND","CHINA","BELGIUM","GERMANY","GERMANY","COLOMBIA","BRAZIL","SLOVAKIA","AUSTRALIA","BELGIUM","ROMANIA","HUNGARY","ARGENTINA","EGYPT","AUSTRALIA","CAPE VERDE","VENEZUELA","MOROCCO","MEXICO","UNITED STATES","INDIA","MEXICO","CHINA","DENMARK","AUSTRALIA","BANGLADESH","IRELAND","UNITED STATES","UNITED KINGDOM","RUSSIAN FEDERATION","SAUDI ARABIA","GUYANA","GREENLAND","MEXICO","GUAM","VIET NAM","ZIMBABWE","UNITED STATES","FINLAND","AUSTRALIA","HONG KONG","UNITED STATES","RUSSIAN FEDERATION","PAKISTAN","TURKEY","INDONESIA","ISRAEL","AFGHANISTAN","RUSSIAN FEDERATION","PAKISTAN","NEPAL","INDIA","RUSSIAN FEDERATION","MALAYSIA","KUWAIT","UKRAINE","BOLIVIA","PERU","PORTUGAL","SLOVENIA","UNITED KINGDOM","SPAIN","ROMANIA","MARSHALL ISLANDS","MEXICO","AUSTRALIA","MEXICO","UNITED STATES","UNITED STATES","BELARUS","LIBERIA","MEXICO","RUSSIAN FEDERATION","UNITED STATES","INDIA","OMAN","KENYA","FRANCE","INDIA","UNITED STATES","UKRAINE","TONGA","JAPAN","UNITED STATES","FRANCE","AUSTRALIA","PAPUA NEW GUINEA","CZECH REPUBLIC","SOUTH AFRICA","ECUADOR","MYANMAR","LATVIA","SAUDI ARABIA","ITALY","PAPUA NEW GUINEA","CHILE","JAPAN","BOSNIA AND HERZEGOWINA","CANADA","KOREA (S)","SINGAPORE","MACEDONIA","BULGARIA","SOLOMON ISLANDS","SRI LANKA","RUSSIAN FEDERATION","SWEDEN","AUSTRALIA","TAIWAN","ESTONIA","UZBEKISTAN","GEORGIA","IRAN (ISLAMIC REPUBLIC OF)","MEXICO","JAPAN","MONGOLIA","CHINA","AUSTRIA","LITHUANIA","RUSSIAN FEDERATION","RUSSIAN FEDERATION","POLAND","NEW ZEALAND","NIGERIA","RUSSIAN FEDERATION","ARMENIA","CROATIA"};
+    	   String[] listUSStates = {"AK","AL","AR","AZ","CA","CO","CT","DC","DE","FL","GA","HI","IA","ID","IL","IN","KS","KY","LA","MA","MD","ME","MI","MN","MO","MS","MT","NC","ND","NE","NH","NJ","NM","NV","NY","OH","OK","OR","PA","PR","RI","SC","SD","TN","TX","UT","VA","VT","WA","WI","WV","WY"};
+    	   for ( int i = 0; i <list.length; i++)
+           {
+    		   
+           	if(country!=null) 
+           	{
+           		country = country.trim();
+     		   String countryUp = country.toUpperCase();
+     		   if(countryUp.equals("USA"))
+     		   {
+     			   countryUp = "UNITED STATES";
+     		   }
+     		   if(countryUp.equals(list[i]))
+     		   {
+           		return countryUp;
+     		   }
+           	}
+           }
+    	   
+    	   for ( int i = 0; i <listUSStates.length; i++)
+           {
+    		   
+           	if(country!=null) 
+           	{
+           		country = country.trim();
+     		   String countryUp = country.toUpperCase();
+     		   if(countryUp.equals(listUSStates[i]))
+     		   {
+           		return "UNITED STATES";
+     		   }
+           	}
+           }
+    	   
+         
+                   String[] mylist = {"UNITED ARAB EMIRATES","AUSTRALIA","UNITED STATES","NETHERLANDS","UNITED STATES","CANADA","SPAIN",
+    	        	   	   "BELGIUM","GERMANY","GERMANY",
+    	        	    	   "BRAZIL","AUSTRALIA","BELGIUM","ROMANIA","HUNGARY","ARGENTINA","UNITED STATES","INDIA","DENMARK",
+    	        	    	   "IRELAND","UNITED STATES","UNITED KINGDOM","SINGAPORE",
+    	        	    	   "ISRAEL","INDIA","UNITED KINGDOM","SPAIN","UNITED STATES","UNITED STATES",
+    	        	    	   "FRANCE","INDIA","FRANCE","SAUDI ARABIA","ITALY","JAPAN","CANADA",
+    	        	    	   "SWEDEN","ITALY"
+    	        	    	   };
+            int min = 0; int max=mylist.length -1;
+     int         ir = (int)(Math.random() * ((max - min) + 1)) + min;
+             String s = mylist [ir];
+             return s ;
+             // return "NA";
+    }
+    
+    /**
+     * {talendTypes} String
+     * 
+     * {Category} Tweets_Generator
+     * 
+     * {example} getTrend() # Bill.
+     */
+    public static int getTrend(String polarity) {
+        if(polarity == null || ("").equals(polarity) || ("null").equals(polarity)){
+        	return 6;
+        } else {
+        	if(polarity.equals("negative")){
+            	return -15;         	
+            }else if(polarity.equals("neutral")){
+            	return 6;
+            } else if(polarity.equals("positive")){
+            	return 15;
+            } else {
+            	return 6;
+        	}
+        }
+    }
+    
+    public static String removeTrailingDots(String tweet) {
+    	tweet =  tweet.replaceAll("(\\r|\\n)", "");
+    	tweet =tweet.replaceAll("\u2026", "");
+    	//eet =tweet.replaceAll("0xE20x800xA6 ", "");
+    	/*if (tweet.endsWith("...."))
+    	{
+    		tweet =  tweet.substring(0, tweet.length()-5);
+    	} */
+    	return tweet;
+    }
+}

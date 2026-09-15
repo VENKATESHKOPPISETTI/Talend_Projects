@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><TalendHadoopCluster:HadoopClusterConnection xmlns:TalendHadoopCluster="http://www.talend.org/hadoopcluster" xmlns:xmi="http://www.omg.org/XMI" authMode="USERNAME" dfVersion="SPARK_3_1_x" distribution="SPARK" group="" jobHistory="hadoopcluster:10020" jobTrackerURI="hadoopcluster:8032" label="TrainingCluster" name="TrainingCluster" nameNodeURI="hdfs://hadoopcluster:8020" preloadAuthentification="true" rmScheduler="hadoopcluster:8030" stagingDirectory="/user" useDNHost="true" useSparkProperties="true" useYarn="true" userName="student" xmi:id="__wu-AHWUEemErPxFwdTZFQ" xmi:version="2.0">
+  <connectionList>_c63eAHYmEemErPxFwdTZFQ</connectionList>
+  <parameters key="CONN_PARA_KEY_HADOOP_CONF_SPECIFIC_JAR" value="" xmi:id="_wfvHAOfbEeyg1YRxJyV2tg"/>
+  <parameters key="CONN_PARA_KEY_SET_HADOOP_CONF" value="false" xmi:id="_wf44AOfbEeyg1YRxJyV2tg"/>
+  <parameters key="CONN_PARA_KEY_CDE_WORKLOAD_PASSWORD" value="" xmi:id="_wf44AefbEeyg1YRxJyV2tg"/>
+  <parameters key="CONN_PARA_KEY_CDE_API_ENDPOINT" value="" xmi:id="_wf44AufbEeyg1YRxJyV2tg"/>
+  <parameters key="CONN_PARA_KEY_CDE_WORKLOAD_USER" value="" xmi:id="_wf44A-fbEeyg1YRxJyV2tg"/>
+  <parameters key="CONN_PARA_KEY_CDE_TOKEN" value="" xmi:id="_wf44BOfbEeyg1YRxJyV2tg"/>
+  <parameters key="CONN_PARA_KEY_CDE_TOKEN_ENDPOINT" value="" xmi:id="_wf44BefbEeyg1YRxJyV2tg"/>
+  <parameters key="CONN_PARA_KEY_SPARK_MODE" value="YARN_CLUSTER" xmi:id="_x3F7gOfbEeyg1YRxJyV2tg"/>
+  <parameters key="CONN_PARA_KEY_DATABRICKS_ENDPOINT" value="" xmi:id="_x5UwIOfbEeyg1YRxJyV2tg"/>
+  <parameters key="CONN_PARA_KEY_DATABRICKS_CLUSTER_ID" value="" xmi:id="_x5UwIefbEeyg1YRxJyV2tg"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3d443bd9-c3f3-4199-9c92-38fed2d617d0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>j75hHBA3gGDlIYytwjMvOWUQqcUVeGjuka3XbWzyay2ofKYPNteJ9xdiAhyd1BVP2e4i0vNoakS5&#13;
+mO515YTQrw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_84217ac8-9abf-4a6f-b585-929e73314f78"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>z5tz5crmmqIezCi8BodMm8I4N6KOdpesUpRv+92hMPyIxYHnvZ/gWhHw/IrDtSTTQEz1u4jKxoDE&#13;
+aM/DMXlInQ==</DigestValue></Reference></SignedInfo><SignatureValue>emDTuEaYbX9RQz8JQVybCL+MtPcdIvrGAU8Cv7T+wfLaDsEgT6Mcv6/VlijvpN+10/SjsTo34Q3G&#13;
+yF5U3PT4blWwMckOc3WVeWW4WeGVpEEjOv/qS+stYn9k/xHm5Qfx21NcGJ6Ic+IGqSStt1dv8zuH&#13;
+1CwddJAjxuRIvse3mTNazIMMAvs36L/QK2byKKP/U+ZQ3sF464zj4J9wgzIAbw61rA0UaZ7xaScQ&#13;
+Hn61337qOM/wq5W1892nsJKJPDqOV1SjhbcVHlqUVWRSQdoIs+fmDRP8LHyH/4kSnFukYKpoAXBI&#13;
+ezarwqGfnm/Pe77SHAubIqZ8yAIPEDIPg3scvQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_84217ac8-9abf-4a6f-b585-929e73314f78" Target="#_3d443bd9-c3f3-4199-9c92-38fed2d617d0"><Timestamp>2024-03-26 14:09:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></TalendHadoopCluster:HadoopClusterConnection>

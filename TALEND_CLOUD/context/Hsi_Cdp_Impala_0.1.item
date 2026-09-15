@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Dev" xmi:id="_44nmkEhcEe2ePIsTvlo6KA">
+    <contextParameter comment="" name="Hsi_Cdp_Impala_ImpalaKeyTab" prompt="Hsi_Cdp_Impala_ImpalaKeyTab?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/home/tldcdhuser/tldcdhuser.keytab" xmi:id="_44nmkUhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_Password" prompt="Hsi_Cdp_Impala_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Uu1E0uH8E95YQbC00qTCQ0UVr2rHTRIeaSdT4U0Q0w8M45o8ufXtHNOw" xmi:id="_44nmkkhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_ImpalaKeyTabPrincipal" prompt="Hsi_Cdp_Impala_ImpalaKeyTabPrincipal?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tldcdhuser@HSDEVTEST.HENRYSCHEIN.COM" xmi:id="_44nmk0hcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_hiveAdditionalJDBCParameters" prompt="Hsi_Cdp_Impala_hiveAdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Marlabs" xmi:id="_44nmlEhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_Login" prompt="Hsi_Cdp_Impala_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tldcdhuser" xmi:id="_44nmlUhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_Database" prompt="Hsi_Cdp_Impala_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sc_hsi_consumption" xmi:id="_44nmlkhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_Port" prompt="Hsi_Cdp_Impala_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="21051" xmi:id="_44nml0hcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_ImpalaSSLTrustStorePath" prompt="Hsi_Cdp_Impala_ImpalaSSLTrustStorePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/home/tldcdhuser/truststore.jks" xmi:id="_44nmmEhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_ImpalaPrincipal" prompt="Hsi_Cdp_Impala_ImpalaPrincipal?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="impala/_HOST@HSDEVTEST.HENRYSCHEIN.COM" xmi:id="_44nmmUhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_Server" prompt="Hsi_Cdp_Impala_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mgmnt0142621devtest.hsdevtest.henryschein.com" xmi:id="_44nmmkhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_ImpalaSSLTrustStorePassword" prompt="Hsi_Cdp_Impala_ImpalaSSLTrustStorePassword?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:EMjUDJbbQwYjwE3a6j+oG3qvVsnifGw3qgH/20KjruBuI5QnodlKnjNmRiQ=" xmi:id="_44nmm0hcEe2ePIsTvlo6KA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Prod" xmi:id="_44nmnEhcEe2ePIsTvlo6KA">
+    <contextParameter comment="" name="Hsi_Cdp_Impala_ImpalaKeyTab" prompt="Hsi_Cdp_Impala_ImpalaKeyTab?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/tmp/tldcdhuser.keytab" xmi:id="_44nmnUhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_Password" prompt="Hsi_Cdp_Impala_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:heKYfOa2dvxx1y+K4Ehm3B853ZJZa8KbBOlHfHBVfavkr6+JKeC9thXO" xmi:id="_44nmnkhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_ImpalaKeyTabPrincipal" prompt="Hsi_Cdp_Impala_ImpalaKeyTabPrincipal?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tldcdhuser@HENRYSCHEIN.COM" xmi:id="_44nmn0hcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_hiveAdditionalJDBCParameters" prompt="Hsi_Cdp_Impala_hiveAdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_44nmoEhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_Login" prompt="Hsi_Cdp_Impala_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tldcdhuser" xmi:id="_44nmoUhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_Database" prompt="Hsi_Cdp_Impala_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sc_hsi_consumption" xmi:id="_44nmokhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_Port" prompt="Hsi_Cdp_Impala_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="21051" xmi:id="_44nmo0hcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_ImpalaSSLTrustStorePath" prompt="Hsi_Cdp_Impala_ImpalaSSLTrustStorePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/tmp/truststore.jks" xmi:id="_44nmpEhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_ImpalaPrincipal" prompt="Hsi_Cdp_Impala_ImpalaPrincipal?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="impala/_HOST@HENRYSCHEIN.COM" xmi:id="_44nmpUhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_Server" prompt="Hsi_Cdp_Impala_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="useazrcldrm1.henryschein.com" xmi:id="_44nmpkhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_ImpalaSSLTrustStorePassword" prompt="Hsi_Cdp_Impala_ImpalaSSLTrustStorePassword?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:eyOltRNyjmdAwyoo2hvrwNZSoAN03hMuTSjO+FucXnz1Fjz/7Ssx/viq" xmi:id="_44nmp0hcEe2ePIsTvlo6KA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Qa" xmi:id="_44nmqEhcEe2ePIsTvlo6KA">
+    <contextParameter comment="" name="Hsi_Cdp_Impala_ImpalaKeyTab" prompt="Hsi_Cdp_Impala_ImpalaKeyTab?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/home/tldcdhuser/tldcdhuser.keytab" xmi:id="_44nmqUhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_Password" prompt="Hsi_Cdp_Impala_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Pla/jdlSBFrEm6AAVUCy4+HhfGx1La9Ujrtp7mfqar89BKRBGngg" xmi:id="_44nmqkhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_ImpalaKeyTabPrincipal" prompt="Hsi_Cdp_Impala_ImpalaKeyTabPrincipal?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tldcdhuser@HSQA.HENRYSCHEIN.COM" xmi:id="_44nmq0hcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_hiveAdditionalJDBCParameters" prompt="Hsi_Cdp_Impala_hiveAdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_44nmrEhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_Login" prompt="Hsi_Cdp_Impala_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tldcdhuser" xmi:id="_44nmrUhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_Database" prompt="Hsi_Cdp_Impala_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sc_hsi_consumption" xmi:id="_44nmrkhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_Port" prompt="Hsi_Cdp_Impala_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="21051" xmi:id="_44nmr0hcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_ImpalaSSLTrustStorePath" prompt="Hsi_Cdp_Impala_ImpalaSSLTrustStorePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/home/tldcdhuser/truststore.jks" xmi:id="_44nmsEhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_ImpalaPrincipal" prompt="Hsi_Cdp_Impala_ImpalaPrincipal?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="impala/_HOST@HSQA.HENRYSCHEIN.COM" xmi:id="_44nmsUhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_Server" prompt="Hsi_Cdp_Impala_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mgmnt012023qa.hsqa.henryschein.com" xmi:id="_44nmskhcEe2ePIsTvlo6KA"/>
+    <contextParameter comment="" name="Hsi_Cdp_Impala_ImpalaSSLTrustStorePassword" prompt="Hsi_Cdp_Impala_ImpalaSSLTrustStorePassword?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:zmP915fhZWHgPSV0qHBPawwKXV7muKBjo1HaYmT8sUdDne3i" xmi:id="_44nms0hcEe2ePIsTvlo6KA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_32e780a7-36fe-46b0-a563-6c2d877e8e63"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>opo1goWOZuJr7NkJbt7WiMnfh/U9uOL8tAAUbu1EeguDcMvT1RFF/h7r1OuvLcW50qVAuMR/OMac&#13;
+V6DtDh0cVg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e41e2284-49af-4947-ac50-e07b70122147"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>O0mL/nI0sizzOUMx7ycU03k0nwEBjNhN7l7Z87u3yBZAG/NXMIRs0t5VmcKhiJmG8Wi89T0GEYoa&#13;
+19VD7oJKJA==</DigestValue></Reference></SignedInfo><SignatureValue>nz1APwbdVs5NHcv0VHjnqvKLrT75uVLR8wH6vbaRtYdhFHMyGKUtqDP4BPp9i+nPh47XBOoBdnKE&#13;
+fieKaO7zk8up6c3dKLHon4npFx1rpDpkL2nGbVXZJ6Vx2ediPLl2/bZQajuFkRdLU2TGt8acmzbv&#13;
+0drLJel2ebrAnEDvC3WDfWPe4E6C8qmKr3tdqUidvyKkpqZTMqZFbwTTC6Gi1CObXQxX0YZAcTzc&#13;
+eg2sFMAmSsn6jdq9/mRjO9XGgWqSlOMO+AKjSmSUX8YALcMdPxRU18NDLP+gUyv9ndJtusYGzTvZ&#13;
+wKFThiuraiYRRbg883TF0q6WKn3frqp3MoGiCA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e41e2284-49af-4947-ac50-e07b70122147" Target="#_32e780a7-36fe-46b0-a563-6c2d877e8e63"><Timestamp>2024-03-18 10:29:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
