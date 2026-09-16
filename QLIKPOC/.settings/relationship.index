@@ -23,6 +23,29 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_I9MdcKtpEfGV4LvxLYNE5w",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_CgLZ4KttEfGV4LvxLYNE5w",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_Eom4QKtoEfGV4LvxLYNE5w",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_VfQekKtjEfGV4LvxLYNE5w",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_CgLZ4KttEfGV4LvxLYNE5w - DQ_EXCEPTION",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_p3dHcLGdEfG5Z4vWGc-s7A",
     "version" : "0.1",
     "type" : "job"

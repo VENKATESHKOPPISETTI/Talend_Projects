@@ -9,7 +9,7 @@
     <contextParameter comment="" name="sf_database" prompt="Snowflake database" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_DB" internalId="_XtPZJaguEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_warehouse" prompt="Snowflake warehouse" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_WH" internalId="_XtPZJqguEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_role" prompt="Snowflake role" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_XtPZJ6guEfGLd56ADH5KHw"/>
-    <contextParameter comment="" name="sf_qtc_storage_schema" prompt="QTC Storage/current schema (read only)" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql_to_snowflake_demo_storage" internalId="_XtPZKKguEfGLd56ADH5KHw"/>
+    <contextParameter comment="" name="sf_qtc_storage_schema" prompt="QTC Storage/current schema (read only)" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="onboarding_storage" internalId="_XtPZKKguEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_curated_schema" prompt="CURATED schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CURATED" internalId="_XtPZKaguEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_control_schema" prompt="CONTROL schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CONTROL" internalId="_XtPZKqguEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_exception_schema" prompt="DQ exception schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CONTROL" internalId="_XtPZK6guEfGLd56ADH5KHw"/>
@@ -24,7 +24,7 @@
     <contextParameter comment="" name="sf_database" prompt="Snowflake database" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_DB" internalId="_XtPZMqguEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_warehouse" prompt="Snowflake warehouse" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_WH" internalId="_XtPZM6guEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_role" prompt="Snowflake role" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_XtPZNKguEfGLd56ADH5KHw"/>
-    <contextParameter comment="" name="sf_qtc_storage_schema" prompt="QTC Storage/current schema (read only)" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql_to_snowflake_demo_storage" internalId="_XtPZNaguEfGLd56ADH5KHw"/>
+    <contextParameter comment="" name="sf_qtc_storage_schema" prompt="QTC Storage/current schema (read only)" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="onboarding_storage" internalId="_XtPZNaguEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_curated_schema" prompt="CURATED schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CURATED" internalId="_XtPZNqguEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_control_schema" prompt="CONTROL schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CONTROL" internalId="_XtPZN6guEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_exception_schema" prompt="DQ exception schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CONTROL" internalId="_XtPZOKguEfGLd56ADH5KHw"/>
@@ -39,7 +39,7 @@
     <contextParameter comment="" name="sf_database" prompt="Snowflake database" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_DB" internalId="_XtPZP6guEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_warehouse" prompt="Snowflake warehouse" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_WH" internalId="_XtPZQKguEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_role" prompt="Snowflake role" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_XtPZQaguEfGLd56ADH5KHw"/>
-    <contextParameter comment="" name="sf_qtc_storage_schema" prompt="QTC Storage/current schema (read only)" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql_to_snowflake_demo_storage" internalId="_XtPZQqguEfGLd56ADH5KHw"/>
+    <contextParameter comment="" name="sf_qtc_storage_schema" prompt="QTC Storage/current schema (read only)" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="onboarding_storage" internalId="_XtPZQqguEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_curated_schema" prompt="CURATED schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CURATED" internalId="_XtPZQ6guEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_control_schema" prompt="CONTROL schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CONTROL" internalId="_XtPZRKguEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_exception_schema" prompt="DQ exception schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CONTROL" internalId="_XtPZRaguEfGLd56ADH5KHw"/>
@@ -54,7 +54,7 @@
     <contextParameter comment="" name="sf_database" prompt="Snowflake database" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_DB" internalId="_XtPZTKguEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_warehouse" prompt="Snowflake warehouse" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QTC_DEMO_WH" internalId="_XtPZTaguEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_role" prompt="Snowflake role" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_XtPZTqguEfGLd56ADH5KHw"/>
-    <contextParameter comment="" name="sf_qtc_storage_schema" prompt="QTC Storage/current schema (read only)" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql_to_snowflake_demo_storage__internal" internalId="_XtPZT6guEfGLd56ADH5KHw"/>
+    <contextParameter comment="" name="sf_qtc_storage_schema" prompt="QTC Storage/current schema (read only)" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="onboarding_storage" internalId="_XtPZT6guEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_curated_schema" prompt="CURATED schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CURATED" internalId="_XtPZUKguEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_control_schema" prompt="CONTROL schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CONTROL" internalId="_XtPZUaguEfGLd56ADH5KHw"/>
     <contextParameter comment="" name="sf_exception_schema" prompt="DQ exception schema" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CONTROL" internalId="_XtPZUqguEfGLd56ADH5KHw"/>
@@ -205,16 +205,7 @@
   </node>
   <node componentName="SnowflakeConnection" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="520" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="SnowflakeConnection" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dAConnection" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="1" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Snowflake" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_2FQ6YLGYEfG5Z4vWGc-s7A"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -241,7 +232,6 @@
     <elementParameter field="TEXT" name="configuration.role" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="configuration.jdbcUrlSuffix" value="&quot;.snowflakecomputing.com&quot;"/>
     <elementParameter field="TECHNICAL" name="configuration.__version" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="___TACOKIT_COMPONENT_PLUGIN_NAME___" value="snowflake" show="false"/>
     <metadata connector="FLOW" name="tDBConnection_1"/>
     <metadata connector="LOOKUP" name="LOOKUP"/>
     <metadata connector="MERGE" name="MERGE"/>
